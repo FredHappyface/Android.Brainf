@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
         String line;
         while ((line = reader.readLine()) != null) {
             stringBuilder.append(line);
+            stringBuilder.append("\n");
         }
 
         return stringBuilder.toString();
@@ -194,6 +195,8 @@ public class MainActivity extends AppCompatActivity {
         int instructionPointer = 0;
         int instructionLen = instruction.length();
         int inputCounter = 0;
+        StringBuffer outputBuffer = new StringBuffer();
+
 
         // While still reading instructions
         while (instructionPointer < instructionLen) {
@@ -250,10 +253,12 @@ public class MainActivity extends AppCompatActivity {
                 switch(mode){
                     case ASCII:{
                         System.out.print((char) value);
+                        outputBuffer.append((char) value);
                         break;
                     }
                     case INT:{
                         System.out.print(value + ", ");
+                        outputBuffer.append(value);
                         break;
                     }
                 }
@@ -359,6 +364,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Inform the user that code execution is complete
         System.out.println(INFO_EXECUTION_COMPLETE);
+
+        // Populate the textview with the string
+        TextView output = findViewById(R.id.output);
+        output.setText(outputBuffer.toString());
 
     }
 
