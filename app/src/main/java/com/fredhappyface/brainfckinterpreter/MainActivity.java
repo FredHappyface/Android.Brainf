@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -152,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void run(View v){
 
-        brainfuckInterpreter(syntaxCleaner(fileContent), MODE.ASCII);
+        brainfuckInterpreter(syntaxCleaner(fileContent));
 
     }
 
@@ -188,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
      * The purpose of this function is to take the cleaned syntax and execute
      * the appropriate function based on this
      */
-    public  void brainfuckInterpreter(String instruction, MODE mode) {
+    public  void brainfuckInterpreter(String instruction) {
         // Define variables
         int[] array = new int[MAX_SIZE];
         int arrayPointer = 0;
@@ -197,6 +198,9 @@ public class MainActivity extends AppCompatActivity {
         int inputCounter = 0;
         StringBuffer outputBuffer = new StringBuffer();
 
+
+        RadioButton modeRad = findViewById(R.id.modeAscii);
+        Boolean mode = modeRad.isChecked();
 
         // While still reading instructions
         while (instructionPointer < instructionLen) {
@@ -208,8 +212,15 @@ public class MainActivity extends AppCompatActivity {
                 if (arrayPointer != 0) {
                     arrayPointer--;
                 } else {
-                    System.out.println(String.format(ERR_POINTER_LT_ZERO,
+
+
+                    String error = String.format(String.format(ERR_POINTER_LT_ZERO,
                             instructionPointer, currentInstruction));
+                    System.out.println(error);
+                    outputBuffer.append(error);
+                    Toast.makeText(getApplicationContext(), error,
+                            Toast.LENGTH_LONG).show();
+
                     return;
                 }
             }
@@ -219,9 +230,12 @@ public class MainActivity extends AppCompatActivity {
                 if (arrayPointer < MAX_SIZE) {
                     arrayPointer++;
                 } else {
-                    System.out.println(
-                            String.format(ERR_POINTER_GT_MAX, MAX_SIZE,
-                                    instructionPointer, currentInstruction));
+                    String error = String.format(ERR_POINTER_GT_MAX, MAX_SIZE,
+                            instructionPointer, currentInstruction);
+                    System.out.println(error);
+                    outputBuffer.append(error);
+                    Toast.makeText(getApplicationContext(), error,
+                            Toast.LENGTH_LONG).show();
                     return;
                 }
             }
@@ -231,8 +245,12 @@ public class MainActivity extends AppCompatActivity {
                 if (value > Integer.MIN_VALUE) {
                     array[arrayPointer]--;
                 } else {
-                    System.out.println(String.format(ERR_VALUE_LT_MIN,
-                            instructionPointer, currentInstruction, arrayPointer));
+                    String error = String.format(ERR_VALUE_LT_MIN,
+                            instructionPointer, currentInstruction, arrayPointer);
+                    System.out.println(error);
+                    outputBuffer.append(error);
+                    Toast.makeText(getApplicationContext(), error,
+                            Toast.LENGTH_LONG).show();
                     return;
                 }
             }
@@ -242,27 +260,26 @@ public class MainActivity extends AppCompatActivity {
                 if (value < Integer.MAX_VALUE) {
                     array[arrayPointer]++;
                 } else {
-                    System.out.println(String.format(ERR_VALUE_GT_MAX,
-                            instructionPointer, currentInstruction, arrayPointer));
+                    String error = String.format(ERR_VALUE_GT_MAX,
+                            instructionPointer, currentInstruction, arrayPointer);
+                    System.out.println(error);
+                    outputBuffer.append(error);
+                    Toast.makeText(getApplicationContext(), error,
+                            Toast.LENGTH_LONG).show();
                     return;
                 }
             }
 
             // Define . operator
             if (currentInstruction == '.') {
-                switch(mode){
-                    case ASCII:{
+                if(mode){
                         System.out.print((char) value);
                         outputBuffer.append((char) value);
-                        break;
-                    }
-                    case INT:{
-                        System.out.print(value + ", ");
-                        outputBuffer.append(value);
-                        break;
-                    }
                 }
-
+                else{
+                        System.out.print(value + ", ");
+                        outputBuffer.append(value + ", ");
+                }
 
             }
 
@@ -288,12 +305,20 @@ public class MainActivity extends AppCompatActivity {
 
                 // Terminate if input is called too many times
                 if(inputCounter >= MAX_INPUT * 0.75){
-                    System.out.println(String.format(WARN_HIGH_INPUT,
-                            instructionPointer, currentInstruction, arrayPointer, MAX_INPUT));
+                    String error = String.format(WARN_HIGH_INPUT,
+                            instructionPointer, currentInstruction, arrayPointer, MAX_INPUT);
+                    System.out.println(error);
+                    outputBuffer.append(error);
+                    Toast.makeText(getApplicationContext(), error,
+                            Toast.LENGTH_LONG).show();
                 }
                 if(inputCounter >= MAX_INPUT){
-                    System.out.println(String.format(ERR_EXCEEDED_INPUT,
-                            instructionPointer, currentInstruction, arrayPointer, MAX_INPUT));
+                    String error = String.format(ERR_EXCEEDED_INPUT,
+                            instructionPointer, currentInstruction, arrayPointer, MAX_INPUT);
+                    System.out.println(error);
+                    outputBuffer.append(error);
+                    Toast.makeText(getApplicationContext(), error,
+                            Toast.LENGTH_LONG).show();
                     //reader.close();
                     return;
                 }
@@ -363,8 +388,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Inform the user that code execution is complete
-        System.out.println(INFO_EXECUTION_COMPLETE);
-        outputBuffer.append(INFO_EXECUTION_COMPLETE);
+        String fin = INFO_EXECUTION_COMPLETE;
+        System.out.println(fin);
+        outputBuffer.append(fin);
+        Toast.makeText(getApplicationContext(), fin,
+                Toast.LENGTH_LONG).show();
 
         // Populate the textview with the string
         TextView output = findViewById(R.id.output);
