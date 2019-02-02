@@ -30,6 +30,9 @@ Developed by Kieran W on the 01/02/2019
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
+    Create the activity and apply the activity_main view
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,27 +44,24 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     /*
-    Do when an option has been selected
+    What to do when an option has been selected
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        /*
+        For the about field
+         */
         if (id == R.id.action_about) {
-            // start the new activity here
             startActivity(new Intent(this, About.class));
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -89,11 +89,6 @@ public class MainActivity extends AppCompatActivity {
     final static String ERR_INPUT_INVALID = "ERROR: Input is too short or in the incorrect format: "+
             "must be a comma separated list or a string of characters";
 
-
-    // Warnings
-    final static String WARN_HIGH_INPUT = "WARN: This program is requesting " +
-            "too much input from the user (instruction: %d, %s pointer: %d limit: %d)";
-
     // Information
     final static String INFO_EXECUTION_COMPLETE = "INFO: Code executed " +
             "successfully";
@@ -106,100 +101,94 @@ public class MainActivity extends AppCompatActivity {
     private static final int READ_REQUEST_CODE = 42;
 
     /**
-     * Fires an intent to spin up the "file chooser" UI and select an image.
+     * Fires an intent to spin up the "file chooser" UI and select an file.
      */
     public void performFileSearch(View v) {
-
-        // ACTION_OPEN_DOCUMENT is the intent to choose a file via the system's file
-        // browser.
+        // Open a file with the system's file browser
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-
-        // Filter to only show results that can be "opened", such as a
-        // file (as opposed to a list of contacts or timezones)
+        // Filter to only show results that can be "opened"
         intent.addCategory(Intent.CATEGORY_OPENABLE);
-
-
         intent.setType("*/*");
-
+        // Start this activity in the hope of a result
         startActivityForResult(intent, READ_REQUEST_CODE);
     }
 
 
+    /**
+     * This is run (hopefully) when a file has been selected
+     */
     @Override
     public void onActivityResult(int requestCode, int resultCode,
                                  Intent resultData) {
 
-        // The ACTION_OPEN_DOCUMENT intent was sent with the request code
-        // READ_REQUEST_CODE. If the request code seen here doesn't match, it's the
-        // response to some other intent, and the code below shouldn't run at all.
-
+        /* Check if the file was picked successfully and that this result is from the expected activity
+        */
         if (requestCode == READ_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-            // The document selected by the user won't be returned in the intent.
-            // Instead, a URI to that document will be contained in the return intent
-            // provided to this method as a parameter.
-            // Pull that URI using resultData.getData().
-            //Uri uri = null;
+            // Check that there is result data and get the URI
             if (resultData != null) {
                 Uri uri = resultData.getData();
                 String uriString = "";
+                // Attempt to convert the URI to a string
                 try{
                     uriString = uri.toString();
                 }catch(Exception e){
 
                 }
+                // Attempt to read the data from the file
                 try {
                     fileContent = readTextFromUri(uri);
                 }
                 catch(Exception e){
                     String error = String.format(ERR_FILE_IS_INVALID, uriString);
-                    System.out.println(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
+                    reportError(error);
                 }
                 if(fileContent == null || fileContent.length() == 0){
                     String error = String.format(ERR_FILE_IS_NULL, uriString);
-                    System.out.println(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
+                    reportError(error);
                 }
-                // Populate the textview with the string
+                // Populate the textview with the file contents
                 TextView output = findViewById(R.id.fileContents);
                 output.setText(fileContent);
-
             }
         }
     }
 
+    /*
+    Report and error with a toast notification, and log it to the console
+     */
+    public void reportError(String error){
+        System.out.println(error);
+        Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
+    }
 
+    /*
+    Read the file text from the URI
+     */
     private String readTextFromUri(Uri uri) throws IOException {
         InputStream inputStream = getContentResolver().openInputStream(uri);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(
-                inputStream));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         StringBuilder stringBuilder = new StringBuilder();
+        // Read the next line from the file and add it to the output string
         String line;
         while ((line = reader.readLine()) != null) {
             stringBuilder.append(line);
             stringBuilder.append("\n");
         }
-
         return stringBuilder.toString();
     }
 
-
+    /*
+    Run the interpreter
+     */
     public void run(View v){
-
+        // Check that the file has been loaded first
         if(fileContent == null){
-            String error = ERR_FILE_NOT_LOADED;
-            System.out.println(error);
-            Toast.makeText(getApplicationContext(), error,
-                    Toast.LENGTH_LONG).show();
+            reportError(ERR_FILE_NOT_LOADED);
         }
         else {
             brainfuckInterpreter(syntaxCleaner(fileContent));
         }
-
     }
-
 
     /*
      * The purpose of this function is to strip non brainfuck syntax, this is to
@@ -241,9 +230,9 @@ public class MainActivity extends AppCompatActivity {
         int inputCounter = 0;
         StringBuilder outputBuffer = new StringBuilder();
 
-
+        // Get the mode
         RadioButton modeRad = findViewById(R.id.modeAscii);
-        boolean mode = modeRad.isChecked();
+        boolean isAsciiMode = modeRad.isChecked();
 
         // While still reading instructions
         while (instructionPointer < instructionLen) {
@@ -255,15 +244,9 @@ public class MainActivity extends AppCompatActivity {
                 if (arrayPointer != 0) {
                     arrayPointer--;
                 } else {
-
-
                     String error = String.format(locale, ERR_POINTER_LT_ZERO,
                             instructionPointer, currentInstruction);
-                    System.out.println(error);
-                    outputBuffer.append(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
-
+                    reportError(error);
                     return;
                 }
             }
@@ -275,10 +258,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     String error = String.format(locale, ERR_POINTER_GT_MAX, MAX_SIZE,
                             instructionPointer, currentInstruction);
-                    System.out.println(error);
-                    outputBuffer.append(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
+                    reportError(error);
                     return;
                 }
             }
@@ -290,10 +270,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     String error = String.format(locale, ERR_VALUE_LT_MIN,
                             instructionPointer, currentInstruction, arrayPointer);
-                    System.out.println(error);
-                    outputBuffer.append(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
+                    reportError(error);
                     return;
                 }
             }
@@ -305,17 +282,14 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     String error = String.format(locale, ERR_VALUE_GT_MAX,
                             instructionPointer, currentInstruction, arrayPointer);
-                    System.out.println(error);
-                    outputBuffer.append(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
+                    reportError(error);
                     return;
                 }
             }
 
             // Define . operator
             if (currentInstruction == '.') {
-                if(mode){
+                if(isAsciiMode){
                         System.out.print((char) value);
                         outputBuffer.append((char) value);
                 }
@@ -324,19 +298,18 @@ public class MainActivity extends AppCompatActivity {
                         outputBuffer.append(value);
                         outputBuffer.append(", ");
                 }
-
             }
 
             // Define , operator
             if (currentInstruction == ',') {
-
+                // Get the input
                 EditText input = findViewById(R.id.input_text_edit);
                 String inputText = input.getText().toString();
-
+                // Flag for invalid input
                 boolean invalidInput = false;
 
                 if(inputText.length() > 0) {
-                    if (mode) {
+                    if (isAsciiMode) {
                         try {
                             array[arrayPointer] = inputText.charAt(inputCounter);
                         }catch (Exception e){
@@ -357,56 +330,29 @@ public class MainActivity extends AppCompatActivity {
                         }catch (Exception e){
                             invalidInput = true;
                         }
-
                     }
 
                     if(invalidInput){
-                        String error = ERR_INPUT_INVALID;
-                        System.out.println(error);
-                        outputBuffer.append(error);
-                        Toast.makeText(getApplicationContext(), error,
-                                Toast.LENGTH_LONG).show();
+                        reportError(ERR_INPUT_INVALID);
                         return;
                     }
                     inputCounter++;
                 }
                 else{
-                    String error = ERR_INPUT_REQUIRED;
-                    System.out.println(error);
-                    outputBuffer.append(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
+                    reportError(ERR_INPUT_REQUIRED);
                     return;
                 }
 
-
-
                 // Terminate if input is called too many times
-                if(inputCounter >= MAX_INPUT * 0.75){
-                    String error = String.format(locale, WARN_HIGH_INPUT,
-                            instructionPointer, currentInstruction, arrayPointer, MAX_INPUT);
-                    System.out.println(error);
-                    outputBuffer.append(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
-                }
                 if(inputCounter >= MAX_INPUT){
                     String error = String.format(locale, ERR_EXCEEDED_INPUT,
                             instructionPointer, currentInstruction, arrayPointer, MAX_INPUT);
-                    System.out.println(error);
-                    outputBuffer.append(error);
-                    Toast.makeText(getApplicationContext(), error,
-                            Toast.LENGTH_LONG).show();
-
+                    reportError(error);
                     return;
                 }
-
-
-                //reader.close();
             }
 
             // Define [ operator
-
             // Need to find the matching closing bracket
             if (currentInstruction == '[') {
                 if (value == 0) {
@@ -433,7 +379,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Define ] operator
-
             // Need to find the matching opening bracket
             if (currentInstruction == ']') {
                 if (value > 0) {
@@ -456,26 +401,21 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
                     }
-
                 }
             }
-
 
             // Increment the instruction
             instructionPointer++;
         }
 
         // Inform the user that code execution is complete
-        String fin = INFO_EXECUTION_COMPLETE;
-        System.out.println(fin);
-        outputBuffer.append(fin);
-        Toast.makeText(getApplicationContext(), fin,
-                Toast.LENGTH_LONG).show();
+        String success = INFO_EXECUTION_COMPLETE;
+        reportError(success);
+        outputBuffer.append(success);
 
         // Populate the textview with the string
         TextView output = findViewById(R.id.output);
         output.setText(outputBuffer.toString());
-
     }
 
 
