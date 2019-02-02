@@ -364,6 +364,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Inform the user that code execution is complete
         System.out.println(INFO_EXECUTION_COMPLETE);
+        outputBuffer.append(INFO_EXECUTION_COMPLETE);
 
         // Populate the textview with the string
         TextView output = findViewById(R.id.output);

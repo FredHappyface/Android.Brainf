@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Brainf*ck Interpreter</string>
+
+
+    <!-- HARDCODED STRINGS FOR MAIN-->
+
+    <!-- Strings for activity_main.xml -->
+    <string name="main_open_btn">Open File</string>
+    <string name="main_run_btn">Run Program</string>
+    <string name="main_input_lbl">[File loaded here]</string>
+    <string name="main_output_lbl">[Output here]</string>
+    <string name="main_mode_lbl">Select the mode:</string>
+    <string name="main_mode_ascii_rad">ASCII IO</string>
+    <string name="main_mode_int_rad">Integer IO</string>
+
+
+
 </resources>

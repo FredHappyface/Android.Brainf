@@ -8,4 +8,42 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="RedTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/darkRed</item>
+        <item name="colorAccent">@color/lightRed</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/grey</item>
+    </style>
+
+
+    <style name="heading_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_h1</item>
+        <item name="android:layout_margin">@dimen/text_content_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="heading2_text_style" parent="heading_text_style">
+        <item name="android:textSize">@dimen/text_size_h2</item>
+    </style>
+
+    <style name="body_text_style" parent="heading2_text_style">
+        <item name="android:textSize">@dimen/text_size_body</item>
+    </style>
+
+    <style name="code_text_style" parent="heading2_text_style">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:background">@drawable/textbox</item>
+    </style>
+
+    <style name="button_style" parent="heading_text_style">
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+
+
 </resources>

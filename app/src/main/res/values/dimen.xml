@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_h1">16dp</dimen>
+    <dimen name="text_size_h2">14dp</dimen>
+    <dimen name="text_size_body">12dp</dimen>
+    <dimen name="text_content_padding">8dp</dimen>
+    <dimen name="text_content_margin">8dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+
+</resources>

@@ -18,49 +18,49 @@
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                style="@style/button_style"
                 android:onClick="performFileSearch"
-                android:text="Open "
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:text="@string/main_open_btn"/>
 
             <TextView
                 android:id="@+id/fileContents"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:fontFamily="serif-monospace"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                style="@style/code_text_style"
+                android:text="@string/main_input_lbl"
                 app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <TextView
+                android:id="@+id/mode"
+                style="@style/heading_text_style"
+                android:text="@string/main_mode_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/modeAscii"
+                    style="@style/body_text_style"
+                    android:layout_weight="1"
+                    android:text="@string/main_mode_ascii_rad" />
+
+                <RadioButton
+                    android:id="@+id/modeInt"
+                    style="@style/body_text_style"
+                    android:layout_weight="1"
+                    android:text="@string/main_mode_int_rad" />
+            </RadioGroup>
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                style="@style/button_style"
                 android:onClick="run"
-                android:text="Run" />
+                android:text="@string/main_run_btn" />
 
             <TextView
                 android:id="@+id/output"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:fontFamily="serif-monospace"
-                android:text="TextView" />
+                style="@style/code_text_style"
+                android:text="@string/main_output_lbl" />
 
         </LinearLayout>
     </ScrollView>
