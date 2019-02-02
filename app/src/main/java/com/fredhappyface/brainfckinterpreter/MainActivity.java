@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     String fileContent = null;
 
     // Errors
+    final static String ERR_FILE_NOT_LOADED = "ERROR: Load a file before running";
     final static String ERR_FILE_IS_INVALID = "ERROR: The specified file " +
             "does not exist (filename: %s)";
     final static String ERR_FILE_IS_NULL = "ERROR: The specified file does " +
@@ -53,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
             "too much input from the user (instruction: %d, %s pointer: %d limit: %d)";
 
     // Warnings
-    final static String WARN_FILE_MAY_BE_INVALID = "WARN: The specified file "
-            + "may not be a 'Brainf*ck' file as it does not have the extention .b or " +
-            ".bf (filename: %s)";
     final static String WARN_HIGH_INPUT = "WARN: This program is requesting " +
             "too much input from the user (instruction: %d, %s pointer: %d limit: %d)";
 
@@ -70,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     final static int MAX_INPUT = 20;
     public enum MODE{
         ASCII, INT
-    };
+    }
 
     private static final int READ_REQUEST_CODE = 42;
 
@@ -107,9 +105,9 @@ public class MainActivity extends AppCompatActivity {
             // Instead, a URI to that document will be contained in the return intent
             // provided to this method as a parameter.
             // Pull that URI using resultData.getData().
-            Uri uri = null;
+            //Uri uri = null;
             if (resultData != null) {
-                uri = resultData.getData();
+                Uri uri = resultData.getData();
                 try {
                     fileContent = readTextFromUri(uri);
                 }
@@ -153,7 +151,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void run(View v){
 
-        brainfuckInterpreter(syntaxCleaner(fileContent));
+        if(fileContent == null){
+            String error = ERR_FILE_NOT_LOADED;
+            System.out.println(error);
+            Toast.makeText(getApplicationContext(), error,
+                    Toast.LENGTH_LONG).show();
+        }
+        else {
+            brainfuckInterpreter(syntaxCleaner(fileContent));
+        }
 
     }
 

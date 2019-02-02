@@ -35,13 +35,18 @@
         <item name="android:textSize">@dimen/text_size_body</item>
     </style>
 
+    <style name="radio_style" parent="body_text_style">
+
+    </style>
+
     <style name="code_text_style" parent="heading2_text_style">
         <item name="android:fontFamily">serif-monospace</item>
         <item name="android:background">@drawable/textbox</item>
     </style>
 
-    <style name="button_style" parent="heading_text_style">
+    <style name="button_style" parent="heading2_text_style">
         <item name="android:background">@drawable/button</item>
+        <item name="android:minHeight">@dimen/text_size_h1</item>
     </style>
 
 
