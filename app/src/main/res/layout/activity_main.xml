@@ -50,7 +50,14 @@
                     android:layout_weight="1"
                     android:checked="true"
                     android:text="@string/main_mode_int_rad" />
+
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/input_text_edit"
+                style="@style/code_text_style"
+                android:inputType="text"
+                android:hint="@string/main_input_text_edit" />
 
             <Button
                 android:id="@+id/button2"

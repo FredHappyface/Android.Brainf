@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
             "pointer: %d)";
     final static String ERR_EXCEEDED_INPUT = "ERROR: This program requests " +
             "too much input from the user (instruction: %d, %s pointer: %d limit: %d)";
+    final static String ERR_INPUT_REQUIRED = "ERROR: Input is required here";
+    final static String ERR_INPUT_INVALID = "ERROR: Input is too short or in the incorrect format: "+
+            "must be a comma separated list or a string of characters";
+
 
     // Warnings
     final static String WARN_HIGH_INPUT = "WARN: This program is requesting " +
@@ -61,14 +66,9 @@ public class MainActivity extends AppCompatActivity {
     final static String INFO_EXECUTION_COMPLETE = "INFO: Code executed " +
             "successfully";
 
-    final static String INPUT_MSG = "INFO: Input requested (type: %s) ";
-
     // Constants
     final static int MAX_SIZE = 30000;
     final static int MAX_INPUT = 20;
-    public enum MODE{
-        ASCII, INT
-    }
 
     private static final int READ_REQUEST_CODE = 42;
 
@@ -284,7 +284,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                         System.out.print(value + ", ");
-                        outputBuffer.append(value + ", ");
+                        outputBuffer.append(value);
+                        outputBuffer.append(", ");
                 }
 
             }
@@ -292,22 +293,56 @@ public class MainActivity extends AppCompatActivity {
             // Define , operator
             if (currentInstruction == ',') {
 
-                System.out.print(String.format(INPUT_MSG, mode.toString()));
-                /*
-                Scanner reader = new Scanner(System.in);
-                inputCounter ++;
-                switch(mode){
-                    case ASCII:{
-                        array[arrayPointer] = reader.next().charAt(0);
-                        break;
-                    }
-                    case INT:{
-                        array[arrayPointer] = reader.nextInt();
-                        break;
+                EditText input = findViewById(R.id.input_text_edit);
+                String inputText = input.getText().toString();
+
+                boolean invalidInput = false;
+
+                if(inputText.length() > 0) {
+                    if (mode) {
+                        try {
+                            array[arrayPointer] = inputText.charAt(inputCounter);
+                        }catch (Exception e){
+                            invalidInput = true;
+                        }
+                    } else {
+                        inputText = inputText.replaceAll("\\s", "");
+                        if(inputText.contains(",")) {
+                            String[] intParts = inputText.split(",");
+                            try {
+                                array[arrayPointer] = Integer.parseInt(intParts[inputCounter]);
+                            }catch (Exception e){
+                                invalidInput = true;
+                            }
+                        }
+                        try {
+                            array[arrayPointer] = Integer.parseInt(inputText);
+                        }catch (Exception e){
+                            invalidInput = true;
+                        }
+
                     }
 
+                    if(invalidInput){
+                        String error = ERR_INPUT_INVALID;
+                        System.out.println(error);
+                        outputBuffer.append(error);
+                        Toast.makeText(getApplicationContext(), error,
+                                Toast.LENGTH_LONG).show();
+                        return;
+                    }
+                    inputCounter++;
                 }
-                */
+                else{
+                    String error = ERR_INPUT_REQUIRED;
+                    System.out.println(error);
+                    outputBuffer.append(error);
+                    Toast.makeText(getApplicationContext(), error,
+                            Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+
 
                 // Terminate if input is called too many times
                 if(inputCounter >= MAX_INPUT * 0.75){
@@ -325,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
                     outputBuffer.append(error);
                     Toast.makeText(getApplicationContext(), error,
                             Toast.LENGTH_LONG).show();
-                    //reader.close();
+
                     return;
                 }
 

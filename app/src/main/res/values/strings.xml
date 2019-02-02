@@ -9,6 +9,7 @@
     <string name="main_open_btn">Open File</string>
     <string name="main_run_btn">Run Program</string>
     <string name="main_input_lbl">[File loaded here]</string>
+    <string name="main_input_text_edit">[Input ASCII or Integers here]</string>
     <string name="main_output_lbl">[Output here]</string>
     <string name="main_mode_lbl">Select the mode:</string>
     <string name="main_mode_ascii_rad">ASCII IO</string>
