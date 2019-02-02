@@ -15,6 +15,15 @@
     <string name="main_mode_ascii_rad">ASCII IO</string>
     <string name="main_mode_int_rad">Integer IO</string>
 
+    <!-- Strings for activity_about.xml -->
+    <string name="about_title">About</string>
+    <string name="about_content">
+        Developed by Kieran W on the 02/2019. The aim of this android app is to parse a file and to
+        produce an interpreter for the \'Brainfuck\' programming language
+    </string>
+
+    <!-- Strings for menu_main.xml -->
+    <string name="action_about">About</string>
 
 
 </resources>

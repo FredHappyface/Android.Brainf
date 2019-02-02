@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -16,9 +18,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Locale;
 
 /*
-Develeloped by Kieran W on the 01/02/2019
+Developed by Kieran W on the 01/02/2019
 */
 /*
  * The aim of this android app is to parse a file
@@ -31,6 +34,35 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    /*
+    Create the overflow menu
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    /*
+    Do when an option has been selected
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        if (id == R.id.action_about) {
+            // start the new activity here
+            startActivity(new Intent(this, About.class));
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     String fileContent = null;
@@ -69,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
     // Constants
     final static int MAX_SIZE = 30000;
     final static int MAX_INPUT = 20;
+    final static Locale locale = Locale.ENGLISH;
 
     private static final int READ_REQUEST_CODE = 42;
 
@@ -108,17 +141,23 @@ public class MainActivity extends AppCompatActivity {
             //Uri uri = null;
             if (resultData != null) {
                 Uri uri = resultData.getData();
+                String uriString = "";
+                try{
+                    uriString = uri.toString();
+                }catch(Exception e){
+
+                }
                 try {
                     fileContent = readTextFromUri(uri);
                 }
                 catch(Exception e){
-                    String error = String.format(ERR_FILE_IS_INVALID, uri.toString());
+                    String error = String.format(ERR_FILE_IS_INVALID, uriString);
                     System.out.println(error);
                     Toast.makeText(getApplicationContext(), error,
                             Toast.LENGTH_LONG).show();
                 }
                 if(fileContent == null || fileContent.length() == 0){
-                    String error = String.format(ERR_FILE_IS_NULL, uri.toString());
+                    String error = String.format(ERR_FILE_IS_NULL, uriString);
                     System.out.println(error);
                     Toast.makeText(getApplicationContext(), error,
                             Toast.LENGTH_LONG).show();
@@ -126,8 +165,6 @@ public class MainActivity extends AppCompatActivity {
                 // Populate the textview with the string
                 TextView output = findViewById(R.id.fileContents);
                 output.setText(fileContent);
-
-
 
             }
         }
@@ -173,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         int fileContentsLen = fileContents.length();
         char[] legalChars = { '<', '>', '+', '-', '.', ',', '[', ']' };
         int legalCharsLen = legalChars.length;
-        StringBuffer cleanSyntax = new StringBuffer();
+        StringBuilder cleanSyntax = new StringBuilder();
         // For every character in the input string...
         for (int syntaxPointer = 0; syntaxPointer < fileContentsLen;
              syntaxPointer++) {
@@ -202,11 +239,11 @@ public class MainActivity extends AppCompatActivity {
         int instructionPointer = 0;
         int instructionLen = instruction.length();
         int inputCounter = 0;
-        StringBuffer outputBuffer = new StringBuffer();
+        StringBuilder outputBuffer = new StringBuilder();
 
 
         RadioButton modeRad = findViewById(R.id.modeAscii);
-        Boolean mode = modeRad.isChecked();
+        boolean mode = modeRad.isChecked();
 
         // While still reading instructions
         while (instructionPointer < instructionLen) {
@@ -220,8 +257,8 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
 
-                    String error = String.format(String.format(ERR_POINTER_LT_ZERO,
-                            instructionPointer, currentInstruction));
+                    String error = String.format(locale, ERR_POINTER_LT_ZERO,
+                            instructionPointer, currentInstruction);
                     System.out.println(error);
                     outputBuffer.append(error);
                     Toast.makeText(getApplicationContext(), error,
@@ -236,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
                 if (arrayPointer < MAX_SIZE) {
                     arrayPointer++;
                 } else {
-                    String error = String.format(ERR_POINTER_GT_MAX, MAX_SIZE,
+                    String error = String.format(locale, ERR_POINTER_GT_MAX, MAX_SIZE,
                             instructionPointer, currentInstruction);
                     System.out.println(error);
                     outputBuffer.append(error);
@@ -251,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
                 if (value > Integer.MIN_VALUE) {
                     array[arrayPointer]--;
                 } else {
-                    String error = String.format(ERR_VALUE_LT_MIN,
+                    String error = String.format(locale, ERR_VALUE_LT_MIN,
                             instructionPointer, currentInstruction, arrayPointer);
                     System.out.println(error);
                     outputBuffer.append(error);
@@ -266,7 +303,7 @@ public class MainActivity extends AppCompatActivity {
                 if (value < Integer.MAX_VALUE) {
                     array[arrayPointer]++;
                 } else {
-                    String error = String.format(ERR_VALUE_GT_MAX,
+                    String error = String.format(locale, ERR_VALUE_GT_MAX,
                             instructionPointer, currentInstruction, arrayPointer);
                     System.out.println(error);
                     outputBuffer.append(error);
@@ -346,7 +383,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Terminate if input is called too many times
                 if(inputCounter >= MAX_INPUT * 0.75){
-                    String error = String.format(WARN_HIGH_INPUT,
+                    String error = String.format(locale, WARN_HIGH_INPUT,
                             instructionPointer, currentInstruction, arrayPointer, MAX_INPUT);
                     System.out.println(error);
                     outputBuffer.append(error);
@@ -354,7 +391,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                 }
                 if(inputCounter >= MAX_INPUT){
-                    String error = String.format(ERR_EXCEEDED_INPUT,
+                    String error = String.format(locale, ERR_EXCEEDED_INPUT,
                             instructionPointer, currentInstruction, arrayPointer, MAX_INPUT);
                     System.out.println(error);
                     outputBuffer.append(error);
