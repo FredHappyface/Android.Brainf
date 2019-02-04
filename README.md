@@ -63,10 +63,9 @@ MIT License
 Copyright (c) Kieran W
 (See the [LICENSE](/LICENSE.md) for more information.)
 
-<!--
+
 # Screenshots
 |Screenshots| |
 |:-:|:-:|
-| ![Screenshot 1](readme-assets/screenshot-1.png?raw=true) | ![Screenshot 2](readme-assets/screenshot-2.png?raw=true) |
-| ![Screenshot 3](readme-assets/screenshot-3.png?raw=true) | ![Screenshot 4](readme-assets/screenshot-4.png?raw=true) |
--->
+| <img src="readme-assets/screenshot-1.PNG" alt="Screenshot 1" width="300"> | <img src="readme-assets/screenshot-2.PNG" alt="Screenshot 2" width="300"> |
+| <img src="readme-assets/screenshot-3.PNG" alt="Screenshot 3" width="300"> | <img src="readme-assets/screenshot-4.PNG" alt="Screenshot 4" width="300"> |
