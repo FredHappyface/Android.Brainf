@@ -27,16 +27,16 @@ Download the Android Studio IDE from https://developer.android.com/studio/. For 
 Follow the link to the listing on Google Play by clicking on the badge above, then download/ install
 -->
 
-<!--
+
 ## Available at Amazon Appstore 
 1. Open the Amazon Appstore (can be downloaded from https://www.amazon.co.uk/androidapp)
 2. Search for [app_name] 
 ### Or
 [<img src="readme-assets/amazon-appstore-download.png"
-      alt="Available at Amazon Appstore"   height="80">](http://www.amazon.com/gp/mas/dl/android?p=[package_name]&ref=mas_pm_[app_name])
+      alt="Available at Amazon Appstore"   height="80">](http://www.amazon.com/gp/mas/dl/android?p=com.fredhappyface.brainfckinterpreter&ref=mas_pm_brainf*ck)
 
 Follow the link to the listing on the Amazon Appstore by clicking on the badge above, then download/ install
--->
+
 
 ## Download the APK 
 1. Navigate to the [app_name]-APKs directory
