@@ -19,11 +19,17 @@
     <string name="about_title">About</string>
     <string name="about_content">
         Developed by Kieran W on the 02/2019. The aim of this android app is to parse a file and to
-        produce an interpreter for the \'Brainfuck\' programming language
+        produce an interpreter for the \'Brainf*ck\' programming language
     </string>
 
     <!-- Strings for menu_main.xml -->
     <string name="action_about">About</string>
+
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about_name">About</string>
+    <string name="shortcut_main_name">Home</string>
+    <string name="shortcut_disabled">Shortcut Disabled</string>
+
 
 
 </resources>
