@@ -22,8 +22,10 @@
     <style name="heading_text_style">
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/text_size_h1</item>
-        <item name="android:layout_marginHorizontal">@dimen/text_content_margin</item>
-        <item name="android:layout_marginVertical">@dimen/text_content_margin_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/text_content_margin</item>
+        <item name="android:layout_marginRight">@dimen/text_content_margin</item>
+        <item name="android:layout_marginTop">@dimen/text_content_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/text_content_margin_vertical</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>

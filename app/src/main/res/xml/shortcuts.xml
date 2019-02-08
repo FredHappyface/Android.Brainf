@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="main"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:shortcutShortLabel="@string/shortcut_main_name"
+        android:shortcutLongLabel="@string/shortcut_main_name"
+        android:shortcutDisabledMessage="@string/shortcut_disabled">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.fredhappyface.brainfckinterpreter"
+            android:targetClass="com.fredhappyface.brainfckinterpreter.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="about"
+        android:enabled="true"
+        android:icon="@drawable/ic_about"
+        android:shortcutShortLabel="@string/shortcut_about_name"
+        android:shortcutLongLabel="@string/shortcut_about_name"
+        android:shortcutDisabledMessage="@string/shortcut_disabled">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.fredhappyface.brainfckinterpreter"
+            android:targetClass="com.fredhappyface.brainfckinterpreter.About" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</PreferenceScreen>
