@@ -6,8 +6,8 @@ android {
         applicationId "com.fredhappyface.brainfckinterpreter"
         minSdkVersion 22
         targetSdkVersion 28
-        versionCode 2
-        versionName '20190207'
+        versionCode 3
+        versionName '20190208'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
