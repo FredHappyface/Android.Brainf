@@ -6,7 +6,7 @@ The aim of this android app is to parse a file and to produce an interpreter for
 ## Java and Android Version
 This app has been written in the Java programming language with the Android Studio IDE.
 - The target SDK version is 28 (Android 9.0 Pie)
-- The minimum SDK version is 26 (Android 8.0 Oreo)
+- The minimum SDK version is 22 (Android 5.1 Lollipop)
 
 ## Download Android Studio
 Download the Android Studio IDE from https://developer.android.com/studio/. For Windows, double click the downloaded .exe file and follow the instructions provided by the installer - it will download the Android emulator and the Android SDK. Additional information can be found at https://developer.android.com/studio/install
@@ -27,16 +27,16 @@ Download the Android Studio IDE from https://developer.android.com/studio/. For 
 Follow the link to the listing on Google Play by clicking on the badge above, then download/ install
 -->
 
-<!--
+
 ## Available at Amazon Appstore 
 1. Open the Amazon Appstore (can be downloaded from https://www.amazon.co.uk/androidapp)
 2. Search for [app_name] 
 ### Or
 [<img src="readme-assets/amazon-appstore-download.png"
-      alt="Available at Amazon Appstore"   height="80">](http://www.amazon.com/gp/mas/dl/android?p=[package_name]&ref=mas_pm_[app_name])
+      alt="Available at Amazon Appstore"   height="80">](http://www.amazon.com/gp/mas/dl/android?p=com.fredhappyface.brainfckinterpreter&ref=mas_pm_brainf*ck)
 
 Follow the link to the listing on the Amazon Appstore by clicking on the badge above, then download/ install
--->
+
 
 ## Download the APK 
 1. Navigate to the [app_name]-APKs directory
