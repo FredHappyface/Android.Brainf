@@ -58,17 +58,6 @@ Follow the link to the APKs directory by clicking on the badge above, then selec
 Follow the link to the listing on apkpure.com by clicking on the badge above, then download/ install
 -->
 
-<!--
-## Get it on APKMirror
-1. Go to https://www.apkmirror.com
-2. Search for [app_name] 
-### Or
-[<img src="readme-assets/apkmirror-download.png"
-      alt="Get it on APKMirror"   height="80">](https://www.apkmirror.com/)
-
-Follow the link to the listing on apkmirror.com by clicking on the badge above, then download/ install
--->
-
 # Licence 
 MIT License
 Copyright (c) Kieran W
