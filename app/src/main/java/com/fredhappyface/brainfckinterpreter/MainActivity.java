@@ -3,9 +3,7 @@ package com.fredhappyface.brainfckinterpreter;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,7 +26,7 @@ Developed by Kieran W on the 01/02/2019
  * and to produce an interpreter for the 'Brainfuck' programming language
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     /*
     Create the activity and apply the activity_main view
@@ -62,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, About.class));
             return true;
         }
+        if (id == R.id.action_settings) {
+            startActivity(new Intent(this, Settings.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     final static String ERR_EXCEEDED_INPUT = "ERROR: This program requests " +
             "too much input from the user (instruction: %d, %s pointer: %d limit: %d)";
     final static String ERR_INPUT_REQUIRED = "ERROR: Input is required here";
-    final static String ERR_INPUT_INVALID = "ERROR: Input is too short or in the incorrect format: "+
+    final static String ERR_INPUT_INVALID = "ERROR: Input is too short or in the incorrect format: " +
             "must be a comma separated list or a string of characters";
 
     // Information
@@ -122,27 +124,26 @@ public class MainActivity extends AppCompatActivity {
                                  Intent resultData) {
 
         /* Check if the file was picked successfully and that this result is from the expected activity
-        */
+         */
         if (requestCode == READ_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             // Check that there is result data and get the URI
             if (resultData != null) {
                 Uri uri = resultData.getData();
                 String uriString = "";
                 // Attempt to convert the URI to a string
-                try{
+                try {
                     uriString = uri.toString();
-                }catch(Exception e){
+                } catch (Exception e) {
 
                 }
                 // Attempt to read the data from the file
                 try {
                     fileContent = readTextFromUri(uri);
-                }
-                catch(Exception e){
+                } catch (Exception e) {
                     String error = String.format(ERR_FILE_IS_INVALID, uriString);
                     reportError(error);
                 }
-                if(fileContent == null || fileContent.length() == 0){
+                if (fileContent == null || fileContent.length() == 0) {
                     String error = String.format(ERR_FILE_IS_NULL, uriString);
                     reportError(error);
                 }
@@ -156,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
     /*
     Report and error with a toast notification, and log it to the console
      */
-    public void reportError(String error){
+    public void reportError(String error) {
         System.out.println(error);
         Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
     }
@@ -180,12 +181,11 @@ public class MainActivity extends AppCompatActivity {
     /*
     Run the interpreter
      */
-    public void run(View v){
+    public void run(View v) {
         // Check that the file has been loaded first
-        if(fileContent == null){
+        if (fileContent == null) {
             reportError(ERR_FILE_NOT_LOADED);
-        }
-        else {
+        } else {
             brainfuckInterpreter(syntaxCleaner(fileContent));
         }
     }
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
     public String syntaxCleaner(String fileContents) {
         // Define variables
         int fileContentsLen = fileContents.length();
-        char[] legalChars = { '<', '>', '+', '-', '.', ',', '[', ']' };
+        char[] legalChars = {'<', '>', '+', '-', '.', ',', '[', ']'};
         int legalCharsLen = legalChars.length;
         StringBuilder cleanSyntax = new StringBuilder();
         // For every character in the input string...
@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
      * The purpose of this function is to take the cleaned syntax and execute
      * the appropriate function based on this
      */
-    public  void brainfuckInterpreter(String instruction) {
+    public void brainfuckInterpreter(String instruction) {
         // Define variables
         int[] array = new int[MAX_SIZE];
         int arrayPointer = 0;
@@ -289,14 +289,13 @@ public class MainActivity extends AppCompatActivity {
 
             // Define . operator
             if (currentInstruction == '.') {
-                if(isAsciiMode){
-                        System.out.print((char) value);
-                        outputBuffer.append((char) value);
-                }
-                else{
-                        System.out.print(value + ", ");
-                        outputBuffer.append(value);
-                        outputBuffer.append(", ");
+                if (isAsciiMode) {
+                    System.out.print((char) value);
+                    outputBuffer.append((char) value);
+                } else {
+                    System.out.print(value + ", ");
+                    outputBuffer.append(value);
+                    outputBuffer.append(", ");
                 }
             }
 
@@ -308,43 +307,42 @@ public class MainActivity extends AppCompatActivity {
                 // Flag for invalid input
                 boolean invalidInput = false;
 
-                if(inputText.length() > 0) {
+                if (inputText.length() > 0) {
                     if (isAsciiMode) {
                         try {
                             array[arrayPointer] = inputText.charAt(inputCounter);
-                        }catch (Exception e){
+                        } catch (Exception e) {
                             invalidInput = true;
                         }
                     } else {
                         inputText = inputText.replaceAll("\\s", "");
-                        if(inputText.contains(",")) {
+                        if (inputText.contains(",")) {
                             String[] intParts = inputText.split(",");
                             try {
                                 array[arrayPointer] = Integer.parseInt(intParts[inputCounter]);
-                            }catch (Exception e){
+                            } catch (Exception e) {
                                 invalidInput = true;
                             }
                         }
                         try {
                             array[arrayPointer] = Integer.parseInt(inputText);
-                        }catch (Exception e){
+                        } catch (Exception e) {
                             invalidInput = true;
                         }
                     }
 
-                    if(invalidInput){
+                    if (invalidInput) {
                         reportError(ERR_INPUT_INVALID);
                         return;
                     }
                     inputCounter++;
-                }
-                else{
+                } else {
                     reportError(ERR_INPUT_REQUIRED);
                     return;
                 }
 
                 // Terminate if input is called too many times
-                if(inputCounter >= MAX_INPUT){
+                if (inputCounter >= MAX_INPUT) {
                     String error = String.format(locale, ERR_EXCEEDED_INPUT,
                             instructionPointer, currentInstruction, arrayPointer, MAX_INPUT);
                     reportError(error);
@@ -417,9 +415,6 @@ public class MainActivity extends AppCompatActivity {
         TextView output = findViewById(R.id.output);
         output.setText(outputBuffer.toString());
     }
-
-
-
 
 
 }

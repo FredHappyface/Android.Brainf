@@ -8,9 +8,14 @@
         android:label="@string/app_short_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/RedTheme">
+        android:theme="@style/LightTheme">
         <activity
             android:name=".About"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+        <activity
+            android:name=".Settings"
             android:configChanges="orientation|screenSize">
 
         </activity>
@@ -18,13 +23,14 @@
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <meta-data
                 android:name="android.app.shortcuts"
-                android:resource="@xml/shortcuts"/>
+                android:resource="@xml/shortcuts" />
         </activity>
     </application>
 

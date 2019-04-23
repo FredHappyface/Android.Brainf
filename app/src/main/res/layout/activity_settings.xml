@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/settings_head"
+            style="@style/heading_text_style" />
+
+        <TextView
+            android:text="@string/settings_description"
+            style="@style/body_text_style" />
+
+        <TextView
+            android:text="@string/settings_theme"
+            style="@style/heading_text_style" />
+
+        <RadioGroup
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:text="@string/settings_theme_radio1"
+                style="@style/radio_style"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/settings_theme_radio2"
+                style="@style/radio_style"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/settings_theme_radio3"
+                style="@style/radio_style"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <Button
+            style="@style/button_style"
+            android:onClick="changeTheme"
+            android:text="@string/settings_theme_button" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,43 @@
+package com.fredhappyface.brainfckinterpreter;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
+
+public class BaseActivity extends AppCompatActivity {
+
+    SharedPreferences sharedPreferences;
+    int currentTheme;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        currentTheme = sharedPreferences.getInt("theme", 0);
+        switch (currentTheme) {
+
+            case (1):
+                setTheme(R.style.DarkTheme);
+                break;
+            case (2):
+                setTheme(R.style.BlackTheme);
+                break;
+            default:
+                setTheme(R.style.LightTheme);
+                break;
+        }
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        int theme = sharedPreferences.getInt("theme", 0);
+        if (currentTheme != theme) {
+            currentTheme = theme;
+            recreate();
+        }
+    }
+}

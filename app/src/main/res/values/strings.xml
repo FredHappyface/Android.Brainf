@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Brainf*ck Interpreter</string>
     <string name="app_short_name">Brainf*ck</string>
 
 
@@ -24,12 +23,22 @@
 
     <!-- Strings for menu_main.xml -->
     <string name="action_about">About</string>
+    <string name="action_settings">Settings</string>
+
 
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_about_name">About</string>
+    <string name="shortcut_settings_name">Settings</string>
     <string name="shortcut_main_name">Home</string>
     <string name="shortcut_disabled">Shortcut Disabled</string>
 
-
+    <!-- Strings for settings -->
+    <string name="settings_head">Settings</string>
+    <string name="settings_description"></string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_radio1">Light</string>
+    <string name="settings_theme_radio2">Dark</string>
+    <string name="settings_theme_radio3">Black</string>
+    <string name="settings_theme_button">💾 Save Theme</string>
 
 </resources>

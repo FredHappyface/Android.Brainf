@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,14 +23,12 @@
             <TextView
                 android:id="@+id/fileContents"
                 style="@style/code_text_style"
-                android:text="@string/main_input_lbl"
-                />
+                android:text="@string/main_input_lbl" />
 
             <TextView
                 android:id="@+id/mode"
                 style="@style/heading2_text_style"
-                android:text="@string/main_mode_lbl"
-                />
+                android:text="@string/main_mode_lbl" />
 
             <RadioGroup
                 android:layout_width="match_parent"

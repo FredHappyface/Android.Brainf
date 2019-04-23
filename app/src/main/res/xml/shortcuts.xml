@@ -26,4 +26,18 @@
             android:targetClass="com.fredhappyface.brainfckinterpreter.About" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
+
+    <shortcut
+        android:shortcutId="settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:shortcutShortLabel="@string/shortcut_settings_name"
+        android:shortcutLongLabel="@string/shortcut_settings_name"
+        android:shortcutDisabledMessage="@string/shortcut_disabled">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.fredhappyface.brainfckinterpreter"
+            android:targetClass="com.fredhappyface.brainfckinterpreter.Settings" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
 </PreferenceScreen>
