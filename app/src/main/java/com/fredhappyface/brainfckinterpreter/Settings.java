@@ -9,13 +9,13 @@ import android.widget.RadioGroup;
 public class Settings extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
     }
 
 
-    public void changeTheme(View view) {
+    public final void changeTheme(View view) {
         RadioGroup themeChoices = findViewById(R.id.theme);
 
         int radioButtonID = themeChoices.getCheckedRadioButtonId();

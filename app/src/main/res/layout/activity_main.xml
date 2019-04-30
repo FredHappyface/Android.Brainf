@@ -53,7 +53,8 @@
                 android:id="@+id/input_text_edit"
                 style="@style/code_text_style"
                 android:inputType="text"
-                android:hint="@string/main_input_text_edit" />
+                android:hint="@string/main_input_text_edit"
+                android:importantForAutofill="no" />
 
             <Button
                 android:id="@+id/button2"

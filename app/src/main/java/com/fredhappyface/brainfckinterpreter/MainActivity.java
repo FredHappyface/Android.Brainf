@@ -32,7 +32,7 @@ public class MainActivity extends BaseActivity {
     Create the activity and apply the activity_main view
      */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -41,7 +41,7 @@ public class MainActivity extends BaseActivity {
     Create the overflow menu
      */
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public final boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity {
     What to do when an option has been selected
      */
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public final boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
         /*
@@ -67,45 +67,45 @@ public class MainActivity extends BaseActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    String fileContent = null;
+    private String fileContent = null;
 
     // Errors
-    final static String ERR_FILE_NOT_LOADED = "ERROR: Load a file before running";
-    final static String ERR_FILE_IS_INVALID = "ERROR: The specified file " +
+    private final static String ERR_FILE_NOT_LOADED = "ERROR: Load a file before running";
+    private final static String ERR_FILE_IS_INVALID = "ERROR: The specified file " +
             "does not exist (filename: %s)";
-    final static String ERR_FILE_IS_NULL = "ERROR: The specified file does " +
+    private final static String ERR_FILE_IS_NULL = "ERROR: The specified file does " +
             "not contain any text (filename: %s)";
-    final static String ERR_POINTER_LT_ZERO = "ERROR: The pointer cannot be " +
+    private final static String ERR_POINTER_LT_ZERO = "ERROR: The pointer cannot be " +
             "less than zero (instruction: %d, %s)";
-    final static String ERR_POINTER_GT_MAX = "ERROR: The pointer cannot be "
+    private final static String ERR_POINTER_GT_MAX = "ERROR: The pointer cannot be "
             + "greater than the size of the array (array_size: %d instruction: %d, %s)";
-    final static String ERR_VALUE_LT_MIN = "ERROR: The value cannot be "
+    private final static String ERR_VALUE_LT_MIN = "ERROR: The value cannot be "
             + "less than the size of the minimum integer (instruction: %d, %s " +
             "pointer: %d)";
-    final static String ERR_VALUE_GT_MAX = "ERROR: The value cannot be "
+    private final static String ERR_VALUE_GT_MAX = "ERROR: The value cannot be "
             + "greater than the size of the maximum integer (instruction: %d, %s " +
             "pointer: %d)";
-    final static String ERR_EXCEEDED_INPUT = "ERROR: This program requests " +
+    private final static String ERR_EXCEEDED_INPUT = "ERROR: This program requests " +
             "too much input from the user (instruction: %d, %s pointer: %d limit: %d)";
-    final static String ERR_INPUT_REQUIRED = "ERROR: Input is required here";
-    final static String ERR_INPUT_INVALID = "ERROR: Input is too short or in the incorrect format: " +
+    private final static String ERR_INPUT_REQUIRED = "ERROR: Input is required here";
+    private final static String ERR_INPUT_INVALID = "ERROR: Input is too short or in the incorrect format: " +
             "must be a comma separated list or a string of characters";
 
     // Information
-    final static String INFO_EXECUTION_COMPLETE = "INFO: Code executed " +
+    private final static String INFO_EXECUTION_COMPLETE = "INFO: Code executed " +
             "successfully";
 
     // Constants
-    final static int MAX_SIZE = 30000;
-    final static int MAX_INPUT = 20;
-    final static Locale locale = Locale.ENGLISH;
+    private final static int MAX_SIZE = 30000;
+    private final static int MAX_INPUT = 20;
+    private final static Locale locale = Locale.ENGLISH;
 
     private static final int READ_REQUEST_CODE = 42;
 
     /**
      * Fires an intent to spin up the "file chooser" UI and select an file.
      */
-    public void performFileSearch(View v) {
+    public final void performFileSearch(View v) {
         // Open a file with the system's file browser
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         // Filter to only show results that can be "opened"
@@ -120,8 +120,8 @@ public class MainActivity extends BaseActivity {
      * This is run (hopefully) when a file has been selected
      */
     @Override
-    public void onActivityResult(int requestCode, int resultCode,
-                                 Intent resultData) {
+    public final void onActivityResult(int requestCode, int resultCode,
+                                       Intent resultData) {
 
         /* Check if the file was picked successfully and that this result is from the expected activity
          */
@@ -131,10 +131,8 @@ public class MainActivity extends BaseActivity {
                 Uri uri = resultData.getData();
                 String uriString = "";
                 // Attempt to convert the URI to a string
-                try {
+                if (uri != null) {
                     uriString = uri.toString();
-                } catch (Exception e) {
-
                 }
                 // Attempt to read the data from the file
                 try {
@@ -157,7 +155,7 @@ public class MainActivity extends BaseActivity {
     /*
     Report and error with a toast notification, and log it to the console
      */
-    public void reportError(String error) {
+    private final void reportError(String error) {
         System.out.println(error);
         Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
     }
@@ -181,7 +179,7 @@ public class MainActivity extends BaseActivity {
     /*
     Run the interpreter
      */
-    public void run(View v) {
+    public final void run(View v) {
         // Check that the file has been loaded first
         if (fileContent == null) {
             reportError(ERR_FILE_NOT_LOADED);
@@ -194,7 +192,7 @@ public class MainActivity extends BaseActivity {
      * The purpose of this function is to strip non brainfuck syntax, this is to
      * make the program more modular. The syntax is "< > + - . , [ ]"
      */
-    public String syntaxCleaner(String fileContents) {
+    private final String syntaxCleaner(String fileContents) {
         // Define variables
         int fileContentsLen = fileContents.length();
         char[] legalChars = {'<', '>', '+', '-', '.', ',', '[', ']'};
@@ -221,7 +219,7 @@ public class MainActivity extends BaseActivity {
      * The purpose of this function is to take the cleaned syntax and execute
      * the appropriate function based on this
      */
-    public void brainfuckInterpreter(String instruction) {
+    private final void brainfuckInterpreter(String instruction) {
         // Define variables
         int[] array = new int[MAX_SIZE];
         int arrayPointer = 0;

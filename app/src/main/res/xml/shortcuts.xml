@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
     <shortcut
         android:shortcutId="main"
         android:enabled="true"
@@ -40,4 +40,4 @@
             android:targetClass="com.fredhappyface.brainfckinterpreter.Settings" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
-</PreferenceScreen>
+</shortcuts>

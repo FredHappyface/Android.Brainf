@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 
-public class BaseActivity extends AppCompatActivity {
+abstract public class BaseActivity extends AppCompatActivity {
 
     SharedPreferences sharedPreferences;
     int currentTheme;
@@ -32,7 +32,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
+    final protected void onResume() {
         super.onResume();
         int theme = sharedPreferences.getInt("theme", 0);
         if (currentTheme != theme) {
