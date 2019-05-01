@@ -155,7 +155,7 @@ public class MainActivity extends BaseActivity {
     /*
     Report and error with a toast notification, and log it to the console
      */
-    private final void reportError(String error) {
+    private void reportError(String error) {
         System.out.println(error);
         Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
     }
@@ -192,7 +192,7 @@ public class MainActivity extends BaseActivity {
      * The purpose of this function is to strip non brainfuck syntax, this is to
      * make the program more modular. The syntax is "< > + - . , [ ]"
      */
-    private final String syntaxCleaner(String fileContents) {
+    private String syntaxCleaner(String fileContents) {
         // Define variables
         int fileContentsLen = fileContents.length();
         char[] legalChars = {'<', '>', '+', '-', '.', ',', '[', ']'};
@@ -219,7 +219,7 @@ public class MainActivity extends BaseActivity {
      * The purpose of this function is to take the cleaned syntax and execute
      * the appropriate function based on this
      */
-    private final void brainfuckInterpreter(String instruction) {
+    private void brainfuckInterpreter(String instruction) {
         // Define variables
         int[] array = new int[MAX_SIZE];
         int arrayPointer = 0;

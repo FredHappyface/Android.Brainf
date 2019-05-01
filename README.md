@@ -1,4 +1,4 @@
-# Android.BrainfckInterpreter
+# Android.Brainf*ckInterpreter
 The aim of this android app is to parse a file and to produce an interpreter for the 'Brainfuck' programming language
 
 # Language Information 
@@ -43,7 +43,7 @@ Follow the link to the listing on the Amazon Appstore by clicking on the badge a
 2. Select the debug or release APK depending on your preference. Note that the filenames are in the form: app-[debug/release]-yyyymmdd.apk (I would recommend downloading the most recent release APK)
 ### Or
 [<img src="readme-assets/direct-apk-download.png"
-      alt="Direct apk download"   height="80">](/Brainfck-APKs)
+      alt="Direct apk download"   height="80">](/Brainf*ck-APKs)
 
 Follow the link to the APKs directory by clicking on the badge above, then select the preferred APK
 
