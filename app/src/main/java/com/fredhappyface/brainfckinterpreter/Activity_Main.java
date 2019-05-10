@@ -26,48 +26,7 @@ Developed by Kieran W on the 01/02/2019
  * and to produce an interpreter for the 'Brainfuck' programming language
  */
 
-public class MainActivity extends BaseActivity {
-
-    /*
-    Create the activity and apply the activity_main view
-     */
-    @Override
-    protected final void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    /*
-    Create the overflow menu
-     */
-    @Override
-    public final boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    /*
-    What to do when an option has been selected
-     */
-    @Override
-    public final boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        /*
-        For the about field
-         */
-        if (id == R.id.action_about) {
-            startActivity(new Intent(this, About.class));
-            return true;
-        }
-        if (id == R.id.action_settings) {
-            startActivity(new Intent(this, Settings.class));
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    private String fileContent = null;
+public class Activity_Main extends Abstract_Activity {
 
     // Errors
     private final static String ERR_FILE_NOT_LOADED = "ERROR: Load a file before running";
@@ -102,12 +61,55 @@ public class MainActivity extends BaseActivity {
 
     private static final int READ_REQUEST_CODE = 42;
 
+    /*
+    Create the activity and apply the activity_main view
+     */
+    @Override
+    protected final void onCreate(final Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    /*
+    Create the overflow menu
+     */
+    @Override
+    public final boolean onCreateOptionsMenu(final Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    /*
+    What to do when an option has been selected
+     */
+    @Override
+    public final boolean onOptionsItemSelected(final MenuItem item) {
+        final int itemId = item.getItemId();
+
+        /*
+        For the about field
+         */
+        if (itemId == R.id.action_about) {
+            startActivity(new Intent(this, Activity_About.class));
+            return true;
+        }
+        if (itemId == R.id.action_settings) {
+            startActivity(new Intent(this, Activity_Settings.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private String fileContent = null;
+
+
+
     /**
      * Fires an intent to spin up the "file chooser" UI and select an file.
      */
-    public final void performFileSearch(View v) {
+    public final void performFileSearch(final View view) {
         // Open a file with the system's file browser
-        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        final Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         // Filter to only show results that can be "opened"
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("*/*");
@@ -120,15 +122,15 @@ public class MainActivity extends BaseActivity {
      * This is run (hopefully) when a file has been selected
      */
     @Override
-    public final void onActivityResult(int requestCode, int resultCode,
-                                       Intent resultData) {
+    public final void onActivityResult(final int requestCode, final int resultCode,
+                                       final Intent resultData) {
 
         /* Check if the file was picked successfully and that this result is from the expected activity
          */
         if (requestCode == READ_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             // Check that there is result data and get the URI
             if (resultData != null) {
-                Uri uri = resultData.getData();
+                final Uri uri = resultData.getData();
                 String uriString = "";
                 // Attempt to convert the URI to a string
                 if (uri != null) {
@@ -142,11 +144,11 @@ public class MainActivity extends BaseActivity {
                     reportError(error);
                 }
                 if (fileContent == null || fileContent.length() == 0) {
-                    String error = String.format(ERR_FILE_IS_NULL, uriString);
+                    final String error = String.format(ERR_FILE_IS_NULL, uriString);
                     reportError(error);
                 }
                 // Populate the textview with the file contents
-                TextView output = findViewById(R.id.fileContents);
+                final TextView output = findViewById(R.id.fileContents);
                 output.setText(fileContent);
             }
         }
@@ -156,17 +158,17 @@ public class MainActivity extends BaseActivity {
     Report and error with a toast notification, and log it to the console
      */
     private void reportError(String error) {
-        System.out.println(error);
+        // System.out.println(error);
         Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
     }
 
     /*
     Read the file text from the URI
      */
-    private String readTextFromUri(Uri uri) throws IOException {
-        InputStream inputStream = getContentResolver().openInputStream(uri);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        StringBuilder stringBuilder = new StringBuilder();
+    private String readTextFromUri(final Uri uri) throws IOException {
+        final InputStream inputStream = getContentResolver().openInputStream(uri);
+        final BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        final StringBuilder stringBuilder = new StringBuilder();
         // Read the next line from the file and add it to the output string
         String line;
         while ((line = reader.readLine()) != null) {
@@ -179,7 +181,7 @@ public class MainActivity extends BaseActivity {
     /*
     Run the interpreter
      */
-    public final void run(View v) {
+    public final void run(final View view) {
         // Check that the file has been loaded first
         if (fileContent == null) {
             reportError(ERR_FILE_NOT_LOADED);
@@ -192,21 +194,19 @@ public class MainActivity extends BaseActivity {
      * The purpose of this function is to strip non brainfuck syntax, this is to
      * make the program more modular. The syntax is "< > + - . , [ ]"
      */
-    private String syntaxCleaner(String fileContents) {
+    private String syntaxCleaner(final String fileContents) {
         // Define variables
-        int fileContentsLen = fileContents.length();
-        char[] legalChars = {'<', '>', '+', '-', '.', ',', '[', ']'};
-        int legalCharsLen = legalChars.length;
-        StringBuilder cleanSyntax = new StringBuilder();
+        final int fileContentsLen = fileContents.length();
+        final char[] legalChars = {'<', '>', '+', '-', '.', ',', '[', ']'};
+        final StringBuilder cleanSyntax = new StringBuilder();
         // For every character in the input string...
         for (int syntaxPointer = 0; syntaxPointer < fileContentsLen;
              syntaxPointer++) {
             // ...Select the char at the position of the pointer
             char element = fileContents.charAt(syntaxPointer);
             // ...And compare it to each char in the legalChars array
-            for (int legalPointer = 0; legalPointer < legalCharsLen;
-                 legalPointer++) {
-                if (element == legalChars[legalPointer]) {
+            for (char legalChar: legalChars) {
+                if (element == legalChar) {
                     // Add the char to the output if it is part of the syntax
                     cleanSyntax.append(element);
                 }
@@ -219,7 +219,7 @@ public class MainActivity extends BaseActivity {
      * The purpose of this function is to take the cleaned syntax and execute
      * the appropriate function based on this
      */
-    private void brainfuckInterpreter(String instruction) {
+    private void brainfuckInterpreter(final String instruction) {
         // Define variables
         int[] array = new int[MAX_SIZE];
         int arrayPointer = 0;

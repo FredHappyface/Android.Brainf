@@ -10,7 +10,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.fredhappyface.brainfckinterpreter"
-            android:targetClass="com.fredhappyface.brainfckinterpreter.MainActivity" />
+            android:targetClass="com.fredhappyface.brainfckinterpreter.Activity_Main" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -23,7 +23,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.fredhappyface.brainfckinterpreter"
-            android:targetClass="com.fredhappyface.brainfckinterpreter.About" />
+            android:targetClass="com.fredhappyface.brainfckinterpreter.Activity_About" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 
@@ -37,7 +37,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.fredhappyface.brainfckinterpreter"
-            android:targetClass="com.fredhappyface.brainfckinterpreter.Settings" />
+            android:targetClass="com.fredhappyface.brainfckinterpreter.Activity_Settings" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 </shortcuts>

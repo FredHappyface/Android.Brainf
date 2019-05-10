@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 
-abstract public class BaseActivity extends AppCompatActivity {
+abstract public class Abstract_Activity extends AppCompatActivity {
 
     SharedPreferences sharedPreferences;
     int currentTheme;
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         currentTheme = sharedPreferences.getInt("theme", 0);
@@ -34,7 +34,7 @@ abstract public class BaseActivity extends AppCompatActivity {
     @Override
     final protected void onResume() {
         super.onResume();
-        int theme = sharedPreferences.getInt("theme", 0);
+        final int theme = sharedPreferences.getInt("theme", 0);
         if (currentTheme != theme) {
             currentTheme = theme;
             recreate();
