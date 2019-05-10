@@ -1,8 +1,8 @@
 
 <p float="left">
 <img src="https://img.shields.io/github/languages/top/fredhappyface/Android.BrainfckInterpreter.svg?style=flat-square" alt="Github top language">
-<img src="https://img.shields.io/codacy/grade/:codacy-proj-id:.svg?style=flat-square" alt="Codacy grade">
-<img src="https://img.shields.io/codacy/coverage/:codacy-proj-id:.svg?style=flat-square" alt="Codacy coverage">
+<img src="https://img.shields.io/codacy/grade/eb41727dde3b47dba205b0336f615539.svg?style=flat-square" alt="Codacy grade">
+<img src="https://img.shields.io/codacy/coverage/eb41727dde3b47dba205b0336f615539.svg?style=flat-square" alt="Codacy coverage">
 <img src="https://img.shields.io/github/repo-size/fredhappyface/Android.BrainfckInterpreter.svg?style=flat-square" alt="Repository size">
 <img src="https://img.shields.io/github/issues/fredhappyface/Android.BrainfckInterpreter.svg?style=flat-square" alt="Issues">
 <img src="https://img.shields.io/github/license/fredhappyface/Android.BrainfckInterpreter.svg?style=flat-square" alt="License">
