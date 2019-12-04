@@ -1,4 +1,4 @@
-package com.fredhappyface.brainfckinterpreter;
+package com.fredhappyface.brainf;
 
 import android.os.Bundle;
 

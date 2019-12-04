@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_short_name">Brainf*ck</string>
+    <string name="app_short_name">Brainf</string>
 
 
     <!-- HARDCODED STRINGS FOR MAIN-->
@@ -18,7 +18,7 @@
     <string name="about_title">About</string>
     <string name="about_content">
         Developed by Kieran W on the 02/2019. The aim of this android app is to parse a file and to
-        produce an interpreter for the \'Brainf*ck\' programming language
+        produce an interpreter for the \'Brainf\' programming language
     </string>
 
     <!-- Strings for menu_main.xml -->

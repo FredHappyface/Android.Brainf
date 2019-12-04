@@ -1,9 +1,9 @@
-package com.fredhappyface.brainfckinterpreter;
+package com.fredhappyface.brainf;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 abstract public class Abstract_Activity extends AppCompatActivity {
 
