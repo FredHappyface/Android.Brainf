@@ -9,8 +9,8 @@
         android:shortcutDisabledMessage="@string/shortcut_disabled">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="com.fredhappyface.brainfckinterpreter"
-            android:targetClass="com.fredhappyface.brainfckinterpreter.Activity_Main" />
+            android:targetPackage="com.fredhappyface.brainf"
+            android:targetClass="com.fredhappyface.brainf.ActivityMain" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -22,8 +22,8 @@
         android:shortcutDisabledMessage="@string/shortcut_disabled">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="com.fredhappyface.brainfckinterpreter"
-            android:targetClass="com.fredhappyface.brainfckinterpreter.Activity_About" />
+            android:targetPackage="com.fredhappyface.brainf"
+            android:targetClass="com.fredhappyface.brainf.ActivityAbout" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 
@@ -36,8 +36,8 @@
         android:shortcutDisabledMessage="@string/shortcut_disabled">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="com.fredhappyface.brainfckinterpreter"
-            android:targetClass="com.fredhappyface.brainfckinterpreter.Activity_Settings" />
+            android:targetPackage="com.fredhappyface.brainf"
+            android:targetClass="com.fredhappyface.brainf.ActivitySettings" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 </shortcuts>

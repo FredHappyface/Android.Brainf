@@ -11,17 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/LightTheme">
         <activity
-            android:name=".Activity_About"
+            android:name=".ActivityAbout"
             android:configChanges="orientation|screenSize">
 
         </activity>
         <activity
-            android:name=".Activity_Settings"
+            android:name=".ActivitySettings"
             android:configChanges="orientation|screenSize">
 
         </activity>
         <activity
-            android:name=".Activity_Main"
+            android:name=".ActivityMain"
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

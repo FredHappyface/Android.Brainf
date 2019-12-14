@@ -1,71 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Activity_Main">
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.View"
+        tools:context=".ActivityMain">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
-                style="@style/button_style"
-                android:onClick="performFileSearch"
-                android:text="@string/main_open_btn" />
+                    style="@style/button_style"
+                    android:onClick="performFileSearch"
+                    android:text="@string/main_open_btn"/>
 
             <TextView
-                android:id="@+id/fileContents"
-                style="@style/code_text_style"
-                android:text="@string/main_input_lbl" />
+                    android:id="@+id/fileContents"
+                    style="@style/code_text_style"
+                    android:text="@string/main_input_lbl"/>
 
             <TextView
-                android:id="@+id/mode"
-                style="@style/heading2_text_style"
-                android:text="@string/main_mode_lbl" />
+                    style="@style/heading2_text_style"
+                    android:text="@string/main_mode_lbl"/>
 
             <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/modeAscii"
-                    style="@style/radio_style"
-                    android:layout_weight="1"
-                    android:text="@string/main_mode_ascii_rad" />
+                        android:id="@+id/modeAscii"
+                        style="@style/radio_style"
+                        android:layout_weight="1"
+                        android:text="@string/main_mode_ascii_rad"/>
 
                 <RadioButton
-                    android:id="@+id/modeInt"
-                    style="@style/radio_style"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    android:text="@string/main_mode_int_rad" />
+                        style="@style/radio_style"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/main_mode_int_rad"/>
 
             </RadioGroup>
 
             <EditText
-                android:id="@+id/input_text_edit"
-                style="@style/code_text_style"
-                android:inputType="text"
-                android:hint="@string/main_input_text_edit"
-                android:importantForAutofill="no" />
+                    android:id="@+id/input_text_edit"
+                    style="@style/code_text_style"
+                    android:inputType="text"
+                    android:hint="@string/main_input_text_edit"
+                    android:importantForAutofill="no"/>
 
             <Button
-                android:id="@+id/button2"
-                style="@style/button_style"
-                android:onClick="run"
-                android:text="@string/main_run_btn" />
+                    style="@style/button_style"
+                    android:onClick="run"
+                    android:text="@string/main_run_btn"/>
 
             <TextView
-                android:id="@+id/output"
-                style="@style/code_text_style"
-                android:text="@string/main_output_lbl" />
+                    android:id="@+id/output"
+                    style="@style/code_text_style"
+                    android:text="@string/main_output_lbl"/>
 
         </LinearLayout>
     </ScrollView>
