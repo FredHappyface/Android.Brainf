@@ -6,7 +6,7 @@
 <a href="../../issues"><img src="https://img.shields.io/github/issues/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Issues"></a>
 <a href="/LICENSE.md"><img src="https://img.shields.io/github/license/FredHappyface/Android.Brainf.svg?style=flat-square" alt="License"></a>
 <a href="../../commits/master"><img src="https://img.shields.io/github/commit-activity/m/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Commit activity"></a>
-<a href="../../commits/master"><img src="https://img.shields.io/github/last-commit/FredHappyface/Android.Brainf.svg?"style=flat-square" alt="Last commit"></a>
+<a href="../../commits/master"><img src="https://img.shields.io/github/last-commit/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Last commit"></a>
 </p>
 
 # Android.Brainf
