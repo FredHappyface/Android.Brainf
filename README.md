@@ -1,7 +1,7 @@
 <p float="left">
 <a href="../../"><img src="https://img.shields.io/github/languages/top/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Github top language"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/Android.Brainf"><img src="https://img.shields.io/codacy/grade/eb41727dde3b47dba205b0336f615539.svg?style=flat-square" alt="Codacy grade"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/Android.Brainf"><img src="https://img.shields.io/codacy/coverage/eb41727dde3b47dba205b0336f615539.svg?style=flat-square" alt="Codacy coverage"></a>
+<a href="https://www.codacy.com/manual/FredHappyface/Android.Brainf"><img src="https://img.shields.io/codacy/grade/a1e1c2958260480e9c4c3cb77b9ec759.svg?style=flat-square" alt="Codacy grade"></a>
+<a href="https://www.codacy.com/manual/FredHappyface/Android.Brainf"><img src="https://img.shields.io/codacy/coverage/a1e1c2958260480e9c4c3cb77b9ec759.svg?style=flat-square" alt="Codacy coverage"></a>
 <a href="../../"><img src="https://img.shields.io/github/repo-size/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Repository size"></a>
 <a href="../../issues"><img src="https://img.shields.io/github/issues/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Issues"></a>
 <a href="/LICENSE.md"><img src="https://img.shields.io/github/license/FredHappyface/Android.Brainf.svg?style=flat-square" alt="License"></a>
