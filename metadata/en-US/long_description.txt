@@ -1,0 +1,2 @@
+The aim of is to parse a file and to produce an interpreter for the 'Brainf'
+programming language

@@ -1,57 +1,53 @@
 **Unarchived, Brainf shall live! ...**
 
-<p float="left">
-<a href="../../"><img src="https://img.shields.io/github/languages/top/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Github top language"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/Android.Brainf"><img src="https://img.shields.io/codacy/grade/a1e1c2958260480e9c4c3cb77b9ec759.svg?style=flat-square" alt="Codacy grade"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/Android.Brainf"><img src="https://img.shields.io/codacy/coverage/a1e1c2958260480e9c4c3cb77b9ec759.svg?style=flat-square" alt="Codacy coverage"></a>
-<a href="../../"><img src="https://img.shields.io/github/repo-size/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Repository size"></a>
-<a href="../../issues"><img src="https://img.shields.io/github/issues/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Issues"></a>
-<a href="/LICENSE.md"><img src="https://img.shields.io/github/license/FredHappyface/Android.Brainf.svg?style=flat-square" alt="License"></a>
-<a href="../../commits/master"><img src="https://img.shields.io/github/commit-activity/m/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Commit activity"></a>
-<a href="../../commits/master"><img src="https://img.shields.io/github/last-commit/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Last commit"></a>
-</p>
+[![GitHub top language](https://img.shields.io/github/languages/top/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../)
+[![Repository size](https://img.shields.io/github/repo-size/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../)
+[![Issues](https://img.shields.io/github/issues/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../issues)
+[![License](https://img.shields.io/github/license/FredHappyface/Android.Brainf.svg?style=for-the-badge)](/LICENSE.md)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../commits/master)
+[![Last commit](https://img.shields.io/github/last-commit/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../commits/master)
 
+<!-- omit in toc -->
 # Android.Brainf
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
-The aim of this android app is to parse a file and to produce an interpreter for the 'Brainf' programming language
+Application to read and write brainf source files and execute programs written in
+brainf.
 
+
+- [Features](#features)
+- [Language Information](#language-information)
+	- [Kotlin and Android Version](#kotlin-and-android-version)
+		- [Download Android Studio](#download-android-studio)
+- [How to Run](#how-to-run)
+	- [Build From Source](#build-from-source)
+	- [Download the APK](#download-the-apk)
+- [Changelog](#changelog)
+- [Download](#download)
+	- [Clone](#clone)
+		- [Using The Command Line](#using-the-command-line)
+		- [Using GitHub Desktop](#using-github-desktop)
+	- [Download Zip File](#download-zip-file)
+- [Licence](#licence)
+- [Screenshots](#screenshots)
+	- [Mobile](#mobile)
+	- [Themes](#themes)
+
+## Features
+
+- Open source files
+- Run brainf
 
 ## Language Information
 
-### Java and Android Version
-This app has been written in the Java 8 programming language with the Android
-Studio IDE.
-- The target SDK version is :target-sdk: (Android 29)
-- The minimum SDK version is :minimum-sdk: (Android 22)
+### Kotlin and Android Version
+This app has been written in Kotlin 1.5.0 with the Android Studio IDE.
+- The target SDK version is :target-sdk: (Android 30)
+- The minimum SDK version is :minimum-sdk: (Android 25)
 
-#### Install Java 8
-##### OpenJDK8 (recommended)
-Install with chocolatey
-```powershell
-choco install openjdk8
-```
-##### OracleJDK8
-Install with chocolatey
-```powershell
-choco install jdk8
-```
-or download and install from
-<https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
 
-#### Download an IDE
-##### Download Intellij Community
-Download the Intellij Community from <https://www.jetbrains.com/idea/download/>.
-For Windows, double click the downloaded .exe file and follow the instructions
-provided by the installer. Install the Android SDK through Intellij.
-
-Install with chocolatey
-```powershell
-choco install intellijidea-community
-```
-
-##### Download Android Studio
+#### Download Android Studio
 Download the Android Studio IDE from <https://developer.android.com/studio/>.
 For Windows, double click the downloaded .exe file and follow the instructions
 provided by the installer - it will download the Android emulator and the
@@ -77,20 +73,6 @@ Follow the link to the listing on Google Play by clicking on the badge above,
 then download/ install
 -->
 
-
-### Available at Amazon Appstore
-1. Open the Amazon Appstore (can be downloaded from
-<https://www.amazon.co.uk/androidapp>)
-2. Search for Brainf
-
-**Or**
-
-[<img src="readme-assets/badges/amazon-appstore-download.png" alt="Available
-at Amazon Appstore" height="80">
-](http://www.amazon.com/gp/mas/dl/android?p=com.fredhappyface.brainf&ref=mas_pm_Brainf)
-
-Follow the link to the listing on the Amazon Appstore by clicking on the badge
-above, then download/ install
 
 
 ### Download the APK

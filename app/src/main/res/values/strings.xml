@@ -14,11 +14,27 @@
     <string name="main_mode_ascii_rad">ASCII IO</string>
     <string name="main_mode_int_rad">Integer IO</string>
 
+    <!-- Strings for ActivityMain.kt -->
+    <string name="err_file_not_loaded">ERROR: Load a file before running</string>
+    <string name="err_pointer_lt_zero">ERROR: The pointer cannot be less than zero (instruction: %d, %s)</string>
+    <string name="err_pointer_gt_max">ERROR: The pointer cannot be greater than the size of the array
+        (array_size: %d instruction: %d, %s)</string>
+    <string name="err_value_lt_min">ERROR: The value cannot be less than the size of the minimum
+        integer (instruction: %d, %s pointer: %d)</string>
+    <string name="err_value_gt_max">ERROR: The value cannot be greater than the size of the maximum
+        integer (instruction: %d, %s pointer: %d)</string>
+    <string name="err_exceeded_input">ERROR: This program requests too much input from the user
+        (instruction: %d, %s pointer: %d limit: %d)</string>
+    <string name="err_input_required">ERROR: Input is required here</string>
+    <string name="err_input_invalid">ERROR: Input is too short or in the incorrect format: must be
+        a comma separated list or a string of characters</string>
+    <string name="info_exe_complete">INFO: Code executed successfully</string>
+
     <!-- Strings for activity_about.xml -->
     <string name="about_title">About</string>
     <string name="about_content">
-        Developed by Kieran W on the 02/2019. The aim of this android app is to parse a file and to
-        produce an interpreter for the \'Brainf\' programming language
+        Developed by FredHappyface (2019-2021). The aim of this android app is to parse a file and to
+        produce an interpreter for the \'Brainf\' programming language.
     </string>
 
     <!-- Strings for menu_main.xml -->
