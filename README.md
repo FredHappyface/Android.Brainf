@@ -1,24 +1,4 @@
-========================= No Longer Supported =========================
-
-**This project has reached the end of development and is no longer
-supported**
-
-## What this means now
-- The repository, issues, pull requests, labels, milestones, projects, wiki,
-releases, commits, tags, branches, reactions and comments are read-only.
-- The repository can still be forked and cloned - The License still applies.
-- The app has been removed from the various markets and must be built from
-  source
-
-## What this means in the future
-- The repository is scheduled for deletion (the earliest date for this is
-01/01/2021)
-- The repository will be unregistered from Codacy (the earliest date for this is
-01/11/2020)
-- The repository may be un-archived (however, this is very unlikely)
-
-========================= No Longer Supported =========================
-
+**Unarchived, Brainf shall live! ...**
 
 <p float="left">
 <a href="../../"><img src="https://img.shields.io/github/languages/top/FredHappyface/Android.Brainf.svg?style=flat-square" alt="Github top language"></a>
