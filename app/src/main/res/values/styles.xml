@@ -1,11 +1,9 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimaryVariant">@color/red</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="navigationBarColor">@color/darkRed</item>
         <item name="appBarColor">@color/red</item>
@@ -19,15 +17,22 @@
         <item name="android:textColor">@color/lightText</item>
         <item name="android:windowBackground">?attr/backgroundColorPrimary</item>
         <item name="android:fontFamily">@font/firacode_medium</item>
-
         <item name="popupMenuBackground">?attr/backgroundColorSecondary</item>
-
-
         <item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+        <item name="actionBarStyle">@style/AppBarBackground</item>
+        <item name="actionBarTheme">@style/AppBarText</item>
     </style>
 
     <style name="OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
         <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="AppBarBackground" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="android:background">?attr/appBarColor</item>
+    </style>
+
+    <style name="AppBarText" parent="ThemeOverlay.MaterialComponents.ActionBar.Surface">
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 
 
@@ -63,19 +68,15 @@
 
 
     <style name="base_container_style">
-        <item name="android:layout_marginLeft">@dimen/text_content_margin</item>
-        <item name="android:layout_marginRight">@dimen/text_content_margin</item>
-        <item name="android:layout_marginTop">@dimen/text_content_margin_vertical</item>
-        <item name="android:layout_marginBottom">@dimen/text_content_margin_vertical</item>
+        <item name="android:layout_marginHorizontal">@dimen/content_margin</item>
+        <item name="android:layout_marginVertical">@dimen/content_margin_vertical</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="image_container_style" parent="Widget.MaterialComponents.CardView">
-        <item name="android:layout_marginLeft">@dimen/text_content_margin</item>
-        <item name="android:layout_marginRight">@dimen/text_content_margin</item>
-        <item name="android:layout_marginTop">@dimen/text_content_margin_vertical</item>
-        <item name="android:layout_marginBottom">@dimen/text_content_margin_vertical</item>
+        <item name="android:layout_marginHorizontal">@dimen/content_margin</item>
+        <item name="android:layout_marginVertical">@dimen/content_margin_vertical</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
@@ -103,12 +104,13 @@
     </style>
 
     <style name="button_style" parent="body_text_style">
-        <item name="android:background">@drawable/button</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:minHeight">@dimen/text_size_h1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginVertical">@dimen/button_content_padding</item>
     </style>
 
     <style name="radio_style" parent="body_text_style">
         <item name="android:buttonTint">?attr/foregroundColorAccent</item>
+        <item name="android:layout_marginVertical">@dimen/button_content_padding</item>
     </style>
 </resources>
