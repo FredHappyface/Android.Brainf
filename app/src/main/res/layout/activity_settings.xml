@@ -9,6 +9,14 @@
     android:theme="@style/AppTheme"
     tools:context=".ActivitySettings">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/heading_text_style"
+            android:text="@string/settings_title" />
 
     <LinearLayout
         android:id="@+id/theme"
@@ -81,6 +89,8 @@
                 android:scaleType="fitStart"
                 app:srcCompat="@drawable/system" />
         </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
 
     </LinearLayout>
 

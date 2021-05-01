@@ -44,7 +44,7 @@ brainf.
 ### Kotlin and Android Version
 This app has been written in Kotlin 1.5.0 with the Android Studio IDE.
 - The target SDK version is :target-sdk: (Android 30)
-- The minimum SDK version is :minimum-sdk: (Android 25)
+- The minimum SDK version is :minimum-sdk: (Android 26)
 
 
 #### Download Android Studio

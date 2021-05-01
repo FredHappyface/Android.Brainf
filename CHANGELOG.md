@@ -2,6 +2,11 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 20210501 - 2021/05/01
+- Update gradle wrapper
+- Update metadata
+- Misc tweaks
+
 ## 20210430 - 2021/04/30
 - Modernize the codebase
   - Convert to Kotlin

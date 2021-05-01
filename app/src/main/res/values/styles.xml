@@ -18,7 +18,7 @@
         <item name="android:textColorSecondary">@color/lightText</item>
         <item name="android:textColor">@color/lightText</item>
         <item name="android:windowBackground">?attr/backgroundColorPrimary</item>
-        <item name="android:fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firacode_medium</item>
 
         <item name="popupMenuBackground">?attr/backgroundColorSecondary</item>
 
@@ -94,11 +94,11 @@
 
     <style name="body_text_style" parent="heading2_text_style">
         <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:fontFamily">@font/firacode</item>
     </style>
 
     <style name="code_text_style" parent="body_text_style">
         <item name="android:textColorHint">?attr/foregroundColorSecondary</item>
-        <item name="android:fontFamily">@font/firacode</item>
         <item name="android:background">@drawable/textbox</item>
     </style>
 

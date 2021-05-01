@@ -8,8 +8,8 @@ android {
         applicationId "com.fredhappyface.brainf"
         minSdkVersion 26
         targetSdkVersion 30
-        versionCode 20210430
-        versionName '2021.04.30'
+        versionCode 20210501
+        versionName '2021.05.01'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

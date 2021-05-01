@@ -8,8 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 
 /**
- * Provides theming capabilities for my activity classes. These are applied in the onCreate method. This is also where
- * the title is reset. This is due to an issue with applying a color to the titlebar
+ * Provides theming capabilities for my activity classes. These are applied in the onCreate method.
  */
 
 
