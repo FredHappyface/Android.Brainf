@@ -76,18 +76,18 @@ then download/ install
 
 
 ### Download the APK
-1. Navigate to the Brainf-APKs directory
+1. For releases, navigate to the /app/release directory. For debug, navigate to /app/debug
 2. Select the debug or release APK depending on your preference. Note that the
-filenames are in the form: app-(debug/release)-yyyymmdd.apk (I would recommend
+filenames are in the form: app-(debug/release)_(version)_yyyy-mm-dd.apk (I would recommend
 downloading the most recent release APK)
 
 **Or**
 
 [<img src="readme-assets/badges/direct-apk-download.png" alt="Direct apk
-download" height="80">](/APKs)
+download" height="80">](/app/release)
 
-Follow the link to the APKs directory by clicking on the badge above, then
-select the preferred APK
+Follow the link to the /app/release directory by clicking on the badge above, then
+select the preferred version.
 
 
 ## Changelog

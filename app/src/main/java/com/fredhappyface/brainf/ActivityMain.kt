@@ -91,7 +91,6 @@ class ActivityMain : ActivityThemable() {
 		intent.addCategory(Intent.CATEGORY_OPENABLE)
 		intent.type = "*/*"
 		startActivityForResult(intent, READ_REQUEST_CODE)
-
 	}
 
 
@@ -187,8 +186,12 @@ class ActivityMain : ActivityThemable() {
 				if (arrayPointer != 0) {
 					arrayPointer--
 				} else {
-					return reportError(String.format(getString(R.string.err_pointer_lt_zero),
-							instructionPointer, currentInstruction))
+					return reportError(
+						String.format(
+							getString(R.string.err_pointer_lt_zero),
+							instructionPointer, currentInstruction
+						)
+					)
 				}
 			}
 
@@ -197,8 +200,12 @@ class ActivityMain : ActivityThemable() {
 				if (arrayPointer < MAX_SIZE) {
 					arrayPointer++
 				} else {
-					return reportError(String.format(getString(R.string.err_pointer_gt_max), MAX_SIZE,
-							instructionPointer, currentInstruction))
+					return reportError(
+						String.format(
+							getString(R.string.err_pointer_gt_max), MAX_SIZE,
+							instructionPointer, currentInstruction
+						)
+					)
 
 				}
 			}
@@ -208,8 +215,12 @@ class ActivityMain : ActivityThemable() {
 				if (value > Int.MIN_VALUE) {
 					array[arrayPointer]--
 				} else {
-					return reportError(String.format(getString(R.string.err_value_lt_min),
-							instructionPointer, currentInstruction, arrayPointer))
+					return reportError(
+						String.format(
+							getString(R.string.err_value_lt_min),
+							instructionPointer, currentInstruction, arrayPointer
+						)
+					)
 				}
 			}
 
@@ -218,8 +229,12 @@ class ActivityMain : ActivityThemable() {
 				if (value < Int.MAX_VALUE) {
 					array[arrayPointer]++
 				} else {
-					return reportError(String.format(getString(R.string.err_value_gt_max),
-							instructionPointer, currentInstruction, arrayPointer))
+					return reportError(
+						String.format(
+							getString(R.string.err_value_gt_max),
+							instructionPointer, currentInstruction, arrayPointer
+						)
+					)
 
 				}
 			}
@@ -276,8 +291,12 @@ class ActivityMain : ActivityThemable() {
 
 				// Terminate if input is called too many times
 				if (inputCounter >= MAX_INPUT) {
-					return reportError(String.format(getString(R.string.err_exceeded_input),
-							instructionPointer, currentInstruction, arrayPointer, MAX_INPUT))
+					return reportError(
+						String.format(
+							getString(R.string.err_exceeded_input),
+							instructionPointer, currentInstruction, arrayPointer, MAX_INPUT
+						)
+					)
 
 				}
 			}
