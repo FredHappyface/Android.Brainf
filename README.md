@@ -32,7 +32,6 @@ brainf.
 - [Licence](#licence)
 - [Screenshots](#screenshots)
 	- [Mobile](#mobile)
-	- [Themes](#themes)
 
 ## Features
 
@@ -134,12 +133,6 @@ Copyright (c) FredHappyface
 ### Mobile
 |Screenshots                                                                                 |                                                                                            |
 |:-:                                                                                         |:-:                                                                                         |
-|<img src="readme-assets/screenshots/mobile/screenshot-1.png" alt="Screenshot 1" width="300">|<img src="readme-assets/screenshots/mobile/screenshot-2.png" alt="Screenshot 2" width="300">|
-|<img src="readme-assets/screenshots/mobile/screenshot-3.png" alt="Screenshot 3" width="300">|<img src="readme-assets/screenshots/mobile/screenshot-4.png" alt="Screenshot 4" width="300">|
-|<img src="readme-assets/screenshots/mobile/screenshot-5.png" alt="Screenshot 5" width="300">|<img src="readme-assets/screenshots/mobile/screenshot-6.png" alt="Screenshot 6" width="300">|
-
-
-### Themes
-|Light                                                                             |Dark                                                                              |Black                                                                             |
-|:-:                                                                               |:-:                                                                               |:-:                                                                               |
-|<img src="readme-assets/screenshots/themes/theme-1.png" alt="Theme 1" width="200">|<img src="readme-assets/screenshots/themes/theme-2.png" alt="Theme 2" width="200">|<img src="readme-assets/screenshots/themes/theme-3.png" alt="Theme 3" width="200">|
+|<img src="metadata/en-US/images/phoneScreenshots/screenshot-1.png" alt="Screenshot 1" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-2.png" alt="Screenshot 2" width="300">|
+|<img src="metadata/en-US/images/phoneScreenshots/screenshot-3.png" alt="Screenshot 3" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-4.png" alt="Screenshot 4" width="300">|
+|<img src="metadata/en-US/images/phoneScreenshots/screenshot-5.png" alt="Screenshot 5" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-6.png" alt="Screenshot 6" width="300">|
