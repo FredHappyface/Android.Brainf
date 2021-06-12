@@ -1,5 +1,3 @@
-**Unarchived, Brainf shall live! ...**
-
 [![GitHub top language](https://img.shields.io/github/languages/top/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../)
 [![Repository size](https://img.shields.io/github/repo-size/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../)
 [![Issues](https://img.shields.io/github/issues/FredHappyface/Android.Brainf.svg?style=for-the-badge)](../../issues)
@@ -15,35 +13,50 @@
 Application to read and write brainf source files and execute programs written in
 brainf.
 
-
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Language Information](#language-information)
 	- [Kotlin and Android Version](#kotlin-and-android-version)
 		- [Download Android Studio](#download-android-studio)
 - [How to Run](#how-to-run)
 	- [Build From Source](#build-from-source)
+	- [Get it on F-Droid](#get-it-on-f-droid)
 	- [Download the APK](#download-the-apk)
 - [Changelog](#changelog)
-- [Download](#download)
+- [Download Project](#download-project)
 	- [Clone](#clone)
 		- [Using The Command Line](#using-the-command-line)
 		- [Using GitHub Desktop](#using-github-desktop)
 	- [Download Zip File](#download-zip-file)
-- [Licence](#licence)
-- [Screenshots](#screenshots)
-	- [Mobile](#mobile)
+- [Community Files](#community-files)
+	- [Licence](#licence)
+	- [Changelog](#changelog-1)
+	- [Code of Conduct](#code-of-conduct)
+	- [Contributing](#contributing)
+	- [Security](#security)
+	- [Support](#support)
+	- [Rationale](#rationale)
 
 ## Features
 
 - Open source files
 - Run brainf
 
+## Screenshots
+
+|Screenshots                                                                                 |                                                                                            |
+|:-:                                                                                         |:-:                                                                                         |
+|<img src="metadata/en-US/images/phoneScreenshots/screenshot-1.png" alt="Screenshot 1" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-2.png" alt="Screenshot 2" width="300">|
+|<img src="metadata/en-US/images/phoneScreenshots/screenshot-3.png" alt="Screenshot 3" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-4.png" alt="Screenshot 4" width="300">|
+|<img src="metadata/en-US/images/phoneScreenshots/screenshot-5.png" alt="Screenshot 5" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-6.png" alt="Screenshot 6" width="300">|
+
+
 ## Language Information
 
 ### Kotlin and Android Version
 This app has been written in Kotlin 1.5.0 with the Android Studio IDE.
-- The target SDK version is :target-sdk: (Android 30)
-- The minimum SDK version is :minimum-sdk: (Android 26)
+- The target SDK version is 30 (Android 11)
+- The minimum SDK version is 26 (Android 7 Nougat)
 
 
 #### Download Android Studio
@@ -60,11 +73,27 @@ Android SDK. Additional information can be found at
 3. In Android Studio click File > Open and then navigate to the project file
 (Android studio defaults to the directory of the last opened file)
 
+
+### Get it on F-Droid
+1. Open the F-Droid app
+2. Search for Brainf
+
+**Or**
+
+[<img src="readme-assets/badges/f-droid-download.png"
+alt="Get it on F-Droid" height="80">](https://f-droid.org/en/packages/com.fredhappyface.brainf/)
+
+Follow the link to the listing on F-Droid by clicking on the badge above,
+then download/ install
+
+
 <!--
 ### Get it on Google Play
 1. Open the Google Play app
 2. Search for Brainf
+
 **Or**
+
 [<img src="readme-assets/badges/google-play-download.png"
 alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/)
 
@@ -92,7 +121,7 @@ select the preferred version.
 ## Changelog
 See the [CHANGELOG](/CHANGELOG.md) for more information.
 
-## Download
+## Download Project
 ### Clone
 #### Using The Command Line
 1. Press the Clone or download button in the top right
@@ -121,18 +150,42 @@ More information can be found at
 2. Extract the zip archive
 3. Copy/ move to the desired location
 
-
-## Licence
+## Community Files
+### Licence
 MIT License
 Copyright (c) FredHappyface
+Copyright (c) Randy Zhou
 (See the [LICENSE](/LICENSE.md) for more information.)
 
+### Changelog
+See the [Changelog](/CHANGELOG.md) for more information.
 
-## Screenshots
+### Code of Conduct
+Online communities include people from many backgrounds. The *Project*
+contributors are committed to providing a friendly, safe and welcoming
+environment for all. Please see the
+[Code of Conduct](https://github.com/FredHappyface/.github/blob/master/CODE_OF_CONDUCT.md)
+ for more information.
 
-### Mobile
-|Screenshots                                                                                 |                                                                                            |
-|:-:                                                                                         |:-:                                                                                         |
-|<img src="metadata/en-US/images/phoneScreenshots/screenshot-1.png" alt="Screenshot 1" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-2.png" alt="Screenshot 2" width="300">|
-|<img src="metadata/en-US/images/phoneScreenshots/screenshot-3.png" alt="Screenshot 3" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-4.png" alt="Screenshot 4" width="300">|
-|<img src="metadata/en-US/images/phoneScreenshots/screenshot-5.png" alt="Screenshot 5" width="300">|<img src="metadata/en-US/images/phoneScreenshots/screenshot-6.png" alt="Screenshot 6" width="300">|
+### Contributing
+Contributions are welcome, please see the
+[Contributing Guidelines](https://github.com/FredHappyface/.github/blob/master/CONTRIBUTING.md)
+for more information.
+
+### Security
+Thank you for improving the security of the project, please see the
+[Security Policy](https://github.com/FredHappyface/.github/blob/master/SECURITY.md)
+for more information.
+
+### Support
+Thank you for using this project, I hope it is of use to you. Please be aware that
+those involved with the project often do so for fun along with other commitments
+(such as work, family, etc). Please see the
+[Support Policy](https://github.com/FredHappyface/.github/blob/master/SUPPORT.md)
+for more information.
+
+### Rationale
+The rationale acts as a guide to various processes regarding projects such as
+the versioning scheme and the programming styles used. Please see the
+[Rationale](https://github.com/FredHappyface/.github/blob/master/RATIONALE.md)
+for more information.
