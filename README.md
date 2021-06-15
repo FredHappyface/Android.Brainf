@@ -21,6 +21,7 @@ brainf.
 - [How to Run](#how-to-run)
 	- [Build From Source](#build-from-source)
 	- [Get it on F-Droid](#get-it-on-f-droid)
+	- [Get it on Google Play](#get-it-on-google-play)
 	- [Download the APK](#download-the-apk)
 - [Changelog](#changelog)
 - [Download Project](#download-project)
@@ -87,7 +88,6 @@ Follow the link to the listing on F-Droid by clicking on the badge above,
 then download/ install
 
 
-<!--
 ### Get it on Google Play
 1. Open the Google Play app
 2. Search for Brainf
@@ -95,11 +95,10 @@ then download/ install
 **Or**
 
 [<img src="readme-assets/badges/google-play-download.png"
-alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/)
+alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.fredhappyface.brainf)
 
 Follow the link to the listing on Google Play by clicking on the badge above,
 then download/ install
--->
 
 
 
