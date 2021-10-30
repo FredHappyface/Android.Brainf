@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
-    <shortcut
-        android:shortcutId="main"
-        android:enabled="true"
-        android:icon="@drawable/ic_home"
-        android:shortcutShortLabel="@string/shortcut_main_name"
-        android:shortcutLongLabel="@string/shortcut_main_name"
-        android:shortcutDisabledMessage="@string/shortcut_disabled">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.fredhappyface.brainf"
-            android:targetClass="com.fredhappyface.brainf.ActivityMain" />
-        <categories android:name="android.shortcut.conversation" />
-    </shortcut>
-    <shortcut
-        android:shortcutId="about"
-        android:enabled="true"
-        android:icon="@drawable/ic_about"
-        android:shortcutShortLabel="@string/shortcut_about_name"
-        android:shortcutLongLabel="@string/shortcut_about_name"
-        android:shortcutDisabledMessage="@string/shortcut_disabled">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.fredhappyface.brainf"
-            android:targetClass="com.fredhappyface.brainf.ActivityAbout" />
-        <categories android:name="android.shortcut.conversation" />
-    </shortcut>
-
-    <shortcut
-        android:shortcutId="settings"
-        android:enabled="true"
-        android:icon="@drawable/ic_settings"
-        android:shortcutShortLabel="@string/shortcut_settings_name"
-        android:shortcutLongLabel="@string/shortcut_settings_name"
-        android:shortcutDisabledMessage="@string/shortcut_disabled">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.fredhappyface.brainf"
-            android:targetClass="com.fredhappyface.brainf.ActivitySettings" />
-        <categories android:name="android.shortcut.conversation" />
-    </shortcut>
+	<shortcut
+		android:enabled="true"
+		android:icon="@drawable/ic_home"
+		android:shortcutDisabledMessage="@string/shortcut_disabled"
+		android:shortcutId="main"
+		android:shortcutLongLabel="@string/shortcut_main_name"
+		android:shortcutShortLabel="@string/shortcut_main_name">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:targetClass="com.fredhappyface.brainf.ActivityMain"
+			android:targetPackage="com.fredhappyface.brainf" />
+		<categories android:name="android.shortcut.conversation" />
+	</shortcut>
+	<shortcut
+		android:enabled="true"
+		android:icon="@drawable/ic_about"
+		android:shortcutDisabledMessage="@string/shortcut_disabled"
+		android:shortcutId="about"
+		android:shortcutLongLabel="@string/shortcut_about_name"
+		android:shortcutShortLabel="@string/shortcut_about_name">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:targetClass="com.fredhappyface.brainf.ActivityAbout"
+			android:targetPackage="com.fredhappyface.brainf" />
+		<categories android:name="android.shortcut.conversation" />
+	</shortcut>
+	<shortcut
+		android:enabled="true"
+		android:icon="@drawable/ic_settings"
+		android:shortcutDisabledMessage="@string/shortcut_disabled"
+		android:shortcutId="settings"
+		android:shortcutLongLabel="@string/shortcut_settings_name"
+		android:shortcutShortLabel="@string/shortcut_settings_name">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:targetClass="com.fredhappyface.brainf.ActivitySettings"
+			android:targetPackage="com.fredhappyface.brainf" />
+		<categories android:name="android.shortcut.conversation" />
+	</shortcut>
 </shortcuts>

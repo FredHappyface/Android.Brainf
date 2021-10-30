@@ -11,10 +11,10 @@ import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
-
 
 /**
  * The aim of this android app is to parse a file
@@ -24,17 +24,9 @@ class ActivityMain : ActivityThemable() {
 	/**
 	 * Storage of private vars. These being _fileContent
 	 */
-	private var _fileContent: String? = null
-
-	/**
-	 *
-	 */
-	companion object {
-		private const val MAX_SIZE = 16384 // 16k (2^14)
-		private const val MAX_INPUT = 32
-		private const val READ_REQUEST_CODE = 42
-	}
-
+	private var mFileContent: String? = null
+	private val constMaxSize = 16384 // 16k (2^14)
+	private val constMaxInput = 32
 
 	/**
 	 * Override the onCreate method from ActivityThemable adding the activity_main view
@@ -58,7 +50,6 @@ class ActivityMain : ActivityThemable() {
 		return true
 	}
 
-
 	/**
 	 * Override the onOptionsItemSelected method. This is essentially a callback method triggered when
 	 * the end user selects a menu item. Here we filter the item/ action selection and trigger a
@@ -75,11 +66,9 @@ class ActivityMain : ActivityThemable() {
 			R.id.action_settings -> {
 				startActivity(Intent(this, ActivitySettings::class.java)); true
 			}
-
 			else -> super.onOptionsItemSelected(item)
 		}
 	}
-
 
 	/**
 	 * Call this when the user clicks open button
@@ -90,39 +79,23 @@ class ActivityMain : ActivityThemable() {
 		intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
 		intent.addCategory(Intent.CATEGORY_OPENABLE)
 		intent.type = "*/*"
-		startActivityForResult(intent, READ_REQUEST_CODE)
+		completeFileOpen.launch(intent)
 	}
 
-
 	/**
-	 * This is basically a callback from an activity
-	 *
-	 * @param requestCode Int - RequestCode as defined under the Activity private vars
-	 * @param resultCode Int - The result code, we only want to do stuff if successful
-	 * @param data Intent? - Extra data in the form of an intent. tend to access .data
+	 * Handles ACTION_OPEN_DOCUMENT result and populates R.id.fileContents with the
+	 * contents of the selected file
 	 */
-	override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-		super.onActivityResult(requestCode, resultCode, data)
-		if (resultCode == Activity.RESULT_OK) {
-			if (requestCode == READ_REQUEST_CODE) {
-				completeFileOpen(data)
+	private val completeFileOpen =
+		registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+			if (result.resultCode == Activity.RESULT_OK) {
+				val uri = (result.data ?: return@registerForActivityResult).data.toString()
+				val text = readTextFromUri(Uri.parse(uri))
+				mFileContent =
+					text.substring(0, text.length.coerceAtMost(constMaxSize)) // Limit to 16kb
+				findViewById<TextView>(R.id.fileContents).text = mFileContent
 			}
 		}
-	}
-
-
-	/**
-	 * Callback from onActivityResult
-	 *
-	 * @param data Intent - some intent with a uri (accessed with .data)
-	 */
-	private fun completeFileOpen(data: Intent?) {
-		val uri = (data ?: return).data.toString()
-		val output = findViewById<TextView>(R.id.fileContents)
-		val text = readTextFromUri(Uri.parse(uri))
-		_fileContent = text.substring(0, text.length.coerceAtMost(MAX_SIZE)) // Limit to 16kb
-		output.text = _fileContent
-	}
 
 	/*
 	Report and error with a toast notification, and log it to the console
@@ -130,7 +103,6 @@ class ActivityMain : ActivityThemable() {
 	private fun reportError(error: String) {
 		// System.out.println(error);
 		Toast.makeText(applicationContext, error, Toast.LENGTH_LONG).show()
-
 	}
 
 	/**
@@ -152,10 +124,10 @@ class ActivityMain : ActivityThemable() {
 	 */
 	fun run(view: View) {
 		// Check that the file has been loaded first
-		if (_fileContent == null) {
+		if (mFileContent == null) {
 			reportError(getString(R.string.err_file_not_loaded))
 		} else {
-			brainfInterpreter(_fileContent ?: return)
+			brainfInterpreter(mFileContent ?: return)
 		}
 	}
 
@@ -165,22 +137,19 @@ class ActivityMain : ActivityThemable() {
 	 */
 	private fun brainfInterpreter(instruction: String) {
 		// Define variables
-		val array = IntArray(MAX_SIZE)
+		val array = IntArray(constMaxSize)
 		var arrayPointer = 0
 		var instructionPointer = 0
 		val instructionLen = instruction.length
 		var inputCounter = 0
 		val outputBuffer = StringBuilder()
-
 		// Get the mode
 		val modeRad = findViewById<RadioButton>(R.id.modeAscii)
 		val isAsciiMode = modeRad.isChecked
-
 		// While still reading instructions
 		while (instructionPointer < instructionLen) {
 			var currentInstruction = instruction[instructionPointer]
 			val value = array[arrayPointer]
-
 			// Define < operator
 			if (currentInstruction == '<') {
 				if (arrayPointer != 0) {
@@ -194,22 +163,19 @@ class ActivityMain : ActivityThemable() {
 					)
 				}
 			}
-
 			// Define > operator
 			if (currentInstruction == '>') {
-				if (arrayPointer < MAX_SIZE) {
+				if (arrayPointer < constMaxSize) {
 					arrayPointer++
 				} else {
 					return reportError(
 						String.format(
-							getString(R.string.err_pointer_gt_max), MAX_SIZE,
+							getString(R.string.err_pointer_gt_max), constMaxSize,
 							instructionPointer, currentInstruction
 						)
 					)
-
 				}
 			}
-
 			// Define - operator
 			if (currentInstruction == '-') {
 				if (value > Int.MIN_VALUE) {
@@ -223,7 +189,6 @@ class ActivityMain : ActivityThemable() {
 					)
 				}
 			}
-
 			// Define + operator
 			if (currentInstruction == '+') {
 				if (value < Int.MAX_VALUE) {
@@ -235,10 +200,8 @@ class ActivityMain : ActivityThemable() {
 							instructionPointer, currentInstruction, arrayPointer
 						)
 					)
-
 				}
 			}
-
 			// Define . operator
 			if (currentInstruction == '.') {
 				if (isAsciiMode) {
@@ -248,7 +211,6 @@ class ActivityMain : ActivityThemable() {
 					outputBuffer.append(", ")
 				}
 			}
-
 			// Define , operator
 			if (currentInstruction == ',') {
 				// Get the input
@@ -259,7 +221,7 @@ class ActivityMain : ActivityThemable() {
 				if (inputText.isNotEmpty()) {
 					if (isAsciiMode) {
 						try {
-							array[arrayPointer] = inputText[inputCounter].toInt()
+							array[arrayPointer] = inputText[inputCounter].code
 						} catch (e: Exception) {
 							invalidInput = true
 						}
@@ -288,19 +250,16 @@ class ActivityMain : ActivityThemable() {
 					reportError(getString(R.string.err_input_required))
 					return
 				}
-
 				// Terminate if input is called too many times
-				if (inputCounter >= MAX_INPUT) {
+				if (inputCounter >= constMaxInput) {
 					return reportError(
 						String.format(
 							getString(R.string.err_exceeded_input),
-							instructionPointer, currentInstruction, arrayPointer, MAX_INPUT
+							instructionPointer, currentInstruction, arrayPointer, constMaxInput
 						)
 					)
-
 				}
 			}
-
 			// Define [ operator
 			// Need to find the matching closing bracket
 			if (currentInstruction == '[') {
@@ -324,7 +283,6 @@ class ActivityMain : ActivityThemable() {
 					}
 				}
 			}
-
 			// Define ] operator
 			// Need to find the matching opening bracket
 			if (currentInstruction == ']') {
@@ -348,20 +306,15 @@ class ActivityMain : ActivityThemable() {
 					}
 				}
 			}
-
 			// Increment the instruction
 			instructionPointer++
 		}
-
 		// Inform the user that code execution is complete
 		val success = getString(R.string.info_exe_complete)
 		reportError(success)
 		outputBuffer.append(success)
-
 		// Populate the textview with the string
 		val output = findViewById<TextView>(R.id.output)
 		output.text = outputBuffer.toString()
 	}
-
-
 }

@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <color name="lightRed">#EF5350</color>
-    <color name="red">#E53935</color>
-    <color name="darkRed">#B71C1C</color>
-
-    <color name="black">#000000</color>
-    <color name="darkGrey">#181A1F</color>
-    <color name="grey">#282C34</color>
-    <color name="lightText">#ABB2BF</color>
-
-    <color name="lightGrey">#EAEAEB</color>
-    <color name="white">#FAFAFA</color>
-
-
+	<color name="red">#EF5350</color>
+	<color name="black">#000000</color>
+	<color name="darkGrey">#181A1F</color>
+	<color name="grey">#282C34</color>
+	<color name="lightText">#ABB2BF</color>
+	<color name="lightGrey">#EAEAEB</color>
+	<color name="white">#FAFAFA</color>
 </resources>

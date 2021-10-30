@@ -1,70 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:theme="@style/AppTheme"
-    tools:context=".ActivityMain">
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:theme="@style/AppTheme"
+	tools:context=".ActivityMain">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
 
-            <Button
-                style="@style/button_style"
-                android:onClick="startFileOpen"
-                android:text="@string/main_open_btn" />
+			<Button
+				style="@style/button_style"
+				android:onClick="startFileOpen"
+				android:text="@string/main_open_btn" />
 
-            <TextView
-                android:id="@+id/fileContents"
-                style="@style/code_text_style"
-                android:text="@string/main_input_lbl" />
+			<TextView
+				android:id="@+id/fileContents"
+				style="@style/code_text_style"
+				android:text="@string/main_input_lbl" />
 
-            <TextView
-                style="@style/heading2_text_style"
-                android:text="@string/main_mode_lbl" />
+			<TextView
+				style="@style/heading2_text_style"
+				android:text="@string/main_mode_lbl" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+			<RadioGroup
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
 
-                <RadioButton
-                    android:id="@+id/modeAscii"
-                    style="@style/radio_style"
-                    android:text="@string/main_mode_ascii_rad" />
+				<RadioButton
+					android:id="@+id/modeAscii"
+					style="@style/radio_style"
+					android:text="@string/main_mode_ascii_rad" />
 
-                <RadioButton
-                    android:id="@+id/modeInt"
-                    style="@style/radio_style"
-                    android:checked="true"
-                    android:text="@string/main_mode_int_rad" />
+				<RadioButton
+					style="@style/radio_style"
+					android:checked="true"
+					android:text="@string/main_mode_int_rad" />
+			</RadioGroup>
 
-            </RadioGroup>
+			<EditText
+				android:id="@+id/input_text_edit"
+				style="@style/code_text_style"
+				android:hint="@string/main_input_text_edit"
+				android:importantForAutofill="no"
+				android:inputType="text" />
 
-            <EditText
-                android:id="@+id/input_text_edit"
-                style="@style/code_text_style"
-                android:hint="@string/main_input_text_edit"
-                android:importantForAutofill="no"
-                android:inputType="text" />
+			<Button
+				style="@style/button_style"
+				android:onClick="run"
+				android:text="@string/main_run_btn" />
 
-            <Button
-                style="@style/button_style"
-                android:onClick="run"
-                android:text="@string/main_run_btn" />
-
-            <TextView
-                android:id="@+id/output"
-                style="@style/code_text_style"
-                android:text="@string/main_output_lbl" />
-
-        </LinearLayout>
-    </ScrollView>
-
+			<TextView
+				android:id="@+id/output"
+				style="@style/code_text_style"
+				android:text="@string/main_output_lbl" />
+		</LinearLayout>
+	</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
