@@ -11,7 +11,7 @@
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
-Sticker-board for android inspired by uSticker (forked from woosticker).
+The aim of this android app is to parse a file and to produce an interpreter for the 'Brainf' programming language
 
 - [Features](#features)
 - [Screenshots](#screenshots)
