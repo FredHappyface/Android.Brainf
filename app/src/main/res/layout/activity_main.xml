@@ -26,25 +26,6 @@
 				style="@style/code_text_style"
 				android:text="@string/main_input_lbl" />
 
-			<TextView
-				style="@style/heading2_text_style"
-				android:text="@string/main_mode_lbl" />
-
-			<RadioGroup
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content">
-
-				<RadioButton
-					android:id="@+id/modeAscii"
-					style="@style/radio_style"
-					android:text="@string/main_mode_ascii_rad" />
-
-				<RadioButton
-					style="@style/radio_style"
-					android:checked="true"
-					android:text="@string/main_mode_int_rad" />
-			</RadioGroup>
-
 			<EditText
 				android:id="@+id/input_text_edit"
 				style="@style/code_text_style"

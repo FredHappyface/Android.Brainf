@@ -98,8 +98,4 @@
 		<item name="android:layout_marginVertical">@dimen/button_content_padding</item>
 	</style>
 
-	<style name="radio_style" parent="body_text_style">
-		<item name="android:buttonTint">@color/red</item>
-		<item name="android:layout_marginVertical">@dimen/button_content_padding</item>
-	</style>
 </resources>

@@ -8,7 +8,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
-import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -26,7 +25,6 @@ class ActivityMain : ActivityThemable() {
 	 */
 	private var mFileContent: String? = null
 	private val constMaxSize = 16384 // 16k (2^14)
-	private val constMaxInput = 32
 
 	/**
 	 * Override the onCreate method from ActivityThemable adding the activity_main view
@@ -101,8 +99,9 @@ class ActivityMain : ActivityThemable() {
 	Report and error with a toast notification, and log it to the console
 	 */
 	private fun reportError(error: String) {
-		// System.out.println(error);
-		Toast.makeText(applicationContext, error, Toast.LENGTH_LONG).show()
+		val err = "ERROR: $error"
+		findViewById<TextView>(R.id.output).text = err
+		Toast.makeText(applicationContext, err, Toast.LENGTH_LONG).show()
 	}
 
 	/**
@@ -125,196 +124,20 @@ class ActivityMain : ActivityThemable() {
 	fun run(view: View) {
 		// Check that the file has been loaded first
 		if (mFileContent == null) {
-			reportError(getString(R.string.err_file_not_loaded))
+			reportError("File Not Loaded")
 		} else {
-			brainfInterpreter(mFileContent ?: return)
+			val brainfInterpreter = BrainfInterpreter(
+				mFileContent ?: "",
+				findViewById<EditText>(R.id.input_text_edit).text.toString()
+			)
+			try {
+				findViewById<TextView>(R.id.output).text = brainfInterpreter.execute()
+			} catch (exception: IllegalStateException) {
+				reportError(exception.message ?: "Unknown")
+			}
+
+
 		}
 	}
 
-	/*
-	 * The purpose of this function is to take the cleaned syntax and execute
-	 * the appropriate function based on this
-	 */
-	private fun brainfInterpreter(instruction: String) {
-		// Define variables
-		val array = IntArray(constMaxSize)
-		var arrayPointer = 0
-		var instructionPointer = 0
-		val instructionLen = instruction.length
-		var inputCounter = 0
-		val outputBuffer = StringBuilder()
-		// Get the mode
-		val modeRad = findViewById<RadioButton>(R.id.modeAscii)
-		val isAsciiMode = modeRad.isChecked
-		// While still reading instructions
-		while (instructionPointer < instructionLen) {
-			var currentInstruction = instruction[instructionPointer]
-			val value = array[arrayPointer]
-			// Define < operator
-			if (currentInstruction == '<') {
-				if (arrayPointer != 0) {
-					arrayPointer--
-				} else {
-					return reportError(
-						String.format(
-							getString(R.string.err_pointer_lt_zero),
-							instructionPointer, currentInstruction
-						)
-					)
-				}
-			}
-			// Define > operator
-			if (currentInstruction == '>') {
-				if (arrayPointer < constMaxSize) {
-					arrayPointer++
-				} else {
-					return reportError(
-						String.format(
-							getString(R.string.err_pointer_gt_max), constMaxSize,
-							instructionPointer, currentInstruction
-						)
-					)
-				}
-			}
-			// Define - operator
-			if (currentInstruction == '-') {
-				if (value > Int.MIN_VALUE) {
-					array[arrayPointer]--
-				} else {
-					return reportError(
-						String.format(
-							getString(R.string.err_value_lt_min),
-							instructionPointer, currentInstruction, arrayPointer
-						)
-					)
-				}
-			}
-			// Define + operator
-			if (currentInstruction == '+') {
-				if (value < Int.MAX_VALUE) {
-					array[arrayPointer]++
-				} else {
-					return reportError(
-						String.format(
-							getString(R.string.err_value_gt_max),
-							instructionPointer, currentInstruction, arrayPointer
-						)
-					)
-				}
-			}
-			// Define . operator
-			if (currentInstruction == '.') {
-				if (isAsciiMode) {
-					outputBuffer.append(value.toChar())
-				} else {
-					outputBuffer.append(value)
-					outputBuffer.append(", ")
-				}
-			}
-			// Define , operator
-			if (currentInstruction == ',') {
-				// Get the input
-				val input = findViewById<EditText>(R.id.input_text_edit)
-				var inputText = input.text.toString()
-				// Flag for invalid input
-				var invalidInput = false
-				if (inputText.isNotEmpty()) {
-					if (isAsciiMode) {
-						try {
-							array[arrayPointer] = inputText[inputCounter].code
-						} catch (e: Exception) {
-							invalidInput = true
-						}
-					} else {
-						inputText = inputText.replace("\\s".toRegex(), "")
-						if (inputText.contains(",")) {
-							val intParts = inputText.split(",").toTypedArray()
-							try {
-								array[arrayPointer] = intParts[inputCounter].toInt()
-							} catch (e: Exception) {
-								invalidInput = true
-							}
-						}
-						try {
-							array[arrayPointer] = inputText.toInt()
-						} catch (e: Exception) {
-							invalidInput = true
-						}
-					}
-					if (invalidInput) {
-						reportError(getString(R.string.err_input_invalid))
-						return
-					}
-					inputCounter++
-				} else {
-					reportError(getString(R.string.err_input_required))
-					return
-				}
-				// Terminate if input is called too many times
-				if (inputCounter >= constMaxInput) {
-					return reportError(
-						String.format(
-							getString(R.string.err_exceeded_input),
-							instructionPointer, currentInstruction, arrayPointer, constMaxInput
-						)
-					)
-				}
-			}
-			// Define [ operator
-			// Need to find the matching closing bracket
-			if (currentInstruction == '[') {
-				if (value == 0) {
-					var brackets = 0
-					while (true) {
-						// Decrement the pointer and refresh the current instruction
-						instructionPointer++
-						currentInstruction = instruction[instructionPointer]
-						// Another opening bracket is encountered
-						if (currentInstruction == '[') {
-							brackets++
-						} else if (currentInstruction == ']') {
-							// If this is the matching bracket
-							if (brackets == 0) {
-								break
-							} else {
-								brackets--
-							}
-						}
-					}
-				}
-			}
-			// Define ] operator
-			// Need to find the matching opening bracket
-			if (currentInstruction == ']') {
-				if (value > 0) {
-					var brackets = 0
-					while (true) {
-						// Decrement the pointer and refresh the current instruction
-						instructionPointer--
-						currentInstruction = instruction[instructionPointer]
-						// Another closing bracket is encountered
-						if (currentInstruction == ']') {
-							brackets++
-						} else if (currentInstruction == '[') {
-							// If this is the matching bracket
-							if (brackets == 0) {
-								break
-							} else {
-								brackets--
-							}
-						}
-					}
-				}
-			}
-			// Increment the instruction
-			instructionPointer++
-		}
-		// Inform the user that code execution is complete
-		val success = getString(R.string.info_exe_complete)
-		reportError(success)
-		outputBuffer.append(success)
-		// Populate the textview with the string
-		val output = findViewById<TextView>(R.id.output)
-		output.text = outputBuffer.toString()
-	}
 }

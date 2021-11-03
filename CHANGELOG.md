@@ -2,6 +2,10 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## Next_Ver - 2021/11/xx
+
+- Refactor brainfInterpreter function to BrainfInterpreter
+
 ## 20211030 - 2021/10/30
 
 - Gradle to kotlin
