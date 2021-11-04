@@ -2,41 +2,44 @@
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
 	<shortcut
 		android:enabled="true"
-		android:icon="@drawable/ic_home"
+		android:icon="@drawable/ic_shortcut_new_file"
 		android:shortcutDisabledMessage="@string/shortcut_disabled"
-		android:shortcutId="main"
-		android:shortcutLongLabel="@string/shortcut_main_name"
-		android:shortcutShortLabel="@string/shortcut_main_name">
+		android:shortcutId="new_file"
+		android:shortcutLongLabel="@string/shortcut_new_file"
+		android:shortcutShortLabel="@string/shortcut_new_file">
 		<intent
 			android:action="android.intent.action.VIEW"
 			android:targetClass="com.fredhappyface.brainf.ActivityMain"
 			android:targetPackage="com.fredhappyface.brainf" />
 		<categories android:name="android.shortcut.conversation" />
+		<capability-binding android:key="actions.intent.CREATE_MESSAGE" />
 	</shortcut>
 	<shortcut
 		android:enabled="true"
-		android:icon="@drawable/ic_about"
+		android:icon="@drawable/ic_shortcut_about"
 		android:shortcutDisabledMessage="@string/shortcut_disabled"
 		android:shortcutId="about"
-		android:shortcutLongLabel="@string/shortcut_about_name"
-		android:shortcutShortLabel="@string/shortcut_about_name">
+		android:shortcutLongLabel="@string/shortcut_about"
+		android:shortcutShortLabel="@string/shortcut_about">
 		<intent
 			android:action="android.intent.action.VIEW"
 			android:targetClass="com.fredhappyface.brainf.ActivityAbout"
 			android:targetPackage="com.fredhappyface.brainf" />
 		<categories android:name="android.shortcut.conversation" />
+		<capability-binding android:key="actions.intent.CREATE_MESSAGE" />
 	</shortcut>
 	<shortcut
 		android:enabled="true"
-		android:icon="@drawable/ic_settings"
+		android:icon="@drawable/ic_shortcut_settings"
 		android:shortcutDisabledMessage="@string/shortcut_disabled"
 		android:shortcutId="settings"
-		android:shortcutLongLabel="@string/shortcut_settings_name"
-		android:shortcutShortLabel="@string/shortcut_settings_name">
+		android:shortcutLongLabel="@string/shortcut_settings"
+		android:shortcutShortLabel="@string/shortcut_settings">
 		<intent
 			android:action="android.intent.action.VIEW"
 			android:targetClass="com.fredhappyface.brainf.ActivitySettings"
 			android:targetPackage="com.fredhappyface.brainf" />
 		<categories android:name="android.shortcut.conversation" />
+		<capability-binding android:key="actions.intent.CREATE_MESSAGE" />
 	</shortcut>
 </shortcuts>

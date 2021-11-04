@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
 	package="com.fredhappyface.brainf">
 
 	<application
 		android:allowBackup="true"
+		android:dataExtractionRules="@xml/backup_rules"
 		android:fullBackupContent="@xml/backup_rules"
 		android:icon="@mipmap/ic_launcher"
-		android:label="@string/app_short_name"
-		android:roundIcon="@mipmap/ic_launcher_round"
+		android:label="@string/app_name"
 		android:supportsRtl="true"
-		android:theme="@style/LightTheme">
+		android:theme="@style/AppTheme"
+		tools:ignore="GoogleAppIndexingWarning"
+		tools:targetApi="s">
 		<activity
 			android:name="com.fredhappyface.brainf.ActivityAbout"
-			android:configChanges="orientation|screenSize" />
+			android:label="@string/title_activity_about" />
 		<activity
 			android:name="com.fredhappyface.brainf.ActivitySettings"
-			android:configChanges="orientation|screenSize" />
+			android:label="@string/title_activity_settings" />
 		<activity
 			android:name="com.fredhappyface.brainf.ActivityMain"
-			android:configChanges="orientation|screenSize"
 			android:exported="true">
 			<intent-filter>
-				<action android:name="android.intent.action.VIEW" />
 				<action android:name="android.intent.action.MAIN" />
-
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 			<meta-data
 				android:name="android.app.shortcuts"
 				android:resource="@xml/shortcuts" />
 		</activity>
+		<activity android:name=".ActivityThemable" />
 	</application>
 </manifest>

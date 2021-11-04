@@ -17,6 +17,8 @@ class BrainfInterpreter(programText: String, input: String) {
 	private val mOutputBuffer = StringBuilder()
 	private var mInputPointer = 0
 	private var mInputBuffer = input
+	private var mInstructionsExecutedCounter = 0
+	private var mIOCounter = 0
 
 	/**
 	 * execute the programText, with the input specified in the constructor
@@ -24,17 +26,24 @@ class BrainfInterpreter(programText: String, input: String) {
 	 * @return String: OutputBuffer.toString()
 	 */
 	fun execute(): String {
-		while (mInstructionPointer < mInstruction.length) {
+		while (mInstructionPointer < mInstruction.length && mIOCounter < 16384 && mInstructionsExecutedCounter < 1048576) {
 			when (mInstruction[mInstructionPointer]) {
 				'+' -> plus()
 				'-' -> minus()
 				'>' -> gt()
 				'<' -> lt()
-				'.' -> period()
-				',' -> comma()
+				'.' -> {
+					mIOCounter++
+					period()
+				}
+				',' -> {
+					mIOCounter++
+					comma()
+				}
 				'[' -> leftBracket()
 				']' -> rightBracket()
 			}
+			mInstructionsExecutedCounter++
 			mInstructionPointer++
 		}
 		return mOutputBuffer.toString()
@@ -122,7 +131,7 @@ class BrainfInterpreter(programText: String, input: String) {
 				when (mInstruction[mInstructionPointer]) {
 					'[' -> brackets++
 					']' -> if (brackets == 0) {
-						break
+						return
 					} else {
 						brackets--
 					}
@@ -144,7 +153,7 @@ class BrainfInterpreter(programText: String, input: String) {
 				when (mInstruction[mInstructionPointer]) {
 					']' -> brackets++
 					'[' -> if (brackets == 0) {
-						break
+						return
 					} else {
 						brackets--
 					}
@@ -152,6 +161,4 @@ class BrainfInterpreter(programText: String, input: String) {
 			}
 		}
 	}
-
-
 }

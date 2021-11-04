@@ -11,7 +11,7 @@
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
-The aim of this android app is to parse a file and to produce an interpreter for the 'Brainf' programming language
+Interpreter for the 'Brainf' programming language
 
 - [Features](#features)
 - [Screenshots](#screenshots)
@@ -40,8 +40,11 @@ The aim of this android app is to parse a file and to produce an interpreter for
 
 ## Features
 
-- Open source files
-- Run brainf
+- Create, edit, save and run brainf code/ text files
+- Syntax highlighting using regex
+- 4 Themes: Light, Dark, Black, Auto
+- Configurable text size
+- Launcher Shortcuts for Settings, About, New File
 
 ## Screenshots
 
@@ -65,8 +68,8 @@ java -jar .\ktlint --experimental --android --disabled_rules='indent,parameter-l
 ### Kotlin and Android Version
 This app has been written in Kotlin 1.5.0 with the Android Studio IDE.
 
-- The target SDK version is 30 (Android 11)
-- The minimum SDK version is 26 (Android 7 Nougat)
+- The target SDK version is 31 (Android 12)
+- The minimum SDK version is 26 (Android 8 Oreo)
 
 #### Download Android Studio
 Download the Android Studio IDE from <https://developer.android.com/studio/>.

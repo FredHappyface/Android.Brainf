@@ -1,29 +1,44 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 	<!-- Base application theme. -->
 	<style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
 		<!-- Primary brand color. -->
 		<item name="colorPrimaryVariant">@color/red</item>
 		<item name="colorOnPrimary">@color/white</item>
+		<!-- Status bar color. -->
+		<item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
 		<!-- Customize your theme here. -->
 		<item name="navigationBarColor">@color/red</item>
 		<item name="appBarColor">@color/red</item>
+		<item name="appBarTextColor">@color/white</item>
 		<item name="android:navigationBarColor">?attr/navigationBarColor</item>
 		<item name="colorPrimaryDark">?attr/navigationBarColor</item>
 		<item name="colorPrimary">?attr/appBarColor</item>
 		<item name="colorAccent">@color/red</item>
-		<item name="android:textColorPrimary">@color/lightText</item>
-		<item name="android:textColorSecondary">@color/lightText</item>
-		<item name="android:textColor">@color/lightText</item>
-		<item name="android:windowBackground">?attr/bg</item>
+		<item name="android:textColorPrimary">?attr/foregroundColorPrimary</item>
+		<item name="android:textColorSecondary">?attr/foregroundColorSecondary</item>
+		<item name="android:textColor">?attr/foregroundColorPrimary</item>
+		<item name="android:textColorHint">?attr/foregroundColorSecondary</item>
+		<item name="android:windowBackground">?attr/backgroundColorPrimary</item>
 		<item name="android:fontFamily">@font/firacode_medium</item>
-		<item name="popupMenuBackground">?attr/bgSecondary</item>
-		<item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+		<item name="popupMenuBackground">?attr/backgroundColorSecondary</item>
+		<item name="android:dialogTheme">@style/DialogTheme</item>
 		<item name="actionBarStyle">@style/AppBarBackground</item>
 		<item name="actionBarTheme">@style/AppBarText</item>
+		<item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
 	</style>
 
 	<style name="OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
 		<item name="android:tint">@color/white</item>
+	</style>
+
+	<style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
+		<item name="android:textColorPrimary">?attr/foregroundColorPrimary</item>
+		<item name="android:textColorSecondary">?attr/foregroundColorSecondary</item>
+		<item name="android:textColor">?attr/foregroundColorPrimary</item>
+		<item name="android:windowBackground">?attr/backgroundColorSecondary</item>
+		<item name="colorAccent">@color/red</item>
+		<!-- Set the button colour -->
+		<item name="colorPrimary">@color/red</item>
 	</style>
 
 	<style name="AppBarBackground" parent="Widget.MaterialComponents.ActionBar.Solid">
@@ -35,67 +50,82 @@
 	</style>
 
 	<style name="LightTheme" parent="AppTheme">
-		<item name="bg">@color/white</item>
-		<item name="bgSecondary">@color/lightGrey</item>
-		<item name="fg">@color/black</item>
-		<item name="fgSecondary">@color/grey</item>
+		<item name="backgroundColorPrimary">@color/white</item>
+		<item name="backgroundColorSecondary">@color/lightGrey</item>
+		<item name="foregroundColorPrimary">@color/black</item>
+		<item name="foregroundColorSecondary">@color/grey</item>
 	</style>
 
 	<style name="DarkTheme" parent="AppTheme">
-		<item name="bg">@color/darkGrey</item>
-		<item name="bgSecondary">@color/grey</item>
-		<item name="fg">@color/white</item>
-		<item name="fgSecondary">@color/lightGrey</item>
+		<item name="backgroundColorPrimary">@color/darkGrey</item>
+		<item name="backgroundColorSecondary">@color/grey</item>
+		<item name="foregroundColorPrimary">@color/white</item>
+		<item name="foregroundColorSecondary">@color/lightGrey</item>
 	</style>
 
 	<style name="BlackTheme" parent="AppTheme">
-		<item name="bg">@color/black</item>
-		<item name="bgSecondary">@color/black</item>
-		<item name="fg">@color/white</item>
-		<item name="fgSecondary">@color/white</item>
+		<item name="backgroundColorPrimary">@color/black</item>
+		<item name="backgroundColorSecondary">@color/black</item>
+		<item name="foregroundColorPrimary">@color/white</item>
+		<item name="foregroundColorSecondary">@color/white</item>
 		<item name="appBarColor">@color/black</item>
 	</style>
 
-	<style name="base_container_style">
-		<item name="android:layout_marginHorizontal">@dimen/content_margin</item>
-		<item name="android:layout_marginVertical">@dimen/content_margin_vertical</item>
+	<style name="widthMatchHeightWrap">
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">wrap_content</item>
 	</style>
 
-	<style name="image_container_style" parent="Widget.MaterialComponents.CardView">
-		<item name="android:layout_marginHorizontal">@dimen/content_margin</item>
-		<item name="android:layout_marginVertical">@dimen/content_margin_vertical</item>
+	<style name="widget" parent="widthMatchHeightWrap">
+		<item name="android:layout_marginStart">@dimen/content_margin</item>
+		<item name="android:layout_marginEnd">@dimen/content_margin</item>
+		<item name="android:layout_marginTop">@dimen/content_margin_top</item>
+		<item name="android:layout_marginBottom">@dimen/content_margin_bottom</item>
+		<item name="android:paddingTop">@dimen/content_margin_top</item>
+		<item name="android:paddingBottom">@dimen/content_margin_top</item>
+	</style>
+
+	<style name="card" parent="Widget.MaterialComponents.CardView">
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">@dimen/content_margin_top</item>
+		<item name="android:layout_marginBottom">@dimen/content_margin_top</item>
+		<item name="android:textSize">@dimen/zero</item>
+		<item name="cardCornerRadius">@dimen/corner</item>
+		<item name="cardBackgroundColor">?attr/backgroundColorSecondary</item>
+	</style>
+
+	<style name="image_container_style" parent="card">
 		<item name="android:orientation">vertical</item>
-		<item name="cardElevation">0dp</item>
-		<item name="cardCornerRadius">8dp</item>
+		<item name="cardElevation">@dimen/zero</item>
 	</style>
 
-	<style name="heading_text_style" parent="base_container_style">
-		<item name="android:textColor">?attr/fg</item>
-		<item name="android:textSize">@dimen/text_size_h1</item>
-	</style>
-
-	<style name="heading2_text_style" parent="heading_text_style">
-		<item name="android:textSize">@dimen/text_size_h2</item>
-	</style>
-
-	<style name="body_text_style" parent="heading2_text_style">
+	<style name="body_text" parent="widget">
+		<item name="android:textColor">?attr/foregroundColorPrimary</item>
 		<item name="android:textSize">@dimen/text_size_body</item>
-		<item name="android:fontFamily">@font/firacode</item>
+		<item name="android:layout_width">wrap_content</item>
 	</style>
 
-	<style name="code_text_style" parent="body_text_style">
-		<item name="android:textColorHint">?attr/fgSecondary</item>
-		<item name="android:background">@drawable/textbox</item>
+	<style name="heading" parent="widget">
+		<item name="android:fontFamily">@font/firacode_bold</item>
+		<item name="android:textColor">@color/red</item>
+		<item name="android:textSize">@dimen/text_size_heading</item>
+		<item name="android:layout_marginBottom">@dimen/zero</item>
 	</style>
 
-	<style name="button_style" parent="body_text_style">
+	<style name="code_text" parent="body_text">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:background">?attr/backgroundColorSecondary</item>
+		<item name="android:padding">@dimen/content_margin</item>
+		<item name="android:layout_marginTop">@dimen/content_margin</item>
+		<item name="android:layout_marginBottom">@dimen/content_margin</item>
+	</style>
+
+	<style name="button" parent="body_text">
 		<item name="android:textColor">@color/white</item>
 		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_marginVertical">@dimen/button_content_padding</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_marginTop">@dimen/zero</item>
+		<item name="android:layout_marginBottom">@dimen/zero</item>
 	</style>
-
 </resources>

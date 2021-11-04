@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
 <resources>
 	<!-- Background Colours -->
-	<attr name="bg" format="reference" />
-	<attr name="bgSecondary" format="reference" />
+	<attr name="backgroundColorPrimary" format="reference"></attr>
+	<attr name="backgroundColorSecondary" format="reference"></attr>
 	<!-- Foreground Colours -->
-	<attr name="fg" format="reference" />
-	<attr name="fgSecondary" format="reference" />
+	<attr name="foregroundColorPrimary" format="reference"></attr>
+	<attr name="foregroundColorSecondary" format="reference"></attr>
 	<!-- Appbar Colours -->
-	<attr name="appBarColor" format="reference" />
-	<attr name="navigationBarColor" format="reference" />
+	<attr name="appBarColor" format="reference"></attr>
+	<attr name="appBarTextColor" format="reference"></attr>
+	<attr name="navigationBarColor" format="reference"></attr>
 </resources>

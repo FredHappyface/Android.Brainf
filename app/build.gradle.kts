@@ -11,8 +11,8 @@ android {
 		applicationId = "com.fredhappyface.brainf"
 		minSdk = 26
 		targetSdk = 31
-		versionCode = 20211029
-		versionName = "2021.10.29"
+		versionCode = 20211104
+		versionName = "2021.11.04"
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 		setProperty("archivesBaseName", "$applicationId-$versionName")
 	}
@@ -22,7 +22,7 @@ android {
 			versionNameSuffix = "-debug"
 		}
 		getByName("release") {
-			versionNameSuffix = "-release"
+			//versionNameSuffix = "-release"
 			proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
 			isMinifyEnabled = false
 		}

@@ -3,13 +3,13 @@ package com.fredhappyface.brainf
 import android.os.Bundle
 
 /**
- * Define about activity. This is very basic (holds text only)
+ * ActivityAbout class inherits from the ActivityThemable class - provides the about view
  */
 class ActivityAbout : ActivityThemable() {
 	/**
-	 * Boilerplate onCreate method. Applies the layout to the activity
+	 * Override the onCreate method from ActivityThemable adding the activity_about view
 	 *
-	 * @param savedInstanceState activity saved data
+	 * @param savedInstanceState saved state
 	 */
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)

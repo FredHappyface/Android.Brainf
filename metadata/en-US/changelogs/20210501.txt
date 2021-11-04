@@ -1,4 +1,5 @@
-## 20210501 - 2021/05/01
-- Update gradle wrapper
-- Update metadata
-- Misc tweaks
+<ul>
+<li>Update gradle wrapper</li>
+<li>Update metadata</li>
+<li>Misc tweaks</li>
+</ul>
