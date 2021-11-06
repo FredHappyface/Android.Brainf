@@ -43,7 +43,6 @@ Interpreter for the 'Brainf' programming language
 - Create, edit, save and run brainf code/ text files
 - Syntax highlighting using regex
 - 4 Themes: Light, Dark, Black, Auto
-- Configurable text size
 - Launcher Shortcuts for Settings, About, New File
 
 ## Screenshots
