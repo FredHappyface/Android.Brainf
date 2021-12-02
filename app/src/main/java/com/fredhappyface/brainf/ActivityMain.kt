@@ -22,12 +22,12 @@ class ActivityMain : ActivityThemable() {
 	 * Storage of private vars. These being _uri (stores uri of opened file); _createFileRequestCode
 	 * (custom request code); _readRequestCode (request code for reading a file)
 	 */
-	private var mUri: String? = null
-	private lateinit var mCodeEditText: EditText
+	private var uri: String? = null
+	private lateinit var codeEditText: EditText
 
 	/**
 	 * Override the onCreate method from ActivityThemable adding the activity_main view and configuring
-	 * the mCodeEditText, the textHighlight and the initial text
+	 * the this.codeEditText, the textHighlight and the initial text
 	 *
 	 * @param savedInstanceState saved state
 	 */
@@ -35,21 +35,21 @@ class ActivityMain : ActivityThemable() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
 		// Get saved state
-		mUri = savedInstanceState?.getString("_uri", null)
+		this.uri = savedInstanceState?.getString("_uri", null)
 		// Set up correct colour
 		var colours: Colours = ColoursDark()
-		if (mCurrentTheme == 0) {
+		if (this.currentTheme == 0) {
 			colours = ColoursLight()
 		}
 		// Set up code edit, apply highlighting and some startup text
-		mCodeEditText = findViewById(R.id.codeHighlight)
+		this.codeEditText = findViewById(R.id.codeHighlight)
 		val textHighlight = TextHighlight(
-			mCodeEditText,
+			this.codeEditText,
 			LanguageRules(),
 			colours
 		)
 		textHighlight.start()
-		mCodeEditText.setText(R.string.blank_file_text)
+		this.codeEditText.setText(R.string.blank_file_text)
 	}
 
 	/**
@@ -105,7 +105,7 @@ class ActivityMain : ActivityThemable() {
 	 */
 	override fun onSaveInstanceState(outState: Bundle) {
 		super.onSaveInstanceState(outState)
-		outState.putString("_uri", mUri)
+		outState.putString("_uri", this.uri)
 	}
 
 	/**
@@ -140,8 +140,8 @@ class ActivityMain : ActivityThemable() {
 			AlertDialog.BUTTON_POSITIVE, getString(R.string.dialog_new_confirm)
 		) { dialog, _ ->
 			dialog.dismiss()
-			mCodeEditText.setText(R.string.blank_file_text)
-			mUri = null
+			this.codeEditText.setText(R.string.blank_file_text)
+			this.uri = null
 			recreate()
 		}
 		alertDialog.show()
@@ -152,8 +152,8 @@ class ActivityMain : ActivityThemable() {
 	 *
 	 */
 	private fun doFileSave() {
-		if (mUri != null) {
-			writeTextToUri(Uri.parse(mUri ?: return))
+		if (this.uri != null) {
+			writeTextToUri(Uri.parse(this.uri ?: return))
 			showDialogMessageSave()
 		} else {
 			startFileSaveAs()
@@ -161,13 +161,13 @@ class ActivityMain : ActivityThemable() {
 	}
 
 	/**
-	 * Handles ACTION_OPEN_DOCUMENT result and sets mUri, mLanguageID and mCodeEditText
+	 * Handles ACTION_OPEN_DOCUMENT result and sets this.uri, mLanguageID and mCodeEditText
 	 */
 	private val completeFileOpen =
 		registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
 			if (result.resultCode == Activity.RESULT_OK) {
-				mUri = result.data?.data.toString()
-				mCodeEditText.setText(readTextFromUri(Uri.parse(mUri)))
+				this.uri = result.data?.data.toString()
+				this.codeEditText.setText(readTextFromUri(Uri.parse(this.uri)))
 				recreate()
 			}
 		}
@@ -184,13 +184,13 @@ class ActivityMain : ActivityThemable() {
 	}
 
 	/**
-	 * Handles ACTION_CREATE_DOCUMENT result and sets mUri, mLanguageID and triggers writeTextToUri
+	 * Handles ACTION_CREATE_DOCUMENT result and sets this.uri, mLanguageID and triggers writeTextToUri
 	 */
 	private val completeFileSaveAs =
 		registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
 			if (result.resultCode == Activity.RESULT_OK) {
-				mUri = result.data?.data.toString()
-				writeTextToUri(Uri.parse(mUri))
+				this.uri = result.data?.data.toString()
+				writeTextToUri(Uri.parse(this.uri))
 				showDialogMessageSave()
 			}
 		}
@@ -216,7 +216,7 @@ class ActivityMain : ActivityThemable() {
 		try {
 			contentResolver.openFileDescriptor(uri, "rwt")?.use { it ->
 				FileOutputStream(it.fileDescriptor).use {
-					val bytes = mCodeEditText.text.toString()
+					val bytes = this.codeEditText.text.toString()
 						.toByteArray()
 					it.write(bytes, 0, bytes.size)
 				}
@@ -251,7 +251,7 @@ class ActivityMain : ActivityThemable() {
 	 */
 	fun run(view: View) {
 		val brainfInterpreter = BrainfInterpreter(
-			mCodeEditText.text.toString(),
+			this.codeEditText.text.toString(),
 			findViewById<EditText>(R.id.stdin).text.toString()
 		)
 		try {
