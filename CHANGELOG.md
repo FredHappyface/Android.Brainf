@@ -6,6 +6,7 @@ patch-level version changes can be found in [commit messages](../../commits/mast
 ## Next_Ver - 2022/01/xx
 
 - Update dependencies
+- Set file size limit to 1Mb to defend against `java.lang.OutOfMemoryError`
 
 ## 20211104 - 2021/11/04
 
