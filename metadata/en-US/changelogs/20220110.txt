@@ -1,0 +1,5 @@
+<ul>
+<li>Update dependencies</li>
+<li>Set file size limit to 1Mb to defend against <code>java.lang.OutOfMemoryError</code></li>
+<li>Fix BrainfInterpreter.gt and BrainfInterpreter.leftBracket to defend against <code>java.lang.StringIndexOutOfBoundsException</code></li>
+</ul>

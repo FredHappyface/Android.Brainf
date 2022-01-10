@@ -3,10 +3,15 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
-## Next_Ver - 2022/01/xx
+<!--
+## Next_Ver - 2022/xx/xx
+-->
+
+## 20220110 - 2022/01/10
 
 - Update dependencies
 - Set file size limit to 1Mb to defend against `java.lang.OutOfMemoryError`
+- Fix BrainfInterpreter.gt and BrainfInterpreter.leftBracket to defend against `java.lang.StringIndexOutOfBoundsException`
 
 ## 20211104 - 2021/11/04
 

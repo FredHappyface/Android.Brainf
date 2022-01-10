@@ -78,10 +78,10 @@ class BrainfInterpreter(programText: String, input: String) {
 	 *
 	 */
 	private fun gt() {
-		if (this.bufferPointer < this.buffer.size) {
+		if (this.bufferPointer < this.buffer.size - 1) {
 			this.bufferPointer++
 		} else {
-			throw IllegalStateException("Data pointer cannot exceed ${this.buffer.size} (instruction={${this.instructionPointer}:'${this.instruction[this.instructionPointer]}'})")
+			throw IllegalStateException("Data pointer cannot exceed ${this.buffer.size - 1} (instruction={${this.instructionPointer}:'${this.instruction[this.instructionPointer]}'})")
 		}
 	}
 
@@ -129,6 +129,9 @@ class BrainfInterpreter(programText: String, input: String) {
 			var brackets = 0
 			while (this.instructionPointer < this.instruction.length) {
 				this.instructionPointer++
+				if (this.instructionPointer >= this.instruction.length) {
+					break
+				}
 				when (this.instruction[this.instructionPointer]) {
 					'[' -> brackets++
 					']' -> if (brackets == 0) {
