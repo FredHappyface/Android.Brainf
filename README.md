@@ -62,19 +62,22 @@ Interpreter for the 'Brainf' programming language
 A high-level overview of how the documentation is organized organized will help you know
 where to look for certain things:
 
+<!--
 - [Tutorials](/documentation/tutorials) take you by the hand through a series of steps to get
   started using the software. Start here if you’re new.
+-->
 - The [Technical Reference](/documentation/reference) documents APIs and other aspects of the
   machinery. This documentation describes how to use the classes and functions at a lower level
   and assume that you have a good high-level understanding of the software.
+<!--
 - The [Help](/documentation/help) guide provides a starting point and outlines common issues that you
   may have.
+-->
 
 ## Gradle tasks
 
 - ktlintCheck (`gradlew ktlintCheck`): run ktlint over the codebase
 - genDocs (`gradlew genDocs`): generate the api reference using dokka
-
 
 ## Language Information
 
@@ -107,7 +110,7 @@ Android SDK. Additional information can be found at
 1. Open the F-Droid app
 2. Search for Brainf
 
-**Or**
+or
 
 [<img src="readme-assets/badges/f-droid-download.png"
 alt="Get it on F-Droid" height="80">](https://f-droid.org/en/packages/com.fredhappyface.brainf/)
@@ -120,7 +123,7 @@ then download/ install
 1. Open the Google Play app
 2. Search for Brainf
 
-**Or**
+or
 
 [<img src="readme-assets/badges/google-play-download.png"
 alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.fredhappyface.brainf)
@@ -134,7 +137,7 @@ then download/ install
 2. Select the debug or release APK depending on your preference. Note that the
 filenames are in the form: com.fredhappyface.brainf-(version)-(debug|release).apk
 
-**Or**
+or
 
 [<img src="readme-assets/badges/direct-apk-download.png" alt="Direct apk
 download" height="80">](/app/release)
