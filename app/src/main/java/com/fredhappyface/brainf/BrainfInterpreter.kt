@@ -115,7 +115,7 @@ class BrainfInterpreter(programText: String, input: String) {
 				this.inputBuffer[this.inputPointer].code and 0b11111111
 			this.inputPointer++
 		} else {
-			throw IllegalStateException("Insufficient input supplied. Must be > ${this.inputBuffer.length} (instruction={${this.instructionPointer}:'${this.instruction[this.instructionPointer]}'})")
+			this.buffer[this.bufferPointer] = 0
 		}
 	}
 
