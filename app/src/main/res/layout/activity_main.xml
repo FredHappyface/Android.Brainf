@@ -27,7 +27,7 @@
 				android:importantForAutofill="no"
 				android:inputType=""
 				android:text=""
-				android:textColor="?attr/foregroundColorSecondary"
+				android:textColor="?attr/fg2"
 				tools:ignore="LabelFor" />
 
 			<EditText

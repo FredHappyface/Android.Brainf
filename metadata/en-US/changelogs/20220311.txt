@@ -1,0 +1,18 @@
+<ul>
+<li>New Feature: Add Gradle tasks
+<ul>
+<li>ktlintCheck (<code>gradlew ktlintCheck</code>): run ktlint over the
+codebase</li>
+<li>genDocs (<code>gradlew genDocs</code>): generate the api reference
+using dokka</li>
+</ul></li>
+<li>New Feature: Update navbar theme (dark/light rather than the app
+accent colour)</li>
+<li>Bugfix: Empty input is no longer considered an error
+https://github.com/FredHappyface/Android.Brainf/issues/4
+<ul>
+<li>For example, the cat program <code>bf       ,[.,]</code> Input:
+hello, output is now as expected</li>
+</ul></li>
+<li>Removed included apks, use github releases instead</li>
+</ul>

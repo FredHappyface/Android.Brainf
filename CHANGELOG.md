@@ -7,11 +7,12 @@ patch-level version changes can be found in [commit messages](../../commits/mast
 ## Next_Ver - 2022/xx/xx
 -->
 
-## Next_Ver - 2022/xx/xx
+## 20220311 - 2022/03/11
 
 - New Feature: Add Gradle tasks
 	- ktlintCheck (`gradlew ktlintCheck`): run ktlint over the codebase
 	- genDocs (`gradlew genDocs`): generate the api reference using dokka
+- New Feature: Update navbar theme (dark/light rather than the app accent colour)
 - Bugfix: Empty input is no longer considered an error https://github.com/FredHappyface/Android.Brainf/issues/4
 	- For example, the cat program
 		```bf
