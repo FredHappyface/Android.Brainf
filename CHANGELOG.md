@@ -7,6 +7,10 @@ patch-level version changes can be found in [commit messages](../../commits/mast
 ## Next_Ver - 2022/xx/xx
 -->
 
+## 20230820 - 2023/08/20
+
+- Update dependencies
+
 ## 20220311 - 2022/03/11
 
 - New Feature: Add Gradle tasks

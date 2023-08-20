@@ -32,15 +32,15 @@ tasks.register("genDocs") {
 }
 
 android {
-	compileSdk = 31
-	buildToolsVersion = "30.0.3"
+	compileSdk = 33
+	buildToolsVersion = "34.0.0"
 
 	defaultConfig {
 		applicationId = "com.fredhappyface.brainf"
 		minSdk = 26
-		targetSdk = 31
-		versionCode = 20220311
-		versionName = "2022.03.11"
+		targetSdk = 33
+		versionCode = 20230820
+		versionName = "20230820"
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 		setProperty("archivesBaseName", "$applicationId-$versionName")
 	}
@@ -55,22 +55,23 @@ android {
 	}
 
 	compileOptions {
-		sourceCompatibility(JavaVersion.VERSION_11)
-		targetCompatibility(JavaVersion.VERSION_11)
+		sourceCompatibility(JavaVersion.VERSION_17)
+		targetCompatibility(JavaVersion.VERSION_17)
 	}
 
-	kotlinOptions { jvmTarget = "11" }
+	kotlinOptions { jvmTarget = "17" }
+	namespace = "com.fredhappyface.brainf"
 }
 
 dependencies {
-	implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")
-	implementation("androidx.core:core-ktx:1.7.0")
-	implementation("androidx.appcompat:appcompat:1.4.1")
-	implementation("com.google.android.material:material:1.5.0")
-	implementation("androidx.preference:preference-ktx:1.2.0")
+	implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
+	implementation("androidx.core:core-ktx:1.10.1")
+	implementation("androidx.appcompat:appcompat:1.6.1")
+	implementation("com.google.android.material:material:1.9.0")
+	implementation("androidx.preference:preference-ktx:1.2.1")
 	testImplementation("junit:junit:4.13.2")
-	testImplementation("androidx.test.ext:junit:1.1.3")
-	testImplementation("androidx.test.espresso:espresso-core:3.4.0")
+	testImplementation("androidx.test.ext:junit:1.1.5")
+	testImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
 ktlint {
