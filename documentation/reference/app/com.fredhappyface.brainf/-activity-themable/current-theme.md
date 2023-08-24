@@ -1,4 +1,4 @@
-//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[ActivityThemable](index.md)/[currentTheme](current-theme.md)
+//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[AppCompatActivity](index.md)/[currentTheme](current-theme.md)
 
 # currentTheme
 

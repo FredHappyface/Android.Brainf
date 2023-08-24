@@ -1,4 +1,4 @@
-//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[ActivityThemable](index.md)/[onResume](on-resume.md)
+//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[AppCompatActivity](index.md)/[onResume](on-resume.md)
 
 # onResume
 

@@ -2,6 +2,7 @@ package com.fredhappyface.brainf
 
 import android.app.Activity
 import android.content.Intent
+import android.content.res.Configuration
 import android.net.Uri
 import android.os.Bundle
 import android.provider.OpenableColumns
@@ -13,14 +14,16 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import com.fredhappyface.brainf.R
 import java.io.*
 
 private const val MAX_FILE_SIZE = 1024 * 1024 // 1Mb
 
 /**
- * ActivityMain class inherits from the ActivityThemable class - provides the settings view
+ * ActivityMain class inherits from the AppCompatActivity class - provides the settings view
  */
-class ActivityMain : ActivityThemable() {
+class ActivityMain : AppCompatActivity() {
 	/**
 	 * Storage of private vars. These being _uri (stores uri of opened file); _createFileRequestCode
 	 * (custom request code); _readRequestCode (request code for reading a file)
@@ -29,7 +32,7 @@ class ActivityMain : ActivityThemable() {
 	private lateinit var codeEditText: EditText
 
 	/**
-	 * Override the onCreate method from ActivityThemable adding the activity_main view and configuring
+	 * Override the onCreate method from AppCompatActivity adding the activity_main view and configuring
 	 * the this.codeEditText, the textHighlight and the initial text
 	 *
 	 * @param savedInstanceState saved state
@@ -41,9 +44,11 @@ class ActivityMain : ActivityThemable() {
 		this.uri = savedInstanceState?.getString("_uri", null)
 		// Set up correct colour
 		var colours: Colours = ColoursDark()
-		if (this.currentTheme == 0) {
+		val currentNightMode = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
+		if (currentNightMode != Configuration.UI_MODE_NIGHT_YES) {
 			colours = ColoursLight()
 		}
+
 		// Set up code edit, apply highlighting and some startup text
 		this.codeEditText = findViewById(R.id.codeHighlight)
 		val textHighlight = TextHighlight(
@@ -82,21 +87,23 @@ class ActivityMain : ActivityThemable() {
 			R.id.action_new_file -> {
 				doNewFile(); true
 			}
+
 			R.id.action_open -> {
 				startFileOpen(); true
 			}
+
 			R.id.action_save -> {
 				doFileSave(); true
 			}
+
 			R.id.action_save_as -> {
 				startFileSaveAs(); true
 			}
-			R.id.action_settings -> {
-				startActivity(Intent(this, ActivitySettings::class.java)); true
-			}
+
 			R.id.action_about -> {
 				startActivity(Intent(this, ActivityAbout::class.java)); true
 			}
+
 			else -> super.onOptionsItemSelected(item)
 		}
 	}
@@ -246,7 +253,7 @@ class ActivityMain : ActivityThemable() {
 			val sizeIdx = cursor?.getColumnIndex(OpenableColumns.SIZE)
 			cursor?.moveToFirst()
 			val size = sizeIdx?.let { cursor.getLong(it) }
-			if (size ?: 0 > MAX_FILE_SIZE) {
+			if ((size ?: 0) > MAX_FILE_SIZE) {
 				return "File too large! (over $MAX_FILE_SIZE bytes)\n"
 			}
 		}
@@ -258,9 +265,9 @@ class ActivityMain : ActivityThemable() {
 	/**
 	 * Run the interpreter
 	 *
-	 * @param view: View? required to call function from layout
+	 * @param ignoreView: View? required to call function from layout
 	 */
-	fun run(view: View) {
+	fun run(ignoreView: View) {
 		val brainfInterpreter = BrainfInterpreter(
 			this.codeEditText.text.toString(),
 			findViewById<EditText>(R.id.stdin).text.toString()

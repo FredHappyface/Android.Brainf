@@ -1,4 +1,4 @@
-//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[ActivityThemable](index.md)/[onCreate](on-create.md)
+//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[AppCompatActivity](index.md)/[onCreate](on-create.md)
 
 # onCreate
 

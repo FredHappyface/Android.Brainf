@@ -16,9 +16,6 @@
 			android:name="com.fredhappyface.brainf.ActivityAbout"
 			android:label="@string/title_activity_about" />
 		<activity
-			android:name="com.fredhappyface.brainf.ActivitySettings"
-			android:label="@string/title_activity_settings" />
-		<activity
 			android:name="com.fredhappyface.brainf.ActivityMain"
 			android:exported="true">
 			<intent-filter>
@@ -29,6 +26,5 @@
 				android:name="android.app.shortcuts"
 				android:resource="@xml/shortcuts" />
 		</activity>
-		<activity android:name=".ActivityThemable" />
 	</application>
 </manifest>

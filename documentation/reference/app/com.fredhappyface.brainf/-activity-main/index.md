@@ -3,9 +3,9 @@
 # ActivityMain
 
 [androidJvm]\
-class [ActivityMain](index.md) : [ActivityThemable](../-activity-themable/index.md)
+class [ActivityMain](index.md) : [AppCompatActivity](../-activity-themable/index.md)
 
-ActivityMain class inherits from the ActivityThemable class - provides the settings view
+ActivityMain class inherits from the AppCompatActivity class - provides the settings view
 
 ## Constructors
 
@@ -19,7 +19,7 @@ ActivityMain class inherits from the ActivityThemable class - provides the setti
 |---|---|
 | [doFileSave](do-file-save.md) | [androidJvm]<br>private fun [doFileSave](do-file-save.md)()<br>Call this when the user clicks menu -> save |
 | [doNewFile](do-new-file.md) | [androidJvm]<br>private fun [doNewFile](do-new-file.md)()<br>Call this when the user clicks menu -> new file |
-| [onCreate](on-create.md) | [androidJvm]<br>protected open override fun [onCreate](on-create.md)(savedInstanceState: [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html)?)<br>Override the onCreate method from ActivityThemable adding the activity_main view and configuring the this.codeEditText, the textHighlight and the initial text |
+| [onCreate](on-create.md) | [androidJvm]<br>protected open override fun [onCreate](on-create.md)(savedInstanceState: [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html)?)<br>Override the onCreate method from AppCompatActivity adding the activity_main view and configuring the this.codeEditText, the textHighlight and the initial text |
 | [onCreateOptionsMenu](on-create-options-menu.md) | [androidJvm]<br>open override fun [onCreateOptionsMenu](on-create-options-menu.md)(menu: [Menu](https://developer.android.com/reference/kotlin/android/view/Menu.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>Override the onCreateOptionsMenu method (used to create the overflow menu - see three dotted menu on the title bar) |
 | [onOptionsItemSelected](on-options-item-selected.md) | [androidJvm]<br>open override fun [onOptionsItemSelected](on-options-item-selected.md)(item: [MenuItem](https://developer.android.com/reference/kotlin/android/view/MenuItem.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>Override the onOptionsItemSelected method. This is essentially a callback method triggered when the end user selects a menu item. Here we filter the item/ action selection and trigger a corresponding action. E.g. action_open -> startFileOpen() |
 | [onSaveInstanceState](on-save-instance-state.md) | [androidJvm]<br>protected open override fun [onSaveInstanceState](on-save-instance-state.md)(outState: [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html))<br>Override onSaveInstanceState to save the _languageID and _uri when recreating the activity |

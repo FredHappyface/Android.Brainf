@@ -3,9 +3,9 @@
 # ActivityAbout
 
 [androidJvm]\
-class [ActivityAbout](index.md) : [ActivityThemable](../-activity-themable/index.md)
+class [ActivityAbout](index.md) : [AppCompatActivity](../-activity-themable/index.md)
 
-ActivityAbout class inherits from the ActivityThemable class - provides the about view
+ActivityAbout class inherits from the AppCompatActivity class - provides the about view
 
 ## Constructors
 
@@ -17,4 +17,4 @@ ActivityAbout class inherits from the ActivityThemable class - provides the abou
 
 | Name | Summary |
 |---|---|
-| [onCreate](on-create.md) | [androidJvm]<br>protected open override fun [onCreate](on-create.md)(savedInstanceState: [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html)?)<br>Override the onCreate method from ActivityThemable adding the activity_about view |
+| [onCreate](on-create.md) | [androidJvm]<br>protected open override fun [onCreate](on-create.md)(savedInstanceState: [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html)?)<br>Override the onCreate method from AppCompatActivity adding the activity_about view |

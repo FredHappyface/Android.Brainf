@@ -1,13 +1,15 @@
 package com.fredhappyface.brainf
 
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.fredhappyface.brainf.R
 
 /**
- * ActivityAbout class inherits from the ActivityThemable class - provides the about view
+ * ActivityAbout class inherits from the AppCompatActivity class - provides the about view
  */
-class ActivityAbout : ActivityThemable() {
+class ActivityAbout : AppCompatActivity() {
 	/**
-	 * Override the onCreate method from ActivityThemable adding the activity_about view
+	 * Override the onCreate method from AppCompatActivity adding the activity_about view
 	 *
 	 * @param savedInstanceState saved state
 	 */

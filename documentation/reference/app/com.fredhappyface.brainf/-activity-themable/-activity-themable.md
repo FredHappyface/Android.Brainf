@@ -1,6 +1,6 @@
-//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[ActivityThemable](index.md)/[ActivityThemable](-activity-themable.md)
+//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[AppCompatActivity](index.md)/[AppCompatActivity](-activity-themable.md)
 
-# ActivityThemable
+# AppCompatActivity
 
 [androidJvm]\
-fun [ActivityThemable](-activity-themable.md)()
+fun [AppCompatActivity](-activity-themable.md)()

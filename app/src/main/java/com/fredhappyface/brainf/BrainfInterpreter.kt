@@ -36,10 +36,12 @@ class BrainfInterpreter(programText: String, input: String) {
 					this.iOCounter++
 					period()
 				}
+
 				',' -> {
 					this.iOCounter++
 					comma()
 				}
+
 				'[' -> leftBracket()
 				']' -> rightBracket()
 			}

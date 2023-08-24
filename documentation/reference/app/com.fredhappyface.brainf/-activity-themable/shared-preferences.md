@@ -1,4 +1,4 @@
-//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[ActivityThemable](index.md)/[sharedPreferences](shared-preferences.md)
+//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[AppCompatActivity](index.md)/[sharedPreferences](shared-preferences.md)
 
 # sharedPreferences
 

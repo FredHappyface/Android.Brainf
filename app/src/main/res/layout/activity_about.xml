@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:fitsSystemWindows="true"
-	android:theme="@style/AppTheme"
-	tools:context=".ActivityAbout">
+	android:background="@color/bg">
 
 	<ScrollView
 		android:layout_width="match_parent"
@@ -19,7 +16,7 @@
 			<com.google.android.material.card.MaterialCardView style="@style/card">
 
 				<LinearLayout
-					style="@style/widthMatchHeightWrap"
+					style="@style/cardchild"
 					android:orientation="vertical">
 
 					<TextView
@@ -35,7 +32,7 @@
 			<com.google.android.material.card.MaterialCardView style="@style/card">
 
 				<LinearLayout
-					style="@style/widthMatchHeightWrap"
+					style="@style/cardchild"
 					android:orientation="vertical">
 
 					<TextView
@@ -51,7 +48,7 @@
 			<com.google.android.material.card.MaterialCardView style="@style/card">
 
 				<LinearLayout
-					style="@style/widthMatchHeightWrap"
+					style="@style/cardchild"
 					android:orientation="vertical">
 
 					<TextView
@@ -67,7 +64,7 @@
 			<com.google.android.material.card.MaterialCardView style="@style/card">
 
 				<LinearLayout
-					style="@style/widthMatchHeightWrap"
+					style="@style/cardchild"
 					android:orientation="vertical">
 
 					<TextView
@@ -83,4 +80,4 @@
 			</com.google.android.material.card.MaterialCardView>
 		</LinearLayout>
 	</ScrollView>
-</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

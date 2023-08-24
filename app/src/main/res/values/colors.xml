@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="red">#EF5350</color>
-	<color name="black">#FF000000</color>
-	<color name="darkGrey">#181A1F</color>
-	<color name="grey">#21252b</color>
-	<color name="lightGrey">#e7e7e9</color>
-	<color name="white">#f0f0f1</color>
+	<color name="accent">#EF5350</color>
+	<color name="onAccent">#e6e6e6</color>
 </resources>

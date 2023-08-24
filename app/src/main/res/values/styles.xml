@@ -1,72 +1,59 @@
 <resources>
 	<!-- Base application theme. -->
-	<style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-		<item name="accent">@color/red</item>
-		<item name="onAccent">@color/white</item>
-		<item name="light_theme">@bool/_false</item>
-		<!-- Status bar color. -->
-		<item name="android:statusBarColor">?attr/accent</item>
+	<style name="AppTheme" parent="Theme.Material3.DayNight">
+		<!-- Primary brand color. -->
+		<item name="colorPrimaryVariant">@color/accent</item>
+		<item name="colorOnPrimary">@color/onAccent</item>
 		<!-- Customize your theme here. -->
-		<item name="android:navigationBarColor">?attr/accent</item>
-		<item name="colorPrimaryDark">?attr/accent</item>
-		<item name="colorPrimary">?attr/accent</item>
-		<item name="colorAccent">?attr/accent</item>
-		<item name="android:textColorPrimary">?attr/fg</item>
-		<item name="android:textColorSecondary">?attr/fg2</item>
-		<item name="android:textColor">?attr/fg</item>
-		<item name="android:textColorHint">?attr/fg2</item>
-		<item name="android:windowBackground">?attr/bg</item>
+		<item name="android:navigationBarColor">@color/accent</item>
+		<item name="colorPrimaryDark">@color/accent</item>
+		<item name="colorPrimary">@color/accent</item>
+		<item name="colorAccent">@color/accent</item>
+		<item name="android:textColorPrimary">@color/fg</item>
+		<item name="android:textColorSecondary">@color/fg</item>
+		<item name="android:textColor">@color/fg</item>
+		<item name="android:windowBackground">@color/bg</item>
 		<item name="android:fontFamily">@font/firacode_medium</item>
-		<item name="popupMenuBackground">?attr/bg2</item>
+		<item name="popupMenuBackground">@color/bg2</item>
 		<item name="android:dialogTheme">@style/DialogTheme</item>
+		<item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
 		<item name="actionBarStyle">@style/AppBarBackground</item>
 		<item name="actionBarTheme">@style/AppBarText</item>
-		<item name="actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
-	</style>
-
-	<style name="OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
-		<item name="android:tint">@color/white</item>
+		<item name="colorSurface">@color/bg2</item>
+		<item name="colorOnSurface">@color/fg</item>
+		<item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent
+		</item>
+		<item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
 	</style>
 
 	<style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
-		<item name="android:textColorPrimary">?attr/fg</item>
-		<item name="android:textColorSecondary">?attr/fg2</item>
-		<item name="android:textColor">?attr/fg</item>
-		<item name="android:windowBackground">?attr/bg2</item>
-		<item name="colorAccent">@color/red</item>
+		<item name="android:textColorPrimary">@color/fg</item>
+		<item name="android:textColorSecondary">@color/fg</item>
+		<item name="android:textColor">@color/fg</item>
+		<item name="android:windowBackground">@color/bg2</item>
+		<item name="colorAccent">@color/accent</item>
 		<!-- Set the button colour -->
-		<item name="colorPrimary">@color/red</item>
+		<item name="colorPrimary">@color/accent</item>
+	</style>
+
+	<style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+		<item name="cornerSize">@dimen/corner</item>
+	</style>
+
+	<style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+		<item name="cornerSize">@dimen/corner</item>
+	</style>
+
+	<style name="OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+		<item name="android:tint">@color/onAccent</item>
 	</style>
 
 	<style name="AppBarBackground" parent="Widget.MaterialComponents.ActionBar.Solid">
-		<item name="android:background">?attr/accent</item>
+		<item name="android:background">@color/accent</item>
 	</style>
 
 	<style name="AppBarText" parent="ThemeOverlay.MaterialComponents.ActionBar.Surface">
-		<item name="android:textColorPrimary">@color/white</item>
-	</style>
-
-	<style name="LightTheme" parent="AppTheme">
-		<item name="bg">@color/white</item>
-		<item name="bg2">@color/lightGrey</item>
-		<item name="fg">@color/black</item>
-		<item name="fg2">@color/grey</item>
-		<item name="light_theme">@bool/_true</item>
-	</style>
-
-	<style name="DarkTheme" parent="AppTheme">
-		<item name="bg">@color/darkGrey</item>
-		<item name="bg2">@color/grey</item>
-		<item name="fg">@color/white</item>
-		<item name="fg2">@color/lightGrey</item>
-	</style>
-
-	<style name="BlackTheme" parent="AppTheme">
-		<item name="bg">@color/black</item>
-		<item name="bg2">@color/black</item>
-		<item name="fg">@color/white</item>
-		<item name="fg2">@color/white</item>
-		<item name="accent">@color/black</item>
+		<item name="android:textColorPrimary">@color/onAccent</item>
 	</style>
 
 	<style name="widthMatchHeightWrap">
@@ -78,48 +65,43 @@
 		<item name="android:layout_marginHorizontal">@dimen/content_margin</item>
 		<item name="android:layout_marginTop">@dimen/content_margin_top</item>
 		<item name="android:layout_marginBottom">@dimen/content_margin_bottom</item>
-		<item name="android:paddingTop">@dimen/content_margin_top</item>
-		<item name="android:paddingBottom">@dimen/content_margin_top</item>
+		<item name="android:paddingVertical">@dimen/content_margin_top</item>
 	</style>
 
-	<style name="card" parent="Widget.MaterialComponents.CardView">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
+	<style name="card" parent="widthMatchHeightWrap">
 		<item name="android:layout_marginVertical">@dimen/content_margin_top</item>
 		<item name="android:textSize">@dimen/zero</item>
-		<item name="cardCornerRadius">@dimen/corner</item>
-		<item name="cardBackgroundColor">?attr/bg2</item>
 	</style>
 
-	<style name="image_container_style" parent="card">
-		<item name="android:orientation">vertical</item>
-		<item name="cardElevation">@dimen/zero</item>
+	<style name="cardchild" parent="widthMatchHeightWrap">
+		<item name="android:layout_margin">@dimen/card_margin</item>
 	</style>
+
 
 	<style name="body_text" parent="widget">
-		<item name="android:textColor">?attr/fg</item>
+		<item name="android:textColor">@color/fg</item>
 		<item name="android:textSize">@dimen/text_size_body</item>
 		<item name="android:layout_width">wrap_content</item>
 	</style>
 
 	<style name="heading" parent="widget">
-		<item name="android:fontFamily">@font/firacode_bold</item>
-		<item name="android:textColor">@color/red</item>
+		<item name="android:textColor">@color/accent</item>
 		<item name="android:textSize">@dimen/text_size_heading</item>
+		<item name="android:fontFamily">@font/firacode_bold</item>
 		<item name="android:layout_marginBottom">@dimen/zero</item>
 	</style>
 
 	<style name="code_text" parent="body_text">
 		<item name="android:layout_width">match_parent</item>
-		<item name="android:background">?attr/bg2</item>
+		<item name="android:background">@color/bg2</item>
 		<item name="android:padding">@dimen/content_margin</item>
 		<item name="android:layout_marginVertical">@dimen/content_margin</item>
 	</style>
 
 	<style name="button" parent="body_text">
-		<item name="android:textColor">@color/white</item>
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_marginVertical">@dimen/zero</item>
+		<item name="android:textColor">@color/onAccent</item>
 	</style>
 </resources>

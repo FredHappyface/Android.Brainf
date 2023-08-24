@@ -3,8 +3,8 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:theme="@style/AppTheme"
-	tools:context=".ActivityMain">
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:theme="@style/AppTheme">
 
 	<ScrollView
 		android:layout_width="match_parent"
@@ -27,7 +27,7 @@
 				android:importantForAutofill="no"
 				android:inputType=""
 				android:text=""
-				android:textColor="?attr/fg2"
+				android:textColor="@color/fg"
 				tools:ignore="LabelFor" />
 
 			<EditText
@@ -40,7 +40,8 @@
 			<Button
 				style="@style/button"
 				android:onClick="run"
-				android:text="@string/main_run_btn" />
+				android:text="@string/main_run_btn"
+				app:shapeAppearance="?attr/shapeAppearanceSmallComponent" />
 
 			<TextView
 				android:id="@+id/stdout"

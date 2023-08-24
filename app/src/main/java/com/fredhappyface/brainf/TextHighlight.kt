@@ -5,8 +5,17 @@ import android.text.Spannable
 import android.text.TextWatcher
 import android.text.style.CharacterStyle
 import android.widget.EditText
-import kotlinx.coroutines.*
-import java.util.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.util.Timer
+import java.util.TimerTask
 
 /**
  * TextHighlight provides convenience functions to apply colours to an edit text

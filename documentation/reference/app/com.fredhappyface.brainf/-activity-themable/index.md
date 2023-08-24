@@ -1,17 +1,17 @@
-//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[ActivityThemable](index.md)
+//[app](../../../index.md)/[com.fredhappyface.brainf](../index.md)/[AppCompatActivity](index.md)
 
-# ActivityThemable
+# AppCompatActivity
 
 [androidJvm]\
-open class [ActivityThemable](index.md) : [AppCompatActivity](https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html)
+open class [AppCompatActivity](index.md) : [AppCompatActivity](https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html)
 
-ActivityThemable class inherits from the AppCompatActivity class - AppCompatActivity with custom themes. Overrides onCreate and onResume to set the theme
+AppCompatActivity class inherits from the AppCompatActivity class - AppCompatActivity with custom themes. Overrides onCreate and onResume to set the theme
 
 ## Constructors
 
 | | |
 |---|---|
-| [ActivityThemable](-activity-themable.md) | [androidJvm]<br>fun [ActivityThemable](-activity-themable.md)() |
+| [AppCompatActivity](-activity-themable.md) | [androidJvm]<br>fun [AppCompatActivity](-activity-themable.md)() |
 
 ## Functions
 

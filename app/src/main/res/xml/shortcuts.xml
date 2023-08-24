@@ -28,18 +28,4 @@
 		<categories android:name="android.shortcut.conversation" />
 		<capability-binding android:key="actions.intent.CREATE_MESSAGE" />
 	</shortcut>
-	<shortcut
-		android:enabled="true"
-		android:icon="@drawable/ic_shortcut_settings"
-		android:shortcutDisabledMessage="@string/shortcut_disabled"
-		android:shortcutId="settings"
-		android:shortcutLongLabel="@string/shortcut_settings"
-		android:shortcutShortLabel="@string/shortcut_settings">
-		<intent
-			android:action="android.intent.action.VIEW"
-			android:targetClass="com.fredhappyface.brainf.ActivitySettings"
-			android:targetPackage="com.fredhappyface.brainf" />
-		<categories android:name="android.shortcut.conversation" />
-		<capability-binding android:key="actions.intent.CREATE_MESSAGE" />
-	</shortcut>
 </shortcuts>
