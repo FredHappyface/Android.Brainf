@@ -1,0 +1,6 @@
+<h2 id="section">20230828</h2>
+<ul>
+<li>Update app description</li>
+<li>Update version, screenshots</li>
+<li>Update UI</li>
+</ul>

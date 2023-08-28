@@ -39,8 +39,8 @@ android {
 		applicationId = "com.fredhappyface.brainf"
 		minSdk = 26
 		targetSdk = 33
-		versionCode = 20230824
-		versionName = "20230824"
+		versionCode = 20230828
+		versionName = "20230828"
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 		setProperty("archivesBaseName", "$applicationId-$versionName")
 	}
@@ -70,6 +70,7 @@ dependencies {
 	implementation("androidx.appcompat:appcompat:1.6.1")
 	implementation("com.google.android.material:material:1.9.0")
 	implementation("androidx.preference:preference-ktx:1.2.1")
+	implementation("io.noties.markwon:core:4.6.2")
 	testImplementation("junit:junit:4.13.2")
 	testImplementation("androidx.test.ext:junit:1.1.5")
 	testImplementation("androidx.test.espresso:espresso-core:3.5.1")

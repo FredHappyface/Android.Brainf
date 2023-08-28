@@ -1,6 +1,20 @@
-Interpreter for the 'Brainf' programming language
+Interpreter for the ‘Brainf’ programming language
 
-- Create, edit, save and run brainf code/ text files
-- Syntax highlighting using regex
-- 4 Themes: Light, Dark, Black, Auto
-- Launcher Shortcuts for Settings, About, New File
+Features
+
+<ul>
+<li><b>Integration with System Theme</b>: Brainf seamlessly
+integrates with the system’s theme, ensuring that the app’s appearance
+aligns with the user’s device-wide design choices.</li>
+<li><b>Effortless Code Management</b>: Easily create, edit,
+save, and execute Brainf code and text files, providing a comprehensive
+platform for coding endeavours.</li>
+<li><b>Vibrant Syntax Highlighting</b>: Harness the power
+of regex-based syntax highlighting, making your code structures and
+elements vividly distinct for enhanced readability and
+comprehension.</li>
+<li><b>Swift Navigation via Launcher Shortcuts</b>:
+Instantly access key sections like Settings, About, and New File through
+convenient launcher shortcuts, streamlining your interaction with the
+app for maximum efficiency.</li>
+</ul>

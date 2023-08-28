@@ -7,6 +7,12 @@ patch-level version changes can be found in [commit messages](../../commits/mast
 ## Next_Ver - 2022/xx/xx
 -->
 
+## 20230828
+
+- Update app description
+- Update version, screenshots
+- Update UI
+
 ## 20230820 - 2023/08/20
 
 - Update dependencies

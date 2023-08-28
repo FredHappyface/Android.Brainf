@@ -15,7 +15,6 @@ import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.fredhappyface.brainf.R
 import java.io.*
 
 private const val MAX_FILE_SIZE = 1024 * 1024 // 1Mb

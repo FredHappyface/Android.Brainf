@@ -15,17 +15,22 @@
 	<string name="info_text">"Interpreter for the 'Brainf' programming language.</string>
 	<!-- Features -->
 	<string name="features_heading">Features</string>
-	<string name="features_text">"- Create, edit, save and run brainf code/ text files
-- Syntax highlighting using regex
-- 4 Themes: Light, Dark, Black, Auto
-- Launcher Shortcuts for Settings, About, New File</string>
+<string name="features_text">"- **Integration with System Theme**: Brainf seamlessly integrates with the system's theme, ensuring that the app's appearance aligns with the user's device-wide design choices.
+
+- **Effortless Code Management**: Easily create, edit, save, and execute Brainf code and text files, providing a comprehensive platform for coding endeavours.
+
+- **Vibrant Syntax Highlighting**: Harness the power of regex-based syntax highlighting, making your code structures and elements vividly distinct for enhanced readability and comprehension.
+
+- **Swift Navigation via Launcher Shortcuts**: Instantly access key sections like Settings, About, and New File through convenient launcher shortcuts, streamlining your interaction with the app for maximum efficiency.</string>
 	<!-- License -->
 	<string name="license_heading">MIT License</string>
 	<string name="license_text">"Copyright © FredHappyface</string>
 	<!-- Links -->
 	<string name="links_heading">Links</string>
-	<string name="links_text">"- Project: https://github.com/FredHappyface/Android.Brainf
-- License: https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md</string>
+	<string name="links_text">"- The source code for Brainf is available at https://github.com/FredHappyface/Android.Brainf
+
+- MIT License
+(See the license for more information https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
 	<!-- Saved dialog  -->
 	<string name="dialog_saved_button">OK</string>
 	<string name="dialog_saved_title">Saved!</string>
