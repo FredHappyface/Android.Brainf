@@ -1,2 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Brainf</string>
+    <string name="action_new_file">Neue Datei</string>
+    <string name="action_open">Offen</string>
+    <string name="action_save">Speicher</string>
+    <string name="action_save_as">Speicher Da</string>
+    <string name="action_about">Etwa</string>
+    <string name="title_activity_about">Brainf - Etwa</string>
+    <string name="info_heading">Info</string>
+    <string name="info_text">Dolmetscherin für die \'Brainfs Programmiersprache.</string>
+    <string name="features_heading">Charakterzüge</string>
+    <string name="features_text">- *Integration mit System Thema**: Brainf #Bruchlos integriert mit das SystemsThema, sichern dass das #AppAussehen stimmt ab mit den NutzersVorrichtung-weite Design Auswahlen.
+\n
+\n- **Effortless Code Management**: Sicher schaff, Bearbeitung, speicher, und exekutiert Brainf Code und Text Dateien, versehen einen umfassenden Bahnsteig für #kodieren Bemühungen.
+\n
+\n- *Strahlende Syntax Hervorhebung**: #Anschirren die Kraft von regex-gegründet Syntax Hervorhebung, machend eure Code Strukturen und Elemente #plastisch genau für erweiterten Lesbarkeit und Einsicht.
+\n
+\n- *Mauersegler Navigation via #Abschussgerät Abkürzungen**: Auf Anhieb greifen zu wesentliche Sektionen wie Lagen, Etwa, und Neue Datei durch angemessen #Abschussgerät Abkürzungen, #windschlüpfig machen eure Interaktion mit dem #App für #höchster Effizienz.</string>
+    <string name="license_heading">MIT Schein</string>
+    <string name="license_text">Copyright © FredHappyface</string>
+    <string name="links_heading">Bänder</string>
+    <string name="links_text">- Der Quelle Code für Brainf ist verfügbar an https://github.com/FredHappyface/Androide.Brainf
+\n
+\n- MIT Schein
+\n(Sehen den Schein für #mehr Kunde https://github.com/FredHappyface/Androide.Brainf/blob/Hauptsächlicher/SCHEIN.md)</string>
+    <string name="dialog_saved_button">OK</string>
+    <string name="dialog_saved_title">Gespeichert!</string>
+    <string name="dialog_new_confirm">Ja</string>
+    <string name="dialog_new_cancel">#Nr</string>
+    <string name="dialog_new_title">Schaff Neue Datei\?</string>
+    <string name="blank_file_text">[Dies ist eine Lücke Datei, offen eine Datei oder Bearbeitung diese Datei und speichert]</string>
+    <string name="main_run_btn">Gerannt Programmheft</string>
+    <string name="main_stdin">[Input Stdin Bytes Hier]</string>
+    <string name="main_stdout">[Stdout Bytes Hier]</string>
+    <string name="shortcut_about">Etwa</string>
+    <string name="shortcut_new_file">Neue Datei</string>
+    <string name="shortcut_disabled">Abkürzung Schaltete aus</string>
+</resources>
