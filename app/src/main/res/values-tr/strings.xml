@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyQuotes">
+	<!-- Strings for menu_main.xml -->
+	<string name="action_new_file">Yeni Klasör</string>
+	<string name="action_open">Aç</string>
+	<string name="action_save">Kaydet</string>
+	<string name="action_save_as">Farklı kaydet</string>
+	<string name="action_about">Hakkında</string>
+	<!-- Strings for about + settings activities  -->
+	<string name="title_activity_about">Brainf - Hakkında</string>
+	<!-- settings  -->
+	<!-- about  -->
+	<!-- Info -->
+	<string name="info_heading">Bilgi</string>
+	<string name="info_text">Programlama dili"'Brainf' için tercüman"</string>
+	<!-- Features -->
+	<string name="features_heading">Özellikler</string>
+<string name="features_text">"- **Sistem Teması Entegrasyonu**: Brainf, sistemin temasıyla sorunsuz bir şekilde entegre olarak uygulamanın görünümünün kullanıcının cihaz genelindeki tasarım seçimleriyle uyumlu olmasını sağlar.
+
+- **Zahmetsiz Kod Yönetimi**: Brainf kodu ve metin dosyalarını kolayca oluşturun, düzenleyin, kaydedin ve çalıştırın; kodlama çalışmaları için kapsamlı bir platform sağlayın.
+
+- **Canlı Sözdizimi Vurgulama**: Regex tabanlı sözdizimi vurgulamanın gücünden yararlanarak kod yapılarınızı ve öğelerinizi daha iyi okunabilirlik ve anlaşılırlık için canlı bir şekilde belirgin hale getirin.
+
+- **Başlatıcı Kısayolları ile Hızlı Gezinme**: Kullanışlı başlatıcı kısayolları aracılığıyla Ayarlar, Hakkında ve Yeni Dosya gibi önemli bölümlere anında erişerek maksimum verimlilik için uygulamayla etkileşiminizi kolaylaştırın.</string>
+	<!-- License -->
+	<string name="license_heading">MIT Lisansı</string>
+	<string name="license_text">Tüm Hakları Saklıdır © FredHappyface</string>
+	<!-- Links -->
+	<string name="links_heading">Bağlantılar</string>
+	<string name="links_text">"- Brainf kaynak kodu https://github.com/FredHappyface/Android.Brainf üzerinde mevcuttur
+
+- MIT Lisansı
+(Daha fazla bilgi için lisansa bakın https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+	<!-- Saved dialog  -->
+	<string name="dialog_saved_button">TAMAM</string>
+	<string name="dialog_saved_title">Kaydedildi!</string>
+	<!-- New file dialog  -->
+	<string name="dialog_new_confirm">Evet</string>
+	<string name="dialog_new_cancel">Hayır</string>
+	<string name="dialog_new_title">Yeni dosya oluşturulsun mu?</string>
+	<!-- Blank file text  -->
+	<string name="blank_file_text">[Bu boş bir dosya, bir dosya açın veya bu dosyayı düzenleyin ve kaydedin]</string>
+	<!-- Run, stdin, stdout  -->
+	<string name="main_run_btn">Programı Çalıştır</string>
+	<string name="main_stdin">[Stdin Baytlarını Buraya Girin]</string>
+	<string name="main_stdout">[Stdout Baytlarını Buraya]</string>
+	<!-- Strings for shortcuts.xml -->
+	<string name="shortcut_about">Hakkında</string>
+	<string name="shortcut_new_file">Yeni Dosya</string>
+	<string name="shortcut_disabled">Kısayol Devre Dışı</string>
+</resources>
