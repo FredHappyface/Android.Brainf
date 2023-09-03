@@ -1,2 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Brainf 編程語言</string>
+    <!-- Strings for menu_main.xml -->
+    <string name="action_new_file">新建檔案</string>
+    <string name="action_open">開啟</string>
+    <string name="action_save">儲存</string>
+    <string name="action_save_as">另存新檔</string>
+    <string name="action_about">關於</string>
+    <!-- Strings for about + settings activities  -->
+    <string name="title_activity_about">關於 Brainf</string>
+    <!-- settings  -->
+    <!-- about  -->
+    <!-- Info -->
+    <string name="info_heading">資訊</string>
+    <string name="info_text">"Brainf 編程語言的解譯器。</string>
+    <!-- Features -->
+    <string name="features_heading">特色功能</string>
+    <string name="features_text">"- **整合系統主題**: Brainf 能夠無縫整合系統主題，確保應用程式的外觀與使用者設備的整體設計一致。
+
+- **輕鬆的程式碼管理**: 輕鬆地建立、編輯、儲存和執行 Brainf 程式碼和文字檔案，提供全面的程式碼編寫平台。
+
+- **豐富的語法突顯**: 利用基於正則表達式的語法突顯，使您的程式碼結構和元素更加清晰，提高可讀性和理解力。
+
+- **通過快速啟動器快速導航**: 通過便捷的快速啟動器快速訪問設置、關於和新建檔案等關鍵部分，簡化了與應用程式的互動，提高效率。</string>
+    <!-- License -->
+    <string name="license_heading">MIT 授權</string>
+    <string name="license_text">"版權所有 © FredHappyface</string>
+    <!-- Links -->
+    <string name="links_heading">連結</string>
+    <string name="links_text">"- Brainf 的原始碼可在 https://github.com/FredHappyface/Android.Brainf 找到
+
+- MIT 授權
+(有關詳細資訊，請參閱授權 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <!-- Saved dialog  -->
+    <string name="dialog_saved_button">確定</string>
+    <string name="dialog_saved_title">已儲存！</string>
+    <!-- New file dialog  -->
+    <string name="dialog_new_confirm">是</string>
+    <string name="dialog_new_cancel">否</string>
+    <string name="dialog_new_title">建立新檔案？</string>
+    <!-- Blank file text  -->
+    <string name="blank_file_text">[這是一個空檔案，請開啟一個檔案或編輯此檔案並儲存]</string>
+    <!-- Run, stdin, stdout  -->
+    <string name="main_run_btn">執行程式</string>
+    <string name="main_stdin">[在此輸入標準輸入位元組]</string>
+    <string name="main_stdout">[標準輸出位元組在此]</string>
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about">關於</string>
+    <string name="shortcut_new_file">新建檔案</string>
+    <string name="shortcut_disabled">快速啟動器已停用</string>
+</resources>

@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Brainf</string>
+    <!-- Strings for menu_main.xml -->
     <string name="action_new_file">Neue Datei</string>
-    <string name="action_open">Offen</string>
-    <string name="action_save">Speicher</string>
-    <string name="action_save_as">Speicher Da</string>
-    <string name="action_about">Etwa</string>
-    <string name="title_activity_about">Brainf - Etwa</string>
+    <string name="action_open">Öffnen</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_save_as">Speichern als</string>
+    <string name="action_about">Über</string>
+    <!-- Strings for about + settings activities  -->
+    <string name="title_activity_about">Brainf - Über</string>
+    <!-- settings  -->
+    <!-- about  -->
+    <!-- Info -->
     <string name="info_heading">Info</string>
-    <string name="info_text">Dolmetscherin für die \'Brainfs Programmiersprache.</string>
-    <string name="features_heading">Charakterzüge</string>
-    <string name="features_text">- *Integration mit System Thema**: Brainf #Bruchlos integriert mit das SystemsThema, sichern dass das #AppAussehen stimmt ab mit den NutzersVorrichtung-weite Design Auswahlen.
-\n
-\n- **Effortless Code Management**: Sicher schaff, Bearbeitung, speicher, und exekutiert Brainf Code und Text Dateien, versehen einen umfassenden Bahnsteig für #kodieren Bemühungen.
-\n
-\n- *Strahlende Syntax Hervorhebung**: #Anschirren die Kraft von regex-gegründet Syntax Hervorhebung, machend eure Code Strukturen und Elemente #plastisch genau für erweiterten Lesbarkeit und Einsicht.
-\n
-\n- *Mauersegler Navigation via #Abschussgerät Abkürzungen**: Auf Anhieb greifen zu wesentliche Sektionen wie Lagen, Etwa, und Neue Datei durch angemessen #Abschussgerät Abkürzungen, #windschlüpfig machen eure Interaktion mit dem #App für #höchster Effizienz.</string>
-    <string name="license_heading">MIT Schein</string>
-    <string name="license_text">Copyright © FredHappyface</string>
-    <string name="links_heading">Bänder</string>
-    <string name="links_text">- Der Quelle Code für Brainf ist verfügbar an https://github.com/FredHappyface/Androide.Brainf
-\n
-\n- MIT Schein
-\n(Sehen den Schein für #mehr Kunde https://github.com/FredHappyface/Androide.Brainf/blob/Hauptsächlicher/SCHEIN.md)</string>
+    <string name="info_text">"Interpreter für die Programmiersprache 'Brainf'.</string>
+    <!-- Features -->
+    <string name="features_heading">Eigenschaften</string>
+    <string name="features_text">"- **Integration mit dem Systemdesign**: Brainf integriert sich nahtlos in das Systemdesign und gewährleistet, dass das Erscheinungsbild der App den systemweiten Designentscheidungen des Benutzers entspricht.
+
+- **Einfache Codeverwaltung**: Erstellen, bearbeiten, speichern und ausführen Sie mühelos Brainf-Code- und Textdateien und bieten Sie eine umfassende Plattform für Ihre Coding-Projekte.
+
+- **Lebendige Syntaxhervorhebung**: Nutzen Sie die leistungsstarke syntaxbasierte Hervorhebung, um Ihre Code-Strukturen und -Elemente lebendig voneinander zu unterscheiden und die Lesbarkeit und Verständlichkeit zu verbessern.
+
+- **Schnelle Navigation über Startverknüpfungen**: Greifen Sie über praktische Startverknüpfungen sofort auf Schlüsselbereiche wie Einstellungen, Über und Neue Datei zu und vereinfachen Sie Ihre Interaktion mit der App für maximale Effizienz."</string>
+    <!-- License -->
+    <string name="license_heading">MIT Lizenz</string>
+    <string name="license_text">"Copyright © FredHappyface</string>
+    <!-- Links -->
+    <string name="links_heading">Links</string>
+    <string name="links_text">"- Der Quellcode für Brainf ist auf https://github.com/FredHappyface/Android.Brainf verfügbar.
+
+- MIT Lizenz
+(Siehe Lizenz für weitere Informationen https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <!-- Saved dialog  -->
     <string name="dialog_saved_button">OK</string>
     <string name="dialog_saved_title">Gespeichert!</string>
+    <!-- New file dialog  -->
     <string name="dialog_new_confirm">Ja</string>
-    <string name="dialog_new_cancel">#Nr</string>
-    <string name="dialog_new_title">Schaff Neue Datei\?</string>
-    <string name="blank_file_text">[Dies ist eine Lücke Datei, offen eine Datei oder Bearbeitung diese Datei und speichert]</string>
-    <string name="main_run_btn">Gerannt Programmheft</string>
-    <string name="main_stdin">[Input Stdin Bytes Hier]</string>
-    <string name="main_stdout">[Stdout Bytes Hier]</string>
-    <string name="shortcut_about">Etwa</string>
+    <string name="dialog_new_cancel">Nein</string>
+    <string name="dialog_new_title">Neue Datei erstellen?</string>
+    <!-- Blank file text  -->
+    <string name="blank_file_text">[Dies ist eine leere Datei, öffnen Sie eine Datei oder bearbeiten Sie diese und speichern Sie sie]</string>
+    <!-- Run, stdin, stdout  -->
+    <string name="main_run_btn">Programm ausführen</string>
+    <string name="main_stdin">[Eingabe von Standard-Eingabedaten hier]</string>
+    <string name="main_stdout">[Standard-Ausgabedaten hier]</string>
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about">Über</string>
     <string name="shortcut_new_file">Neue Datei</string>
-    <string name="shortcut_disabled">Abkürzung Schaltete aus</string>
+    <string name="shortcut_disabled">Verknüpfung deaktiviert</string>
 </resources>

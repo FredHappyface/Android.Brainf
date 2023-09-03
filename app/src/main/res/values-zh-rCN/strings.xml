@@ -1,2 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- Strings for menu_main.xml -->
+    <string name="action_new_file">新建文件</string>
+    <string name="action_open">打开</string>
+    <string name="action_save">保存</string>
+    <string name="action_save_as">另存为</string>
+    <string name="action_about">关于</string>
+    <!-- Strings for about + settings activities  -->
+    <string name="title_activity_about">关于 Brainf</string>
+    <!-- settings  -->
+    <!-- about  -->
+    <!-- Info -->
+    <string name="info_heading">信息</string>
+    <string name="info_text">"Brainf编程语言的解释器。</string>
+    <!-- Features -->
+    <string name="features_heading">特点</string>
+    <string name="features_text">"- **与系统主题集成**: Brainf与系统主题无缝集成，确保应用程序的外观与用户设备的整体设计选择相一致。
+
+- **轻松代码管理**: 轻松创建、编辑、保存和执行Brainf代码和文本文件，提供全面的编码平台。
+
+- **丰富的语法高亮**: 利用基于正则表达式的语法高亮，使您的代码结构和元素清晰可辨，增强可读性和理解力。
+
+- **通过快捷方式快速导航**: 通过便捷的快捷方式即时访问设置、关于和新建文件等关键部分，简化了与应用程序的交互，提高了效率。</string>
+    <!-- License -->
+    <string name="license_heading">MIT许可</string>
+    <string name="license_text">"版权所有 © FredHappyface</string>
+    <!-- Links -->
+    <string name="links_heading">链接</string>
+    <string name="links_text">"- Brainf的源代码位于 https://github.com/FredHappyface/Android.Brainf
+
+- MIT许可
+(有关更多信息，请参阅许可证 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <!-- Saved dialog  -->
+    <string name="dialog_saved_button">好的</string>
+    <string name="dialog_saved_title">已保存！</string>
+    <!-- New file dialog  -->
+    <string name="dialog_new_confirm">是</string>
+    <string name="dialog_new_cancel">否</string>
+    <string name="dialog_new_title">创建新文件？</string>
+    <!-- Blank file text  -->
+    <string name="blank_file_text">[这是一个空文件，请打开一个文件或编辑此文件并保存]</string>
+    <!-- Run, stdin, stdout  -->
+    <string name="main_run_btn">运行程序</string>
+    <string name="main_stdin">[在此输入标准输入字节]</string>
+    <string name="main_stdout">[标准输出字节在此]</string>
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about">关于</string>
+    <string name="shortcut_new_file">新建文件</string>
+    <string name="shortcut_disabled">快捷方式已禁用</string>
+</resources>

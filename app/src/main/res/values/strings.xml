@@ -1,5 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyQuotes">
-	<string name="app_name">Brainf</string>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
+	<string name="app_name" translatable="false">Brainf</string>
 	<!-- Strings for menu_main.xml -->
 	<string name="action_new_file">New File</string>
 	<string name="action_open">Open</string>
