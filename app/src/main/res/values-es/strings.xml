@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_new_file">Lima nueva</string>
-    <string name="action_open">Abierto</string>
-    <string name="action_save">Salva</string>
-    <string name="action_save_as">Salva Tan</string>
-    <string name="action_about">Aproximadamente</string>
-    <string name="title_activity_about">Brainf - Aproximadamente</string>
-    <string name="info_heading">Info</string>
-    <string name="info_text">Intérprete para el \'Brainf\' lenguaje de programación.</string>
+    <!-- Strings for menu_main.xml -->
+    <string name="action_new_file">Nuevo Archivo</string>
+    <string name="action_open">Abrir</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_save_as">Guardar como</string>
+    <string name="action_about">Acerca de</string>
+    <!-- Strings for about + settings activities  -->
+    <string name="title_activity_about">Brainf - Acerca de</string>
+    <!-- settings  -->
+    <!-- about  -->
+    <!-- Info -->
+    <string name="info_heading">Información</string>
+    <string name="info_text">"Interprete para el lenguaje de programación 'Brainf'.</string>
+    <!-- Features -->
     <string name="features_heading">Características</string>
-    <string name="features_text">- *Integración con Tema de Sistema**: Brainf seamlessly integra con el tema del sistema, asegurando que el aspecto de la aplicación alinea con el aparato del usuario-elecciones de diseño ancho.
-\n
-\n- **Effortless Gestión de código**: Fácilmente crear, edita, salva, y ejecutar Brainf código y limas de texto, proporcionando una #programa comprensible para esfuerzos de codificación.
-\n
-\n- *La sintaxis vibrante que Destaca**: Arnés el poder de regex-la sintaxis basada que destaca, haciendo vuestras estructuras de código y los elementos vivamente distintos para realzados readability y comprehension.
-\n
-\n- *Navegación veloz vía Atajos de Lanzador**: Instantáneamente acceder secciones claves como Encuadres, Aproximadamente, y Lima Nueva a través de atajos de lanzador conveniente, carenado vuestra interacción con la aplicación para eficacia máxima.</string>
-    <string name="license_heading">MIT Licencia</string>
-    <string name="license_text">Copyright © FredHappyface</string>
+    <string name="features_text">"- **Integración con el Tema del Sistema**: Brainf se integra perfectamente con el tema del sistema, asegurando que la apariencia de la aplicación se ajuste a las elecciones de diseño en todo el dispositivo del usuario.
+
+- **Gestión de Código sin Esfuerzo**: Cree, edite, guarde y ejecute fácilmente código Brainf y archivos de texto, proporcionando una plataforma integral para actividades de codificación.
+
+- **Resaltado de Sintaxis Vibrante**: Aproveche el resaltado de sintaxis basado en regex para hacer que las estructuras y elementos de su código sean vívidamente distintos, mejorando la legibilidad y comprensión.
+
+- **Navegación Rápida a través de Accesos Directos de Inicio**: Acceda instantáneamente a secciones clave como Configuración, Acerca de y Nuevo Archivo a través de prácticos accesos directos de inicio, simplificando su interacción con la aplicación para obtener la máxima eficiencia.</string>
+    <!-- License -->
+    <string name="license_heading">Licencia MIT</string>
+    <string name="license_text">"Copyright © FredHappyface</string>
+    <!-- Links -->
     <string name="links_heading">Enlaces</string>
-    <string name="links_text">- El código de fuente para Brainf es disponible en https://github.com/fredhappyface/android.brainf
-\n
-\n- MIT Licencia
-\n(Ve la licencia para más información https://github.com/fredhappyface/android.brainf/blob/main/license.md)</string>
-    <string name="dialog_saved_button">VALE</string>
-    <string name="dialog_saved_title">Salvado!</string>
+    <string name="links_text">"- El código fuente de Brainf está disponible en https://github.com/FredHappyface/Android.Brainf
+
+- Licencia MIT
+(Consulte la licencia para obtener más información en https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <!-- Saved dialog  -->
+    <string name="dialog_saved_button">Aceptar</string>
+    <string name="dialog_saved_title">¡Guardado!</string>
+    <!-- New file dialog  -->
     <string name="dialog_new_confirm">Sí</string>
-    <string name="dialog_new_cancel">Núm</string>
-    <string name="dialog_new_title">Crea Lima Nueva\?</string>
-    <string name="blank_file_text">[Esto es una lima de espacio , abre una lima o editar esta lima y salvar]</string>
-    <string name="main_run_btn">Programa corrido</string>
-    <string name="main_stdin">[Entrada Stdin Bytes Aquí]</string>
-    <string name="main_stdout">[Stdout Bytes Aquí]</string>
-    <string name="shortcut_about">Aproximadamente</string>
-    <string name="shortcut_new_file">Lima nueva</string>
-    <string name="shortcut_disabled">El atajo Inutilizado</string>
+    <string name="dialog_new_cancel">No</string>
+    <string name="dialog_new_title">¿Crear Nuevo Archivo?</string>
+    <!-- Blank file text  -->
+    <string name="blank_file_text">[Este es un archivo en blanco, abra un archivo o edite este archivo y guárdelo]</string>
+    <!-- Run, stdin, stdout  -->
+    <string name="main_run_btn">Ejecutar Programa</string>
+    <string name="main_stdin">[Inserte Bytes de Entrada Estándar Aquí]</string>
+    <string name="main_stdout">[Bytes de Salida Estándar Aquí]</string>
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about">Acerca de</string>
+    <string name="shortcut_new_file">Nuevo Archivo</string>
+    <string name="shortcut_disabled">Acceso Directo Desactivado</string>
 </resources>

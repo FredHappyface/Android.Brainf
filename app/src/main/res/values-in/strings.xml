@@ -1,2 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- Strings for menu_main.xml -->
+    <string name="action_new_file">File Baru</string>
+    <string name="action_open">Buka</string>
+    <string name="action_save">Simpan</string>
+    <string name="action_save_as">Simpan Sebagai</string>
+    <string name="action_about">Tentang</string>
+    <!-- Strings for about + settings activities  -->
+    <string name="title_activity_about">Brainf - Tentang</string>
+    <!-- settings  -->
+    <!-- about  -->
+    <!-- Info -->
+    <string name="info_heading">Info</string>
+    <string name="info_text">"Penerjemah untuk bahasa pemrograman 'Brainf'.</string>
+    <!-- Features -->
+    <string name="features_heading">Fitur</string>
+    <string name="features_text">"- **Integrasi dengan Tema Sistem**: Brainf terintegrasi dengan lancar dengan tema sistem, memastikan tampilan aplikasi sesuai dengan pilihan desain perangkat pengguna.
+
+- **Manajemen Kode yang Mudah**: Mudah membuat, mengedit, menyimpan, dan menjalankan kode Brainf dan file teks, memberikan platform komprehensif untuk proyek pengkodean Anda.
+
+- **Penggunaan Pemhighlightan Syntax yang Kuat**: Manfaatkan pemhighlightan syntax berdasarkan regex, membuat struktur kode dan elemen Anda menonjol untuk meningkatkan keterbacaan dan pemahaman.
+
+- **Navigasi Cepat melalui Pintasan Launcher**: Akses instan ke bagian-bagian kunci seperti Pengaturan, Tentang, dan File Baru melalui pintasan launcher yang nyaman, menyederhanakan interaksi Anda dengan aplikasi untuk efisiensi maksimal."</string>
+    <!-- License -->
+    <string name="license_heading">Lisensi MIT</string>
+    <string name="license_text">"Hak Cipta © FredHappyface</string>
+    <!-- Links -->
+    <string name="links_heading">Tautan</string>
+    <string name="links_text">"- Kode sumber Brainf tersedia di https://github.com/FredHappyface/Android.Brainf
+
+- Lisensi MIT
+(Lihat lisensi untuk informasi lebih lanjut https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <!-- Saved dialog  -->
+    <string name="dialog_saved_button">OK</string>
+    <string name="dialog_saved_title">Tersimpan!</string>
+    <!-- New file dialog  -->
+    <string name="dialog_new_confirm">Ya</string>
+    <string name="dialog_new_cancel">Tidak</string>
+    <string name="dialog_new_title">Buat File Baru?</string>
+    <!-- Blank file text  -->
+    <string name="blank_file_text">[Ini adalah file kosong, buka file atau edit file ini dan simpan]</string>
+    <!-- Run, stdin, stdout  -->
+    <string name="main_run_btn">Jalankan Program</string>
+    <string name="main_stdin">[Masukkan Byte Standar Input di Sini]</string>
+    <string name="main_stdout">[Byte Standar Output di Sini]</string>
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about">Tentang</string>
+    <string name="shortcut_new_file">File Baru</string>
+    <string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
+</resources>

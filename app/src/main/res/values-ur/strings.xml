@@ -1,2 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- Strings for menu_main.xml -->
+    <string name="action_new_file">نیا فائل</string>
+    <string name="action_open">کھولیں</string>
+    <string name="action_save">محفوظ کریں</string>
+    <string name="action_save_as">اس طرح محفوظ کریں</string>
+    <string name="action_about">کے بارے میں</string>
+    <!-- Strings for about + settings activities  -->
+    <string name="title_activity_about">Brainf - کے بارے میں</string>
+    <!-- settings  -->
+    <!-- about  -->
+    <!-- Info -->
+    <string name="info_heading">معلومات</string>
+    <string name="info_text">"برائے انسانی ترجمہ کا انٹرپریٹر 'برین ایف' پروگرامنگ زبان کے لئے۔</string>
+    <!-- Features -->
+    <string name="features_heading">خصوصیات</string>
+    <string name="features_text">"- **سسٹم تھیم کے ساتھ تعلق**: Brainf سسٹم کے تھیم کے ساتھ بلا جھگڑے انضمام پذیر ہوتا ہے، یہی امداد گار ہے کہ ایپ کی ظاہریت صارف کی ڈوائیس وائیڈ ڈیزائن کی موازنہ کے ساتھ ہے۔
+
+- **بغیر کسی مشق کے کوڈ کا انتظام**: آسانی سے برین ایف کوڈ اور مواد کی فائلیں بنائیں، ترتیب دیں، محفوظ کریں، اور اجرا کریں، کوڈنگ کی مہمات کے لئے پورا پلیٹ فارم فراہم کریں۔
+
+- **روشنی کی ترکیب کو استعمال کرتے ہوئے تشہیر**: ریگیکس بیسڈ سنٹیکس ہائیلاٹنگ کی طاقت کو فائدہ حاصل کرتے ہوئے اپنے کوڈ کی ڈھانچوں اور عناصر کو واضح طریقے سے الگ کریں تاکہ پڑھائی اور سمجھنے میں آسانی ہو۔
+
+- **شارٹ کٹس کی مدد سے تیزی سے نیوگیشن**: شارٹ کٹس کی مدد سے ترتیبیں، کے بارے میں، اور نیا فائل جیسے کلیدی حصوں تک فوراً دسترس حاصل کریں، ایپ کے ساتھ آپ کے تعامل کو زیادہ سے زیادہ کارکری پن کے لئے آسان بناتے ہیں۔</string>
+    <!-- License -->
+    <string name="license_heading">MIT لائسنس</string>
+    <string name="license_text">"کاپی رائٹ © فریڈ ہیپی فیس</string>
+    <!-- Links -->
+    <string name="links_heading">لنکس</string>
+    <string name="links_text">"- Brainf کا ماخذ کوڈ https://github.com/FredHappyface/Android.Brainf پر دستیاب ہے
+
+- MIT لائسنس
+(مزید معلومات کے لئے لائسنس دیکھیں https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <!-- Saved dialog  -->
+    <string name="dialog_saved_button">منظور</string>
+    <string name="dialog_saved_title">محفوظ!</string>
+    <!-- New file dialog  -->
+    <string name="dialog_new_confirm">ہاں</string>
+    <string name="dialog_new_cancel">نہیں</string>
+    <string name="dialog_new_title">نیا فائل بنائیں؟</string>
+    <!-- Blank file text  -->
+    <string name="blank_file_text">[یہ ایک خالی فائل ہے، فائل کھولیں یا اس فائل کو ترتیب دیں اور محفوظ کریں]</string>
+    <!-- Run, stdin, stdout  -->
+    <string name="main_run_btn">پروگرام چلائیں</string>
+    <string name="main_stdin">[یہاں معمولی ان پٹ بائٹس درج کریں]</string>
+    <string name="main_stdout">[معمولی اس پٹ بائٹس یہاں دکھائیں]</string>
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about">کے بارے میں</string>
+    <string name="shortcut_new_file">نیا فائل</string>
+    <string name="shortcut_disabled">شارٹ کٹ غیر فعال ہے</string>
+</resources>

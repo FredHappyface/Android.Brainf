@@ -1,2 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- Strings for menu_main.xml -->
+    <string name="action_new_file">Novo Arquivo</string>
+    <string name="action_open">Abrir</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_save_as">Salvar Como</string>
+    <string name="action_about">Sobre</string>
+    <!-- Strings for about + settings activities  -->
+    <string name="title_activity_about">Brainf - Sobre</string>
+    <!-- settings  -->
+    <!-- about  -->
+    <!-- Info -->
+    <string name="info_heading">Informações</string>
+    <string name="info_text">"Interpretador para a linguagem de programação 'Brainf'.</string>
+    <!-- Features -->
+    <string name="features_heading">Recursos</string>
+    <string name="features_text">"- **Integração com o Tema do Sistema**: O Brainf integra-se perfeitamente com o tema do sistema, garantindo que a aparência do aplicativo esteja alinhada com as escolhas de design em todo o dispositivo do usuário.
+
+- **Gerenciamento de Código Sem Esforço**: Crie, edite, salve e execute facilmente códigos Brainf e arquivos de texto, proporcionando uma plataforma abrangente para empreendimentos de codificação.
+
+- **Destaque de Sintaxe Vibrante**: Utilize o destaque de sintaxe baseado em regex para tornar as estruturas e elementos do seu código vividamente distintos, aumentando a legibilidade e a compreensão.
+
+- **Navegação Rápida por Meio de Atalhos de Inicialização**: Acesse instantaneamente seções-chave, como Configurações, Sobre e Novo Arquivo, por meio de atalhos de inicialização convenientes, simplificando a interação com o aplicativo para máxima eficiência.</string>
+    <!-- License -->
+    <string name="license_heading">Licença MIT</string>
+    <string name="license_text">"Copyright © FredHappyface</string>
+    <!-- Links -->
+    <string name="links_heading">Links</string>
+    <string name="links_text">"- O código-fonte do Brainf está disponível em https://github.com/FredHappyface/Android.Brainf
+
+- Licença MIT
+(Consulte a licença para obter mais informações em https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <!-- Saved dialog  -->
+    <string name="dialog_saved_button">OK</string>
+    <string name="dialog_saved_title">Salvo!</string>
+    <!-- New file dialog  -->
+    <string name="dialog_new_confirm">Sim</string>
+    <string name="dialog_new_cancel">Não</string>
+    <string name="dialog_new_title">Criar Novo Arquivo?</string>
+    <!-- Blank file text  -->
+    <string name="blank_file_text">[Este é um arquivo em branco, abra um arquivo ou edite este arquivo e salve]</string>
+    <!-- Run, stdin, stdout  -->
+    <string name="main_run_btn">Executar Programa</string>
+    <string name="main_stdin">[Insira Bytes de Entrada Padrão Aqui]</string>
+    <string name="main_stdout">[Bytes de Saída Padrão Aqui]</string>
+    <!-- Strings for shortcuts.xml -->
+    <string name="shortcut_about">Sobre</string>
+    <string name="shortcut_new_file">Novo Arquivo</string>
+    <string name="shortcut_disabled">Atalho Desativado</string>
+</resources>
