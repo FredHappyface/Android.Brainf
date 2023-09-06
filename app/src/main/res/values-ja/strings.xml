@@ -12,25 +12,25 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">情報</string>
-    <string name="info_text">"Brainfプログラム言語のインタプリタ。</string>
+    <string name="info_text">Brainfプログラム言語のインタプリタ。</string>
     <!-- Features -->
     <string name="features_heading">特徴</string>
-    <string name="features_text">"- **システムテーマとの統合**: Brainfはシステムのテーマとシームレスに統合し、アプリの外観をユーザーのデバイス全体のデザインに合わせます。
-
-- **コード管理の容易さ**: Brainfコードおよびテキストファイルを簡単に作成、編集、保存、実行でき、コーディング活動の包括的なプラットフォームを提供します。
-
-- **鮮やかな構文ハイライト**: 正規表現ベースの構文ハイライトの力を活用して、コードの構造と要素を鮮やかに区別し、読みやすさと理解を向上させます。
-
-- **ランチャーショートカットを使用したスムーズなナビゲーション**: ランチャーショートカットを使用して設定、アプリについて、新規ファイルなどの主要なセクションに瞬時にアクセスし、アプリとのやり取りを最適な効率で行います。</string>
+    <string name="features_text">- **システムテーマとの統合**: Brainfはシステムのテーマとシームレスに統合し、アプリの外観をユーザーのデバイス全体のデザインに合わせます。
+\n
+\n- **コード管理の容易さ**: Brainfコードおよびテキストファイルを簡単に作成、編集、保存、実行でき、コーディング活動の包括的なプラットフォームを提供します。
+\n
+\n- **鮮やかな構文ハイライト**: 正規表現ベースの構文ハイライトの力を活用して、コードの構造と要素を鮮やかに区別し、読みやすさと理解を向上させます。
+\n
+\n- **ランチャーショートカットを使用したスムーズなナビゲーション**: ランチャーショートカットを使用して設定、アプリについて、新規ファイルなどの主要なセクションに瞬時にアクセスし、アプリとのやり取りを最適な効率で行います。</string>
     <!-- License -->
     <string name="license_heading">MITライセンス</string>
-    <string name="license_text">"Copyright © FredHappyface</string>
+    <string name="license_text">Copyright © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">リンク</string>
-    <string name="links_text">"- Brainfのソースコードは https://github.com/FredHappyface/Android.Brainf で入手できます
-
-- MITライセンス
-（詳細についてはライセンスを参照 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md）</string>
+    <string name="links_text">- Brainfのソースコードは https://github.com/FredHappyface/Android.Brainf で入手できます
+\n
+\n- MITライセンス
+\n（詳細についてはライセンスを参照 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md）</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">OK</string>
     <string name="dialog_saved_title">保存しました！</string>
