@@ -12,32 +12,32 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">Información</string>
-    <string name="info_text">"Interprete para el lenguaje de programación 'Brainf'.</string>
+    <string name="info_text">Interprete para el lenguaje de programación \'Brainf\'.</string>
     <!-- Features -->
     <string name="features_heading">Características</string>
-    <string name="features_text">"- **Integración con el Tema del Sistema**: Brainf se integra perfectamente con el tema del sistema, asegurando que la apariencia de la aplicación se ajuste a las elecciones de diseño en todo el dispositivo del usuario.
-
-- **Gestión de Código sin Esfuerzo**: Cree, edite, guarde y ejecute fácilmente código Brainf y archivos de texto, proporcionando una plataforma integral para actividades de codificación.
-
-- **Resaltado de Sintaxis Vibrante**: Aproveche el resaltado de sintaxis basado en regex para hacer que las estructuras y elementos de su código sean vívidamente distintos, mejorando la legibilidad y comprensión.
-
-- **Navegación Rápida a través de Accesos Directos de Inicio**: Acceda instantáneamente a secciones clave como Configuración, Acerca de y Nuevo Archivo a través de prácticos accesos directos de inicio, simplificando su interacción con la aplicación para obtener la máxima eficiencia.</string>
+    <string name="features_text">- **Integración con el Tema del Sistema**: Brainf se integra perfectamente con el tema del sistema, asegurando que la apariencia de la aplicación se ajuste a las elecciones de diseño en todo el dispositivo del usuario.
+\n
+\n- **Gestión de Código sin Esfuerzo**: Cree, edite, guarde y ejecute fácilmente código Brainf y archivos de texto, proporcionando una plataforma integral para actividades de codificación.
+\n
+\n- **Resaltado de Sintaxis Vibrante**: Aproveche el resaltado de sintaxis basado en regex para hacer que las estructuras y elementos de su código sean vívidamente distintos, mejorando la legibilidad y comprensión.
+\n
+\n- **Navegación Rápida a través de Accesos Directos de Inicio**: Acceda instantáneamente a secciones clave como Configuración, Acerca de y Nuevo Archivo a través de prácticos accesos directos de inicio, simplificando su interacción con la aplicación para obtener la máxima eficiencia.</string>
     <!-- License -->
     <string name="license_heading">Licencia MIT</string>
     <string name="license_text">"Copyright © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">Enlaces</string>
-    <string name="links_text">"- El código fuente de Brainf está disponible en https://github.com/FredHappyface/Android.Brainf
-
-- Licencia MIT
-(Consulte la licencia para obtener más información en https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <string name="links_text">- El código fuente de Brainf está disponible en https://github.com/FredHappyface/Android.Brainf
+\n
+\n- Licencia MIT
+\n(Consulte la licencia para obtener más información en https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">Aceptar</string>
     <string name="dialog_saved_title">¡Guardado!</string>
     <!-- New file dialog  -->
     <string name="dialog_new_confirm">Sí</string>
     <string name="dialog_new_cancel">No</string>
-    <string name="dialog_new_title">¿Crear Nuevo Archivo?</string>
+    <string name="dialog_new_title">¿Crear Nuevo Archivo\?</string>
     <!-- Blank file text  -->
     <string name="blank_file_text">[Este es un archivo en blanco, abra un archivo o edite este archivo y guárdelo]</string>
     <!-- Run, stdin, stdout  -->
