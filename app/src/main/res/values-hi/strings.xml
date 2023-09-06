@@ -12,32 +12,32 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">जानकारी</string>
-    <string name="info_text">"Brainf प्रोग्रामिंग भाषा का अनुवादक।</string>
+    <string name="info_text">Brainf प्रोग्रामिंग भाषा का अनुवादक।</string>
     <!-- Features -->
     <string name="features_heading">विशेषताएँ</string>
-    <string name="features_text">"- **सिस्टम थीम के साथ एकत्रित**: Brainf सिस्टम थीम के साथ अद्वितीय रूप से एकत्रित होता है, इसके साथ यह सुनिश्चित करता है कि ऐप का रूप उपयोक्ता के डिवाइस-व्यापी डिज़ाइन चयनों के साथ मेल खाता है।
-
-- **कोड प्रबंधन की सहजता**: Brainf कोड और पाठ फ़ाइलों को आसानी से बना, संपादित, सहेज और निष्पादित करने के लिए बनाया गया है, यह कोडिंग प्रयासों के लिए एक व्यापक प्लेटफ़ॉर्म प्रदान करता है।
-
-- **विविध सिंटैक्स हाइलाइटिंग**: रेगेक्स-आधारित सिंटैक्स हाइलाइटिंग का उपयोग करके आपके कोड संरचनाओं और तत्वों को अधिक पठनीयता और समझने में सहायक बनाता है।
-
-- **लॉन्चर शॉर्टकट्स के माध्यम से त्वरित नेविगेशन**: सेटिंग्स, के बारे में और नई फ़ाइल जैसे महत्वपूर्ण खंडों तक त्वरित उपयोग के लिए आसान लॉन्चर शॉर्टकट के माध्यम से पहुंचें, ऐप के साथ आपके इंटरैक्शन को अधिक कुशलता के लिए संवाहकीकृत करते हैं।"</string>
+    <string name="features_text">- **सिस्टम थीम के साथ एकत्रित**: Brainf सिस्टम थीम के साथ अद्वितीय रूप से एकत्रित होता है, इसके साथ यह सुनिश्चित करता है कि ऐप का रूप उपयोक्ता के डिवाइस-व्यापी डिज़ाइन चयनों के साथ मेल खाता है।
+\n
+\n- **कोड प्रबंधन की सहजता**: Brainf कोड और पाठ फ़ाइलों को आसानी से बना, संपादित, सहेज और निष्पादित करने के लिए बनाया गया है, यह कोडिंग प्रयासों के लिए एक व्यापक प्लेटफ़ॉर्म प्रदान करता है।
+\n
+\n- **विविध सिंटैक्स हाइलाइटिंग**: रेगेक्स-आधारित सिंटैक्स हाइलाइटिंग का उपयोग करके आपके कोड संरचनाओं और तत्वों को अधिक पठनीयता और समझने में सहायक बनाता है।
+\n
+\n- **लॉन्चर शॉर्टकट्स के माध्यम से त्वरित नेविगेशन**: सेटिंग्स, के बारे में और नई फ़ाइल जैसे महत्वपूर्ण खंडों तक त्वरित उपयोग के लिए आसान लॉन्चर शॉर्टकट के माध्यम से पहुंचें, ऐप के साथ आपके इंटरैक्शन को अधिक कुशलता के लिए संवाहकीकृत करते हैं।</string>
     <!-- License -->
     <string name="license_heading">MIT लाइसेंस</string>
-    <string name="license_text">"कॉपीराइट © फ्रेडहैपीफेस</string>
+    <string name="license_text">कॉपीराइट © फ्रेडहैपीफेस</string>
     <!-- Links -->
     <string name="links_heading">लिंक्स</string>
-    <string name="links_text">"- Brainf का स्रोत कोड https://github.com/FredHappyface/Android.Brainf पर उपलब्ध है
-
-- MIT लाइसेंस
-(और जानकारी के लिए लाइसेंस देखें https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+    <string name="links_text">- Brainf का स्रोत कोड https://github.com/FredHappyface/Android.Brainf पर उपलब्ध है
+\n
+\n- MIT लाइसेंस
+\n(और जानकारी के लिए लाइसेंस देखें https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">ठीक है</string>
     <string name="dialog_saved_title">सहेजा गया!</string>
     <!-- New file dialog  -->
     <string name="dialog_new_confirm">हाँ</string>
     <string name="dialog_new_cancel">नहीं</string>
-    <string name="dialog_new_title">नई फ़ाइल बनाएं?</string>
+    <string name="dialog_new_title">नई फ़ाइल बनाएं\?</string>
     <!-- Blank file text  -->
     <string name="blank_file_text">[यह एक रिक्त फ़ाइल है, एक फ़ाइल खोलें या इसे संपादित करें और सहेजें]</string>
     <!-- Run, stdin, stdout  -->
