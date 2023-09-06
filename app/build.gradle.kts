@@ -6,7 +6,7 @@ plugins {
 }
 
 tasks.dokkaGfm.configure {
-	outputDirectory.set(buildDir.resolve("../../documentation/reference"))
+	outputDirectory.set(file(layout.buildDirectory.dir("../../documentation/reference")))
 	dokkaSourceSets {
 		named("main") {
 			skipDeprecated.set(true)
@@ -19,7 +19,7 @@ tasks.dokkaGfm.configure {
 }
 
 tasks.register("genDocs") {
-	val ref = buildDir.resolve("../../documentation/reference")
+	val ref = layout.buildDirectory.dir("../../documentation/reference")
 	delete(ref)
 	dependsOn("dokkaGfm")
 	doLast {
