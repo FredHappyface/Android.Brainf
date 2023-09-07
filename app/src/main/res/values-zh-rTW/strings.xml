@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Brainf 編程語言</string>
     <!-- Strings for menu_main.xml -->
     <string name="action_new_file">新建檔案</string>
     <string name="action_open">開啟</string>
@@ -31,7 +30,7 @@
     <string name="links_text">- Brainf 的原始碼可在 https://github.com/FredHappyface/Android.Brainf 找到
 \n
 \n- MIT 授權
-\n(有關詳細資訊，請參閱授權 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+\n(有關詳細資訊，請參閱授權 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">確定</string>
     <string name="dialog_saved_title">已儲存！</string>
@@ -46,7 +45,5 @@
     <string name="main_stdin">[在此輸入標準輸入位元組]</string>
     <string name="main_stdout">[標準輸出位元組在此]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">關於</string>
-    <string name="shortcut_new_file">新建檔案</string>
-    <string name="shortcut_disabled">快速啟動器已停用</string>
+	<string name="shortcut_disabled">快速啟動器已停用</string>
 </resources>

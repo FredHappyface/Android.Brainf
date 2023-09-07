@@ -5,8 +5,8 @@
 		android:icon="@drawable/ic_shortcut_new_file"
 		android:shortcutDisabledMessage="@string/shortcut_disabled"
 		android:shortcutId="new_file"
-		android:shortcutLongLabel="@string/shortcut_new_file"
-		android:shortcutShortLabel="@string/shortcut_new_file">
+		android:shortcutLongLabel="@string/action_new_file"
+		android:shortcutShortLabel="@string/action_new_file">
 		<intent
 			android:action="android.intent.action.VIEW"
 			android:targetClass="com.fredhappyface.brainf.ActivityMain"
@@ -19,8 +19,8 @@
 		android:icon="@drawable/ic_shortcut_about"
 		android:shortcutDisabledMessage="@string/shortcut_disabled"
 		android:shortcutId="about"
-		android:shortcutLongLabel="@string/shortcut_about"
-		android:shortcutShortLabel="@string/shortcut_about">
+		android:shortcutLongLabel="@string/action_about"
+		android:shortcutShortLabel="@string/action_about">
 		<intent
 			android:action="android.intent.action.VIEW"
 			android:targetClass="com.fredhappyface.brainf.ActivityAbout"

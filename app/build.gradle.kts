@@ -34,6 +34,15 @@ tasks.register("genDocs") {
 android {
 	compileSdk = 33
 	buildToolsVersion = "34.0.0"
+	namespace = "com.fredhappyface.brainf"
+
+	kotlinOptions {
+		jvmTarget = "17"
+	}
+
+	androidResources {
+		generateLocaleConfig = true
+	}
 
 	defaultConfig {
 		applicationId = "com.fredhappyface.brainf"
@@ -48,7 +57,6 @@ android {
 	buildTypes {
 		getByName("debug") { versionNameSuffix = "-debug" }
 		getByName("release") {
-			// versionNameSuffix = "-release"
 			proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
 			isMinifyEnabled = false
 		}
@@ -58,9 +66,6 @@ android {
 		sourceCompatibility(JavaVersion.VERSION_17)
 		targetCompatibility(JavaVersion.VERSION_17)
 	}
-
-	kotlinOptions { jvmTarget = "17" }
-	namespace = "com.fredhappyface.brainf"
 }
 
 dependencies {

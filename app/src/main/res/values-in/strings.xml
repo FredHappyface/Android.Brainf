@@ -12,7 +12,7 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">Info</string>
-    <string name="info_text">Penerjemah untuk bahasa pemrograman \'Brainf\'.</string>
+    <string name="info_text">Penerjemah untuk bahasa pemrograman \‘Brainf\’.</string>
     <!-- Features -->
     <string name="features_heading">Fitur</string>
     <string name="features_text">- **Integrasi dengan Tema Sistem**: Brainf terintegrasi dengan lancar dengan tema sistem, memastikan tampilan aplikasi sesuai dengan pilihan desain perangkat pengguna.
@@ -30,7 +30,7 @@
     <string name="links_text">- Kode sumber Brainf tersedia di https://github.com/FredHappyface/Android.Brainf
 \n
 \n- Lisensi MIT
-\n(Lihat lisensi untuk informasi lebih lanjut https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+\n(Lihat lisensi untuk informasi lebih lanjut https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">OK</string>
     <string name="dialog_saved_title">Tersimpan!</string>
@@ -45,7 +45,5 @@
     <string name="main_stdin">[Masukkan Byte Standar Input di Sini]</string>
     <string name="main_stdout">[Byte Standar Output di Sini]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">Tentang</string>
-    <string name="shortcut_new_file">File Baru</string>
-    <string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
+	<string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
 </resources>

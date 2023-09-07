@@ -23,7 +23,7 @@
     <string name="links_text">- Исходный код Brainf доступен по адресу https://github.com/FredHappyface/Android.Brainf.
 \n
 \n- Лицензия Массачусетского технологического института
-\n(Дополнительную информацию см. в лицензии https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+\n(Дополнительную информацию см. в лицензии https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <string name="dialog_saved_button">ХОРОШО</string>
     <string name="dialog_saved_title">Сохранено!</string>
     <string name="dialog_new_confirm">Да</string>
@@ -32,7 +32,5 @@
     <string name="main_run_btn">Запустить программу</string>
     <string name="main_stdin">[Введите сюда байты стандартного ввода]</string>
     <string name="main_stdout">[Здесь стандартные байты]</string>
-    <string name="shortcut_about">О</string>
-    <string name="shortcut_new_file">Новый файл</string>
-    <string name="shortcut_disabled">Ярлык отключен</string>
+	<string name="shortcut_disabled">Ярлык отключен</string>
 </resources>

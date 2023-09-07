@@ -30,7 +30,7 @@
     <string name="links_text">- Brainf এর সোর্স কোড এখানে পাওয়া যাবে: https://github.com/FredHappyface/Android.Brainf
 \n
 \n- MIT লাইসেন্স
-\n(আরও তথ্যের জন্য লাইসেন্স দেখুন: https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+\n(আরও তথ্যের জন্য লাইসেন্স দেখুন: https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">ঠিক আছে</string>
     <string name="dialog_saved_title">সংরক্ষণ করা হয়েছে!</string>
@@ -45,7 +45,5 @@
     <string name="main_stdin">[ইনপুট স্ট্যান্ডার্ড ইনপুট বাইটগুলি এখানে দিন]</string>
     <string name="main_stdout">[স্ট্যান্ডার্ড আউটপুট বাইটগুলি এখানে]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">সম্পর্কে</string>
-    <string name="shortcut_new_file">নতুন ফাইল</string>
-    <string name="shortcut_disabled">শর্টকাট নিষ্ক্রিয় করা হয়েছে</string>
+	<string name="shortcut_disabled">শর্টকাট নিষ্ক্রিয় করা হয়েছে</string>
 </resources>

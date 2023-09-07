@@ -12,7 +12,7 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">Info</string>
-    <string name="info_text">"Interpreter für die Programmiersprache 'Brainf'.</string>
+    <string name="info_text">"Interpreter für die Programmiersprache ‘Brainf’.</string>
     <!-- Features -->
     <string name="features_heading">Eigenschaften</string>
     <string name="features_text">"- **Integration mit dem Systemdesign**: Brainf integriert sich nahtlos in das Systemdesign und gewährleistet, dass das Erscheinungsbild der App den systemweiten Designentscheidungen des Benutzers entspricht.
@@ -30,7 +30,7 @@
     <string name="links_text">"- Der Quellcode für Brainf ist auf https://github.com/FredHappyface/Android.Brainf verfügbar.
 
 - MIT Lizenz
-(Siehe Lizenz für weitere Informationen https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+(Siehe Lizenz für weitere Informationen https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">OK</string>
     <string name="dialog_saved_title">Gespeichert!</string>
@@ -45,7 +45,5 @@
     <string name="main_stdin">[Eingabe von Standard-Eingabedaten hier]</string>
     <string name="main_stdout">[Standard-Ausgabedaten hier]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">Über</string>
-    <string name="shortcut_new_file">Neue Datei</string>
-    <string name="shortcut_disabled">Verknüpfung deaktiviert</string>
+	<string name="shortcut_disabled">Verknüpfung deaktiviert</string>
 </resources>

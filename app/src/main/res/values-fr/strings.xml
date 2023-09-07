@@ -12,7 +12,7 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">Infos</string>
-    <string name="info_text">Interpréteur pour le langage de programmation \'Brainf\'.</string>
+    <string name="info_text">Interpréteur pour le langage de programmation \‘Brainf\’.</string>
     <!-- Features -->
     <string name="features_heading">Fonctionnalités</string>
     <string name="features_text">- **Intégration avec le thème système** : Brainf s\'intègre parfaitement au thème du système, garantissant que l\'apparence de l\'application s\'aligne sur les choix de conception globaux de l\'utilisateur.
@@ -24,13 +24,13 @@
 \n- **Navigation rapide via des raccourcis du lanceur** : Accédez instantanément aux sections clés telles que les paramètres, À propos et Nouveau fichier grâce à des raccourcis pratiques, simplifiant votre interaction avec l\'application pour une efficacité maximale.</string>
     <!-- License -->
     <string name="license_heading">Licence MIT</string>
-    <string name="license_text">Droits d\'auteur © FredHappyface</string>
+    <string name="license_text">Droits d\’auteur © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">Liens</string>
     <string name="links_text">- Le code source de Brainf est disponible sur https://github.com/FredHappyface/Android.Brainf
 \n
 \n- Licence MIT
-\n(Voir la licence pour plus d\'informations https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+\n(Voir la licence pour plus d\’informations https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">OK</string>
     <string name="dialog_saved_title">Enregistré !</string>
@@ -42,10 +42,8 @@
     <string name="blank_file_text">[Ceci est un fichier vide, ouvrez un fichier ou modifiez ce fichier et enregistrez]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Exécuter le programme</string>
-    <string name="main_stdin">[Entrer des octets d\'entrée standard ici]</string>
+    <string name="main_stdin">[Entrer des octets d\’entrée standard ici]</string>
     <string name="main_stdout">[Octets de sortie standard ici]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">À propos</string>
-    <string name="shortcut_new_file">Nouveau fichier</string>
-    <string name="shortcut_disabled">Raccourci désactivé</string>
+	<string name="shortcut_disabled">Raccourci désactivé</string>
 </resources>

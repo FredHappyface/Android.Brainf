@@ -12,7 +12,7 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">معلومات</string>
-    <string name="info_text">مترجم للغة البرمجة \'Brainf\'.</string>
+    <string name="info_text">مترجم للغة البرمجة \‘Brainf\’.</string>
     <!-- Features -->
     <string name="features_heading">الميزات</string>
     <string name="features_text">- **تكامل مع سمة النظام**: Brainf يتكامل بسلاسة مع سمة النظام، مما يضمن أن مظهر التطبيق يتماشى مع اختيارات التصميم على مستوى الجهاز للمستخدم.
@@ -30,7 +30,7 @@
     <string name="links_text">- يمكن العثور على الشيفرة المصدرية لBrainf على الرابط التالي: https://github.com/FredHappyface/Android.Brainf
 \n
 \n- رخصة MIT
-\n(انظر الرخصة لمزيد من المعلومات: https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+\n(انظر الرخصة لمزيد من المعلومات: https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">موافق</string>
     <string name="dialog_saved_title">تم الحفظ!</string>
@@ -45,7 +45,5 @@
     <string name="main_stdin">[ادخل البيانات الواردة هنا]</string>
     <string name="main_stdout">[البيانات المُخرَجة هنا]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">نبذة عن التطبيق</string>
-    <string name="shortcut_new_file">ملف جديد</string>
-    <string name="shortcut_disabled">الاختصار معطل</string>
+	<string name="shortcut_disabled">الاختصار معطل</string>
 </resources>

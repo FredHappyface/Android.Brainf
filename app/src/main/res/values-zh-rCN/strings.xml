@@ -30,7 +30,7 @@
     <string name="links_text">- Brainf的源代码位于 https://github.com/FredHappyface/Android.Brainf
 \n
 \n- MIT许可
-\n(有关更多信息，请参阅许可证 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+\n(有关更多信息，请参阅许可证 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">好的</string>
     <string name="dialog_saved_title">已保存！</string>
@@ -45,7 +45,5 @@
     <string name="main_stdin">[在此输入标准输入字节]</string>
     <string name="main_stdout">[标准输出字节在此]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">关于</string>
-    <string name="shortcut_new_file">新建文件</string>
-    <string name="shortcut_disabled">快捷方式已禁用</string>
+	<string name="shortcut_disabled">快捷方式已禁用</string>
 </resources>

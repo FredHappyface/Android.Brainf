@@ -30,7 +30,7 @@
     <string name="links_text">"- Brainf kaynak kodu https://github.com/FredHappyface/Android.Brainf üzerinde mevcuttur
 
 - MIT Lisansı
-(Daha fazla bilgi için lisansa bakın https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md)</string>
+(Daha fazla bilgi için lisansa bakın https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">TAMAM</string>
     <string name="dialog_saved_title">Kaydedildi!</string>
@@ -45,7 +45,5 @@
     <string name="main_stdin">[Stdin Baytlarını Buraya Girin]</string>
     <string name="main_stdout">[Stdout Baytlarını Buraya]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">Hakkında</string>
-    <string name="shortcut_new_file">Yeni Dosya</string>
-    <string name="shortcut_disabled">Kısayol Devre Dışı</string>
+	<string name="shortcut_disabled">Kısayol Devre Dışı</string>
 </resources>

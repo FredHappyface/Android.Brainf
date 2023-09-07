@@ -45,7 +45,5 @@
     <string name="main_stdin">[ここに標準入力バイトを入力]</string>
     <string name="main_stdout">[標準出力バイトがここに表示されます]</string>
     <!-- Strings for shortcuts.xml -->
-    <string name="shortcut_about">アプリについて</string>
-    <string name="shortcut_new_file">新規ファイル</string>
-    <string name="shortcut_disabled">ショートカットは無効です</string>
+	<string name="shortcut_disabled">ショートカットは無効です</string>
 </resources>
