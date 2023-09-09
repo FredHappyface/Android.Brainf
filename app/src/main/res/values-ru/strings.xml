@@ -8,7 +8,7 @@
     <string name="action_save_as">Сохранить как</string>
     <string name="action_about">О</string>
     <string name="title_activity_about">Мозг - О компании</string>
-    <string name="info_text">Интерпретатор языка программирования Brainf.</string>
+    <string name="info_text">Интерпретатор для языка программирования ‘Brainf’.</string>
     <string name="dialog_new_cancel">Нет</string>
     <string name="features_text">- **Интеграция с системной темой**: Brainf легко интегрируется с темой системы, гарантируя, что внешний вид приложения будет соответствовать выбранному пользователем дизайну всего устройства.
 \n
@@ -32,5 +32,5 @@
     <string name="main_run_btn">Запустить программу</string>
     <string name="main_stdin">[Введите сюда байты стандартного ввода]</string>
     <string name="main_stdout">[Здесь стандартные байты]</string>
-	<string name="shortcut_disabled">Ярлык отключен</string>
+    <string name="shortcut_disabled">Ярлык отключен</string>
 </resources>
