@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings for menu_main.xml -->
-    <string name="action_new_file">Nuevo Archivo</string>
+    <string name="action_new_file">Archivo nuevo</string>
     <string name="action_open">Abrir</string>
     <string name="action_save">Guardar</string>
     <string name="action_save_as">Guardar como</string>
     <string name="action_about">Acerca de</string>
     <!-- Strings for about + settings activities  -->
-    <string name="title_activity_about">Brainf - Acerca de</string>
+    <string name="title_activity_about">Acerca de - Brainf</string>
     <!-- settings  -->
     <!-- about  -->
     <!-- Info -->
@@ -45,5 +45,5 @@
     <string name="main_stdin">[Inserte Bytes de Entrada Estándar Aquí]</string>
     <string name="main_stdout">[Bytes de Salida Estándar Aquí]</string>
     <!-- Strings for shortcuts.xml -->
-	<string name="shortcut_disabled">Acceso Directo Desactivado</string>
+    <string name="shortcut_disabled">Acceso Directo Desactivado</string>
 </resources>
