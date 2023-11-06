@@ -12,7 +12,7 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">Bilgi</string>
-    <string name="info_text">Programlama dili\'Brainf\' için tercüman.</string>
+    <string name="info_text">‘Brainf’ programlama dili için yorumlayıcı.</string>
     <!-- Features -->
     <string name="features_heading">Özellikler</string>
     <string name="features_text">"- **Sistem Teması Entegrasyonu**: Brainf, sistemin temasıyla sorunsuz bir şekilde entegre olarak uygulamanın görünümünün kullanıcının cihaz genelindeki tasarım seçimleriyle uyumlu olmasını sağlar.
@@ -45,5 +45,5 @@
     <string name="main_stdin">[Stdin Baytlarını Buraya Girin]</string>
     <string name="main_stdout">[Stdout Baytlarını Buraya]</string>
     <!-- Strings for shortcuts.xml -->
-	<string name="shortcut_disabled">Kısayol Devre Dışı</string>
+    <string name="shortcut_disabled">Kısayol Devre Dışı</string>
 </resources>
