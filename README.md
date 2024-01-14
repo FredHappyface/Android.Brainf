@@ -78,9 +78,10 @@ where to look for certain things:
 You can install the app using the following methods, Follow the link to the listing on your
 preferred store by clicking on one of the badges below, then download/install:
 
-[<img src="readme-assets/badges/f-droid-download.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/en/packages/com.fredhappyface.brainf/)
-[<img src="readme-assets/badges/google-play-download.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.fredhappyface.brainf)
-[<img src="readme-assets/badges/direct-apk-download.png" alt="Direct apk download" height="80">](../../releases)
+[<img src="readme-assets/badges/badge_obtainium.png" alt="Get it on Obtainium" height="80">](obtainium://add/github.com/fredhappyface/Brainf)
+[<img src="readme-assets/badges/badge_fdroid.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/en/packages/com.fredhappyface.brainf/)
+[<img src="readme-assets/badges/badge_gplay.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.fredhappyface.brainf)
+[<img src="readme-assets/badges/badge_github.png" alt="Get it on GitHub" height="80">](../../releases)
 
 <!-- omit in toc -->
 ### Build from Source
