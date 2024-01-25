@@ -45,5 +45,5 @@
     <string name="main_stdin">[Masukkan Byte Standar Input di Sini]</string>
     <string name="main_stdout">[Byte Standar Output di Sini]</string>
     <!-- Strings for shortcuts.xml -->
-	<string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
+    <string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
 </resources>
