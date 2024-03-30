@@ -1,0 +1,5 @@
+<h2 id="section">20240330</h2>
+<ul>
+<li>Update version, screenshots</li>
+<li>Update UI - add buffer representation</li>
+</ul>

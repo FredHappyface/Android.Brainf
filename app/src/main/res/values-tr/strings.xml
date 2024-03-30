@@ -44,6 +44,9 @@
     <string name="main_run_btn">Programı Çalıştır</string>
     <string name="main_stdin">[Stdin Baytlarını Buraya Girin]</string>
     <string name="main_stdout">[Stdout Baytlarını Buraya]</string>
+    <string name="main_stdin_header">Aşağıdaki Stdin Baytlarını Girin</string>
+    <string name="main_stdout_header">Aşağıdaki Stdout Baytları</string>
+    <string name="main_data">Veri</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Kısayol Devre Dışı</string>
 </resources>

@@ -44,6 +44,9 @@
     <string name="main_run_btn">प्रोग्राम चलाएं</string>
     <string name="main_stdin">[यहाँ मानक इनपुट बाइट दर्ज करें]</string>
     <string name="main_stdout">[मानक आउटपुट बाइट यहाँ है]</string>
+    <string name="main_stdin_header">नीचे स्टैंडर्ड इनपुट बाइट्स दर्ज करें</string>
+    <string name="main_stdout_header">नीचे स्टैंडर्ड आउटपुट बाइट्स</string>
+    <string name="main_data">डेटा</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">शॉर्टकट निष्क्रिय किया गया है</string>
 </resources>

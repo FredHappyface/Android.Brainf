@@ -44,6 +44,9 @@
     <string name="main_run_btn">Jalankan Program</string>
     <string name="main_stdin">[Masukkan Byte Standar Input di Sini]</string>
     <string name="main_stdout">[Byte Standar Output di Sini]</string>
+    <string name="main_stdin_header">Byte Standar Input di Sini</string>
+    <string name="main_stdout_header">Byte Standar Output di Sini</string>
+    <string name="main_data">Data</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
 </resources>

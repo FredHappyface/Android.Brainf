@@ -32,5 +32,8 @@
     <string name="main_run_btn">Запустить программу</string>
     <string name="main_stdin">[Введите сюда байты стандартного ввода]</string>
     <string name="main_stdout">[Здесь стандартные байты]</string>
+    <string name="main_stdin_header">Введите стандартные байты ввода ниже</string>
+    <string name="main_stdout_header">Стандартные байты вывода ниже</string>
+    <string name="main_data">Данные</string>
     <string name="shortcut_disabled">Ярлык отключен</string>
 </resources>

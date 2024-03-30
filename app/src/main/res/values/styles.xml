@@ -26,6 +26,13 @@
 		<item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
 	</style>
 
+	<style name="array_val" parent="Widget.AppCompat.Button">
+		<item name="android:textColor">@color/fg</item>
+		<item name="android:padding">@dimen/content_margin_bottom</item>
+		<item name="android:background">@drawable/array_val</item>
+	</style>
+
+
 	<style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
 		<item name="android:textColorPrimary">@color/fg</item>
 		<item name="android:textColorSecondary">@color/fg</item>

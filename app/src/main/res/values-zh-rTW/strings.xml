@@ -44,6 +44,9 @@
     <string name="main_run_btn">執行程式</string>
     <string name="main_stdin">[在此輸入標準輸入位元組]</string>
     <string name="main_stdout">[標準輸出位元組在此]</string>
+    <string name="main_stdin_header">在下方輸入標準輸入位元組</string>
+    <string name="main_stdout_header">在下方輸出標準輸出位元組</string>
+    <string name="main_data">資料</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">快速啟動器已停用</string>
 </resources>

@@ -15,13 +15,13 @@
     <string name="info_text">Interpréteur pour le langage de programmation \‘Brainf\’.</string>
     <!-- Features -->
     <string name="features_heading">Fonctionnalités</string>
-    <string name="features_text">- **Intégration avec le thème système** : Brainf s\'intègre parfaitement au thème du système, garantissant que l\'apparence de l\'application s\'aligne sur les choix de conception globaux de l\'utilisateur.
+    <string name="features_text">- **Intégration avec le thème système**: Brainf s\'intègre parfaitement au thème du système, garantissant que l\'apparence de l\'application s\'aligne sur les choix de conception globaux de l\'utilisateur.
 \n
-\n- **Gestion facile du code** : Créez, modifiez, enregistrez et exécutez facilement des fichiers de code et de texte Brainf, offrant une plateforme complète pour vos projets de codage.
+\n- **Gestion facile du code**: Créez, modifiez, enregistrez et exécutez facilement des fichiers de code et de texte Brainf, offrant une plateforme complète pour vos projets de codage.
 \n
-\n- **Mise en évidence syntaxique dynamique** : Profitez de la mise en évidence syntaxique basée sur des expressions régulières, rendant vos structures de code et vos éléments clairement distingués pour une meilleure lisibilité et compréhension.
+\n- **Mise en évidence syntaxique dynamique**: Profitez de la mise en évidence syntaxique basée sur des expressions régulières, rendant vos structures de code et vos éléments clairement distingués pour une meilleure lisibilité et compréhension.
 \n
-\n- **Navigation rapide via des raccourcis du lanceur** : Accédez instantanément aux sections clés telles que les paramètres, À propos et Nouveau fichier grâce à des raccourcis pratiques, simplifiant votre interaction avec l\'application pour une efficacité maximale.</string>
+\n- **Navigation rapide via des raccourcis du lanceur**: Accédez instantanément aux sections clés telles que les paramètres, À propos et Nouveau fichier grâce à des raccourcis pratiques, simplifiant votre interaction avec l\'application pour une efficacité maximale.</string>
     <!-- License -->
     <string name="license_heading">Licence MIT</string>
     <string name="license_text">Droits d\’auteur © FredHappyface</string>
@@ -33,17 +33,21 @@
 \n(Voir la licence pour plus d\’informations https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">OK</string>
-    <string name="dialog_saved_title">Enregistré !</string>
+    <string name="dialog_saved_title">Enregistré!</string>
     <!-- New file dialog  -->
     <string name="dialog_new_confirm">Oui</string>
     <string name="dialog_new_cancel">Non</string>
-    <string name="dialog_new_title">Créer un nouveau fichier ?</string>
+    <string name="dialog_new_title">Créer un nouveau fichier?</string>
     <!-- Blank file text  -->
     <string name="blank_file_text">[Ceci est un fichier vide, ouvrez un fichier ou modifiez ce fichier et enregistrez]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Exécuter le programme</string>
-    <string name="main_stdin">[Entrer des octets d\’entrée standard ici]</string>
+    <string name="main_stdin">[Entrer des octets d’entrée standard ici]</string>
     <string name="main_stdout">[Octets de sortie standard ici]</string>
+    <string name="main_stdin_header">Entrez les octets d’entrée standard ci-dessous</string>
+    <string name="main_stdout_header">Octets de sortie standard ci-dessous</string>
+    <string name="main_data">Données</string>
+
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Raccourci désactivé</string>
 </resources>

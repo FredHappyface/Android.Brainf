@@ -15,6 +15,8 @@ import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import java.io.*
 
 private const val MAX_FILE_SIZE = 1024 * 1024 // 1Mb
@@ -272,7 +274,17 @@ class ActivityMain : AppCompatActivity() {
 			findViewById<EditText>(R.id.stdin).text.toString()
 		)
 		try {
-			findViewById<TextView>(R.id.stdout).text = brainfInterpreter.execute()
+			var (output, buffer) = brainfInterpreter.execute()
+			findViewById<TextView>(R.id.stdout).text = output
+			buffer = buffer.copyOfRange(0, 1000)
+			val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+			recyclerView.layoutManager = GridLayoutManager(
+				this,
+				4,
+				RecyclerView.HORIZONTAL,
+				false,
+			)
+			recyclerView.adapter = BufferAdapter(buffer)
 		} catch (exception: IllegalStateException) {
 			val error = "ERROR: " + (exception.message ?: "Unknown")
 			findViewById<TextView>(R.id.stdout).text = error

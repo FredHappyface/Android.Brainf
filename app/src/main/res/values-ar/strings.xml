@@ -44,6 +44,9 @@
     <string name="main_run_btn">تشغيل البرنامج</string>
     <string name="main_stdin">[ادخل البيانات الواردة هنا]</string>
     <string name="main_stdout">[البيانات المُخرَجة هنا]</string>
+    <string name="main_stdin_header">أدخل بايتات stdin أدناه</string>
+    <string name="main_stdout_header">بايتات الإخراج القياسية أدناه</string>
+    <string name="main_data">بيانات</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">الاختصار معطل</string>
 </resources>

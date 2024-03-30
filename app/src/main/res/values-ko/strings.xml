@@ -44,6 +44,9 @@
     <string name="main_run_btn">프로그램 실행</string>
     <string name="main_stdin">[여기에 표준 입력 바이트 입력]</string>
     <string name="main_stdout">[표준 출력 바이트가 여기에 표시됩니다]</string>
+    <string name="main_stdin_header">아래에 표준 입력 바이트 입력</string>
+    <string name="main_stdout_header">아래에 표준 출력 바이트</string>
+    <string name="main_data">데이터</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">바로 가기 비활성화됨</string>
 </resources>

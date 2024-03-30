@@ -30,12 +30,20 @@
 				android:textColor="@color/fg"
 				tools:ignore="LabelFor" />
 
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/body_text"
+				android:text="@string/main_stdin_header"
+				/>
+
 			<EditText
 				android:id="@+id/stdin"
 				style="@style/code_text"
 				android:hint="@string/main_stdin"
 				android:importantForAutofill="no"
-				android:inputType="text" />
+				android:inputType="textMultiLine"
+				/>
 
 			<Button
 				style="@style/button"
@@ -44,9 +52,28 @@
 				app:shapeAppearance="?attr/shapeAppearanceSmallComponent" />
 
 			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/body_text"
+				android:text="@string/main_stdout_header"
+				/>
+
+			<TextView
 				android:id="@+id/stdout"
 				style="@style/code_text"
 				android:text="@string/main_stdout" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/body_text"
+				android:text="@string/main_data"
+				/>
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
 		</LinearLayout>
 	</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

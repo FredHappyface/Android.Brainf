@@ -44,6 +44,9 @@
     <string name="main_run_btn">プログラムを実行</string>
     <string name="main_stdin">[ここに標準入力バイトを入力]</string>
     <string name="main_stdout">[標準出力バイトがここに表示されます]</string>
+    <string name="main_stdin_header">以下に標準入力バイトを入力</string>
+    <string name="main_stdout_header">以下に標準出力バイト</string>
+    <string name="main_data">データ</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">ショートカットは無効です</string>
 </resources>

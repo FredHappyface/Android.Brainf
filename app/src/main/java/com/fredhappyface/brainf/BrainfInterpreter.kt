@@ -23,9 +23,9 @@ class BrainfInterpreter(programText: String, input: String) {
 	/**
 	 * execute the programText, with the input specified in the constructor
 	 *
-	 * @return String: OutputBuffer.toString()
+	 * @return Pair<String, IntArray>: Pair of OutputBuffer.toString() and buffer
 	 */
-	fun execute(): String {
+	fun execute(): Pair<String, Array<Int>> {
 		while (this.instructionPointer < this.instruction.length && this.iOCounter < 16384 && this.instructionsExecutedCounter < 1048576) {
 			when (this.instruction[this.instructionPointer]) {
 				'+' -> plus()
@@ -48,7 +48,7 @@ class BrainfInterpreter(programText: String, input: String) {
 			this.instructionsExecutedCounter++
 			this.instructionPointer++
 		}
-		return this.outputBuffer.toString()
+		return Pair(this.outputBuffer.toString(), this.buffer)
 	}
 
 	/**

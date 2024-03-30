@@ -44,6 +44,9 @@
     <string name="main_run_btn">运行程序</string>
     <string name="main_stdin">[在此输入标准输入字节]</string>
     <string name="main_stdout">[标准输出字节在此]</string>
+    <string name="main_stdin_header">在下方输入标准输入字节</string>
+    <string name="main_stdout_header">在下方输出标准输出字节</string>
+    <string name="main_data">数据</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">快捷方式已禁用</string>
 </resources>

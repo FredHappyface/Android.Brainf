@@ -44,6 +44,9 @@
     <string name="main_run_btn">پروگرام چلائیں</string>
     <string name="main_stdin">[یہاں معمولی ان پٹ بائٹس درج کریں]</string>
     <string name="main_stdout">[معمولی اس پٹ بائٹس یہاں دکھائیں]</string>
+    <string name="main_stdin_header">نیچے ان پٹ سٹینڈرڈ بائٹس داخل کریں</string>
+    <string name="main_stdout_header">استاندارڈ بائٹس بیلو</string>
+    <string name="main_data">ڈیٹا</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">شارٹ کٹ غیر فعال ہے</string>
 </resources>

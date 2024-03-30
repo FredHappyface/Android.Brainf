@@ -44,6 +44,9 @@
     <string name="main_run_btn">প্রোগ্রাম চালান</string>
     <string name="main_stdin">[ইনপুট স্ট্যান্ডার্ড ইনপুট বাইটগুলি এখানে দিন]</string>
     <string name="main_stdout">[স্ট্যান্ডার্ড আউটপুট বাইটগুলি এখানে]</string>
+    <string name="main_stdin_header">নীচে ইনপুট স্ট্যান্ডার্ড ইন বাইট</string>
+    <string name="main_stdout_header">নীচে স্ট্যান্ডার্ড আউটপুট বাইট</string>
+    <string name="main_data">ডেটা</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">শর্টকাট নিষ্ক্রিয় করা হয়েছে</string>
 </resources>

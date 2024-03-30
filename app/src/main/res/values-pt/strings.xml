@@ -44,6 +44,9 @@
     <string name="main_run_btn">Executar Programa</string>
     <string name="main_stdin">[Insira Bytes de Entrada Padrão Aqui]</string>
     <string name="main_stdout">[Bytes de Saída Padrão Aqui]</string>
+    <string name="main_stdin_header">Introduza Bytes de Entrada Padrão Abaixo</string>
+    <string name="main_stdout_header">Bytes de Saída Padrão Abaixo</string>
+    <string name="main_data">Dados</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">Atalho Desativado</string>
 </resources>
