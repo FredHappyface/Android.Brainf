@@ -47,7 +47,6 @@
     <string name="main_stdin_header">Standard-Eingabedaten hier</string>
     <string name="main_stdout_header">Standard-Ausgabedaten hier</string>
     <string name="main_data">Daten</string>
-
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">Verknüpfung deaktiviert</string>
 </resources>
