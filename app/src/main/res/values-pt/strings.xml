@@ -42,7 +42,7 @@
     <string name="blank_file_text">[Este é um arquivo em branco, abra um arquivo ou edite este arquivo e salve]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Executar Programa</string>
-    <string name="main_stdin">[Insira Bytes de Entrada Padrão Aqui]</string>
+    <string name="main_stdin">[Stdin Bytes Here]</string>
     <string name="main_stdout">[Bytes de Saída Padrão Aqui]</string>
     <string name="main_stdin_header">Introduza Bytes de Entrada Padrão Abaixo</string>
     <string name="main_stdout_header">Bytes de Saída Padrão Abaixo</string>
