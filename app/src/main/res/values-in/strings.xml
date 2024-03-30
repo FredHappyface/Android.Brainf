@@ -42,7 +42,7 @@
     <string name="blank_file_text">[Ini adalah file kosong, buka file atau edit file ini dan simpan]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Jalankan Program</string>
-    <string name="main_stdin">[Masukkan Byte Standar Input di Sini]</string>
+    <string name="main_stdin">[Stdin Bytes Here]</string>
     <string name="main_stdout">[Byte Standar Output di Sini]</string>
     <string name="main_stdin_header">Byte Standar Input di Sini</string>
     <string name="main_stdout_header">Byte Standar Output di Sini</string>
