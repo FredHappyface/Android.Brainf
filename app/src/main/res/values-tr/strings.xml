@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyQuotes">
     <!-- Strings for menu_main.xml -->
-    <string name="action_new_file">Yeni Klasör</string>
+    <string name="action_new_file">Yeni Dosya</string>
     <string name="action_open">Aç</string>
     <string name="action_save">Kaydet</string>
-    <string name="action_save_as">Farklı kaydet</string>
+    <string name="action_save_as">Farklı Kaydet</string>
     <string name="action_about">Hakkında</string>
     <!-- Strings for about + settings activities  -->
     <string name="title_activity_about">Brainf - Hakkında</string>
@@ -32,7 +32,7 @@
 - MIT Lisansı
 (Daha fazla bilgi için lisansa bakın https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
-    <string name="dialog_saved_button">TAMAM</string>
+    <string name="dialog_saved_button">Tamam</string>
     <string name="dialog_saved_title">Kaydedildi!</string>
     <!-- New file dialog  -->
     <string name="dialog_new_confirm">Evet</string>
