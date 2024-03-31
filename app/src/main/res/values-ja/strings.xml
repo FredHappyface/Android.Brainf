@@ -42,7 +42,7 @@
     <string name="blank_file_text">[これは空白のファイルです。ファイルを開いて編集し、保存してください]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">プログラムを実行</string>
-    <string name="main_stdin">[ここに標準入力バイトを入力]</string>
+    <string name="main_stdin">[Stdin Bytes 詳細はこちら]</string>
     <string name="main_stdout">[標準出力バイトがここに表示されます]</string>
     <string name="main_stdin_header">以下に標準入力バイトを入力</string>
     <string name="main_stdout_header">以下に標準出力バイト</string>

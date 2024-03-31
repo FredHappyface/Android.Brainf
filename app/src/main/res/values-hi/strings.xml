@@ -42,7 +42,7 @@
     <string name="blank_file_text">[यह एक रिक्त फ़ाइल है, एक फ़ाइल खोलें या इसे संपादित करें और सहेजें]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">प्रोग्राम चलाएं</string>
-    <string name="main_stdin">[यहाँ मानक इनपुट बाइट दर्ज करें]</string>
+    <string name="main_stdin">[Stdin Bytes Here]</string>
     <string name="main_stdout">[मानक आउटपुट बाइट यहाँ है]</string>
     <string name="main_stdin_header">नीचे स्टैंडर्ड इनपुट बाइट्स दर्ज करें</string>
     <string name="main_stdout_header">नीचे स्टैंडर्ड आउटपुट बाइट्स</string>

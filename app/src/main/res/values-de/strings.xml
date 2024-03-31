@@ -42,7 +42,7 @@
     <string name="blank_file_text">[Dies ist eine leere Datei, öffnen Sie eine Datei oder bearbeiten Sie diese und speichern Sie sie]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Programm ausführen</string>
-    <string name="main_stdin">[Eingabe von Standard-Eingabedaten hier]</string>
+    <string name="main_stdin">(Stdin Bytes Hier)</string>
     <string name="main_stdout">[Standard-Ausgabedaten hier]</string>
     <string name="main_stdin_header">Standard-Eingabedaten hier</string>
     <string name="main_stdout_header">Standard-Ausgabedaten hier</string>
