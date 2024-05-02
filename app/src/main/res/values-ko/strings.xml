@@ -14,16 +14,16 @@
     <string name="info_heading">정보</string>
     <string name="info_text">Brainf 프로그래밍 언어의 해석기.</string>
     <!-- Features -->
-    <string name="features_heading">기능</string>
-    <string name="features_text">- **시스템 테마 통합**: Brainf는 시스템 테마와 완벽하게 통합되어 앱의 외관이 사용자의 장치 전체 디자인 선택과 일치합니다.
+    <string name="features_heading">특징</string>
+    <string name="features_text">- **시스템 테마와의 통합**: Brainfish는 시스템 테마와 원활하게 통합되어 앱의 외관이 사용자의 디바이스 전체 디자인 선택과 일치하도록 합니다.
 \n
-\n- **코드 관리 용이성**: Brainf 코드 및 텍스트 파일을 쉽게 만들고 편집, 저장, 실행할 수 있어 코딩 활동에 대한 포괄적인 플랫폼을 제공합니다.
+\n- **Effortless Code Management**: Brainf 코드 및 텍스트 파일을 쉽게 생성, 편집, 저장 및 실행하여 코딩 작업을 위한 포괄적인 플랫폼을 제공합니다.
 \n
-\n- **선명한 구문 강조 표시**: 정규 표현식 기반의 구문 강조 표시를 활용하여 코드 구조와 요소를 선명하게 구분하여 가독성과 이해를 향상시킵니다.
+\n- **활발한 구문 강조**: regex 기반 구문 강조 기능을 활용하여 코드 구조와 요소를 생생하게 구별하여 가독성과 이해력을 향상시킵니다.
 \n
-\n- **런처 바로 가기를 통한 빠른 탐색**: 런처 바로 가기를 통해 설정, 앱 정보 및 새 파일과 같은 주요 섹션에 빠르게 액세스하여 앱과의 상호 작용을 최적화합니다.</string>
+\n- **런처 바로가기를 통한 탐색 전환**: 편리한 런처 바로가기를 통해 설정, 정보 및 새 파일과 같은 주요 섹션에 즉시 액세스하여 앱과의 상호 작용을 간소화하여 효율성을 극대화할 수 있습니다.</string>
     <!-- License -->
-    <string name="license_heading">MIT 라이선스</string>
+    <string name="license_heading">MIT 라이센스</string>
     <string name="license_text">저작권 © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">링크</string>
