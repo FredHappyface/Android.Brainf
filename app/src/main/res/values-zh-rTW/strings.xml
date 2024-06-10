@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings for menu_main.xml -->
-    <string name="action_new_file">新建檔案</string>
+    <string name="action_new_file">新增檔案</string>
     <string name="action_open">開啟</string>
     <string name="action_save">儲存</string>
-    <string name="action_save_as">另存新檔</string>
+    <string name="action_save_as">儲存為</string>
     <string name="action_about">關於</string>
     <!-- Strings for about + settings activities  -->
     <string name="title_activity_about">關於 Brainf</string>
@@ -39,14 +39,14 @@
     <string name="dialog_new_cancel">否</string>
     <string name="dialog_new_title">建立新檔案？</string>
     <!-- Blank file text  -->
-    <string name="blank_file_text">[這是一個空檔案，請開啟一個檔案或編輯此檔案並儲存]</string>
+    <string name="blank_file_text">[這是一個空白檔案，開啟一個檔案或編輯此檔案並儲存]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">執行程式</string>
-    <string name="main_stdin">[此处注明]</string>
+    <string name="main_stdin">[標準輸入位元組在此]</string>
     <string name="main_stdout">[標準輸出位元組在此]</string>
     <string name="main_stdin_header">在下方輸入標準輸入位元組</string>
-    <string name="main_stdout_header">在下方輸出標準輸出位元組</string>
+    <string name="main_stdout_header">在下方為標準輸出位元組</string>
     <string name="main_data">資料</string>
     <!-- Strings for shortcuts.xml -->
-	<string name="shortcut_disabled">快速啟動器已停用</string>
+	<string name="shortcut_disabled">捷徑已停用</string>
 </resources>
