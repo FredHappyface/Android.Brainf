@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings for menu_main.xml -->
-    <string name="action_new_file">新建文件</string>
-    <string name="action_open">打开</string>
-    <string name="action_save">保存</string>
-    <string name="action_save_as">另存为</string>
-    <string name="action_about">关于</string>
+    <string name="action_new_file">新文件</string>
+    <string name="action_open">开放</string>
+    <string name="action_save">Save</string>
+    <string name="action_save_as">Save As</string>
+    <string name="action_about">FHCode——环境</string>
     <!-- Strings for about + settings activities  -->
-    <string name="title_activity_about">关于 Brainf</string>
+    <string name="title_activity_about">脑部</string>
     <!-- settings  -->
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">信息</string>
-    <string name="info_text">Brainf编程语言的解释器。</string>
+    <string name="info_text">“Brainf”方案拟订语言口译.</string>
     <!-- Features -->
     <string name="features_heading">特点</string>
-    <string name="features_text">- **与系统主题集成**: Brainf与系统主题无缝集成，确保应用程序的外观与用户设备的整体设计选择相一致。
+    <string name="features_text">- ** 融入系统主题**:集思广益地与系统主题相结合,确保显示与用户整个装置设计选择一致。
 \n
-\n- **轻松代码管理**: 轻松创建、编辑、保存和执行Brainf代码和文本文件，提供全面的编码平台。
+\n- ** 《无努力守则管理》**:易于制定、编辑、节省和执行脑部法和文字档案,为编码工作提供全面平台。
 \n
-\n- **丰富的语法高亮**: 利用基于正则表达式的语法高亮，使您的代码结构和元素清晰可辨，增强可读性和理解力。
+\n- ** 巡回展览会摘要** • 利用浮游动物群集聚物的力量,使你的代码结构和要素在增强可读性和理解性方面明显不同。
 \n
-\n- **通过快捷方式快速导航**: 通过便捷的快捷方式即时访问设置、关于和新建文件等关键部分，简化了与应用程序的交互，提高了效率。</string>
+\n- ** 通过发射机短击导航** 经常通过方便的发射器短程进入关键部门,如环境、约和新文档,简化与最高效率的接口.</string>
     <!-- License -->
-    <string name="license_heading">MIT许可</string>
-    <string name="license_text">版权所有 © FredHappyface</string>
+    <string name="license_heading">麻省理工学院 执照</string>
+    <string name="license_text">版权 ©</string>
     <!-- Links -->
     <string name="links_heading">链接</string>
     <string name="links_text">- Brainf的源代码位于 https://github.com/FredHappyface/Android.Brainf
@@ -32,21 +32,21 @@
 \n- MIT许可
 \n(有关更多信息，请参阅许可证 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
-    <string name="dialog_saved_button">好的</string>
-    <string name="dialog_saved_title">已保存！</string>
+    <string name="dialog_saved_button">OK</string>
+    <string name="dialog_saved_title">Saved!</string>
     <!-- New file dialog  -->
-    <string name="dialog_new_confirm">是</string>
-    <string name="dialog_new_cancel">否</string>
-    <string name="dialog_new_title">创建新文件？</string>
+    <string name="dialog_new_confirm">否</string>
+    <string name="dialog_new_cancel">无</string>
+    <string name="dialog_new_title">创建新的档案?</string>
     <!-- Blank file text  -->
-    <string name="blank_file_text">[这是一个空文件，请打开一个文件或编辑此文件并保存]</string>
+    <string name="blank_file_text">[这是一个空白档案,开立档案或编辑档案和储蓄]</string>
     <!-- Run, stdin, stdout  -->
-    <string name="main_run_btn">运行程序</string>
+    <string name="main_run_btn">开办方案</string>
     <string name="main_stdin">[此处注明]</string>
-    <string name="main_stdout">[标准输出字节在此]</string>
+    <string name="main_stdout">[此处列出]</string>
     <string name="main_stdin_header">在下方输入标准输入字节</string>
     <string name="main_stdout_header">在下方输出标准输出字节</string>
     <string name="main_data">数据</string>
     <!-- Strings for shortcuts.xml -->
-	<string name="shortcut_disabled">快捷方式已禁用</string>
+	<string name="shortcut_disabled">短期残疾人</string>
 </resources>
