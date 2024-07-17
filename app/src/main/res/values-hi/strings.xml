@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings for menu_main.xml -->
-    <string name="action_new_file">नई फाइल</string>
-    <string name="action_open">खुला</string>
+    <string name="action_new_file">नई फ़ाइल</string>
+    <string name="action_open">खोलें</string>
     <string name="action_save">सहेजें</string>
-    <string name="action_save_as">सहेजें</string>
+    <string name="action_save_as">के रूप में सहेजें</string>
     <string name="action_about">के बारे में</string>
     <!-- Strings for about + settings activities  -->
     <string name="title_activity_about">Brainf - के बारे में</string>
@@ -12,41 +12,41 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">जानकारी</string>
-    <string name="info_text">\'Brainf\' प्रोग्रामिंग भाषा के लिए अनुवादक।।</string>
+    <string name="info_text">Brainf प्रोग्रामिंग भाषा का अनुवादक।</string>
     <!-- Features -->
-    <string name="features_heading">सुविधाएँ</string>
-    <string name="features_text">** सिस्टम थीम के साथ एकीकरण*: ब्रेनफ सिस्टम के थीम के साथ सहज रूप से एकीकृत हो जाता है, यह सुनिश्चित करता है कि ऐप की उपस्थिति उपयोगकर्ता के डिवाइस-वाइड डिज़ाइन विकल्पों के साथ जुड़ा हुआ है।
+    <string name="features_heading">विशेषताएँ</string>
+    <string name="features_text">- **सिस्टम थीम के साथ एकत्रित**: Brainf सिस्टम थीम के साथ अद्वितीय रूप से एकत्रित होता है, इसके साथ यह सुनिश्चित करता है कि ऐप का रूप उपयोक्ता के डिवाइस-व्यापी डिज़ाइन चयनों के साथ मेल खाता है।
 \n
-\n** प्रभावी कोड प्रबंधन **: आसानी से ब्रेनफ कोड और टेक्स्ट फ़ाइलों को बनाने, संपादित करने, सहेजने और निष्पादित करने के लिए, कोडिंग प्रयास के लिए एक व्यापक मंच प्रदान करना।
+\n- **कोड प्रबंधन की सहजता**: Brainf कोड और पाठ फ़ाइलों को आसानी से बना, संपादित, सहेज और निष्पादित करने के लिए बनाया गया है, यह कोडिंग प्रयासों के लिए एक व्यापक प्लेटफ़ॉर्म प्रदान करता है।
 \n
-\n** वाइब्रेंट सिंटैक्स हाइलाइटिंग*: रेगेक्स-आधारित वाक्यविन्यास हाइलाइटिंग की शक्ति का उपयोग करें, जिससे आपकी कोड संरचनाओं और तत्वों को बढ़ी हुई पठनीयता और समझ के लिए स्पष्ट रूप से अलग किया जा सके।
+\n- **विविध सिंटैक्स हाइलाइटिंग**: रेगेक्स-आधारित सिंटैक्स हाइलाइटिंग का उपयोग करके आपके कोड संरचनाओं और तत्वों को अधिक पठनीयता और समझने में सहायक बनाता है।
 \n
-\n** लॉन्चर शॉर्टकट के माध्यम से स्विफ्ट नेविगेशन*: सेटिंग्स, के बारे में और सुविधाजनक लॉन्चर शॉर्टकट के माध्यम से नई फ़ाइल जैसे तुरंत कुंजी अनुभागों तक पहुंचें, अधिकतम दक्षता के लिए ऐप के साथ अपनी बातचीत को सुव्यवस्थित करें।।</string>
+\n- **लॉन्चर शॉर्टकट्स के माध्यम से त्वरित नेविगेशन**: सेटिंग्स, के बारे में और नई फ़ाइल जैसे महत्वपूर्ण खंडों तक त्वरित उपयोग के लिए आसान लॉन्चर शॉर्टकट के माध्यम से पहुंचें, ऐप के साथ आपके इंटरैक्शन को अधिक कुशलता के लिए संवाहकीकृत करते हैं।</string>
     <!-- License -->
-    <string name="license_heading">एमआईटी लाइसेंस</string>
-    <string name="license_text">फ्रेडहैप्पीफेस</string>
+    <string name="license_heading">MIT लाइसेंस</string>
+    <string name="license_text">कॉपीराइट © फ्रेडहैपीफेस</string>
     <!-- Links -->
-    <string name="links_heading">लिंक</string>
+    <string name="links_heading">लिंक्स</string>
     <string name="links_text">- Brainf का स्रोत कोड https://github.com/FredHappyface/Android.Brainf पर उपलब्ध है
 \n
 \n- MIT लाइसेंस
 \n(और जानकारी के लिए लाइसेंस देखें https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
-    <string name="dialog_saved_button">ठीक</string>
-    <string name="dialog_saved_title">बचाओ!</string>
+    <string name="dialog_saved_button">ठीक है</string>
+    <string name="dialog_saved_title">सहेजा गया!</string>
     <!-- New file dialog  -->
     <string name="dialog_new_confirm">हाँ</string>
     <string name="dialog_new_cancel">नहीं</string>
-    <string name="dialog_new_title">नई फ़ाइल बनाएँ?</string>
+    <string name="dialog_new_title">नई फ़ाइल बनाएं?</string>
     <!-- Blank file text  -->
-    <string name="blank_file_text">[यह एक रिक्त फ़ाइल है, एक फ़ाइल खोलें या इस फ़ाइल को संपादित करें और सहेजें]</string>
+    <string name="blank_file_text">[यह एक रिक्त फ़ाइल है, एक फ़ाइल खोलें या इसे संपादित करें और सहेजें]</string>
     <!-- Run, stdin, stdout  -->
-    <string name="main_run_btn">रन प्रोग्राम</string>
+    <string name="main_run_btn">प्रोग्राम चलाएं</string>
     <string name="main_stdin">[Stdin Bytes Here]</string>
-    <string name="main_stdout">[Stdout Bytes Here]</string>
+    <string name="main_stdout">[मानक आउटपुट बाइट यहाँ है]</string>
     <string name="main_stdin_header">नीचे स्टैंडर्ड इनपुट बाइट्स दर्ज करें</string>
     <string name="main_stdout_header">नीचे स्टैंडर्ड आउटपुट बाइट्स</string>
     <string name="main_data">डेटा</string>
     <!-- Strings for shortcuts.xml -->
-	<string name="shortcut_disabled">शॉर्टकट अक्षम</string>
+	<string name="shortcut_disabled">शॉर्टकट निष्क्रिय किया गया है</string>
 </resources>
