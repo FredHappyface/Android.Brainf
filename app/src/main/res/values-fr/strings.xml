@@ -23,7 +23,7 @@
 \n
 \n- **Navigation rapide via des raccourcis du lanceur**: Accédez instantanément aux sections clés telles que les paramètres, À propos et Nouveau fichier grâce à des raccourcis pratiques, simplifiant votre interaction avec l\'application pour une efficacité maximale.</string>
     <!-- License -->
-    <string name="license_heading">MIT Licence</string>
+    <string name="license_heading">Licence MIT</string>
     <string name="license_text">Droits d\’auteur © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">Liens</string>
@@ -39,11 +39,11 @@
     <string name="dialog_new_cancel">Non</string>
     <string name="dialog_new_title">Créer un nouveau fichier?</string>
     <!-- Blank file text  -->
-    <string name="blank_file_text">[C\'est un fichier vierge, ouvrez un fichier ou modifiez ce fichier et enregistrez]</string>
+    <string name="blank_file_text">[Ceci est un fichier vide, ouvrez un fichier ou modifiez ce fichier et enregistrez]</string>
     <!-- Run, stdin, stdout  -->
-    <string name="main_run_btn">Programme</string>
+    <string name="main_run_btn">Exécuter le programme</string>
     <string name="main_stdin">[Entrer des octets d’entrée standard ici]</string>
-    <string name="main_stdout">[Stdout Bytes Here]</string>
+    <string name="main_stdout">[Octets de sortie standard ici]</string>
     <string name="main_stdin_header">Entrez les octets d’entrée standard ci-dessous</string>
     <string name="main_stdout_header">Octets de sortie standard ci-dessous</string>
     <string name="main_data">Données</string>
