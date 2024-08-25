@@ -42,11 +42,14 @@
     <string name="blank_file_text">[هذا ملف فارغ، قم بفتح ملف أو تحرير هذا الملف وحفظه]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">تشغيل البرنامج</string>
-    <string name="main_stdin">[Stdin Bytes هنا]</string>
-    <string name="main_stdout">[البيانات المُخرَجة هنا]</string>
-    <string name="main_stdin_header">أدخل بايتات stdin أدناه</string>
-    <string name="main_stdout_header">بايتات الإخراج القياسية أدناه</string>
-    <string name="main_data">بيانات</string>
+    <string name="main_stdin">[اكتب نص المدخلات هنا]</string>
+    <string name="main_stdout">[نصوص مستنسخة هنا]</string>
+    <string name="main_stdin_header">النص</string>
+    <string name="main_stdout_header">نص الناتج</string>
+    <string name="main_data">البيانات</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">الاختصار معطل</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_input">Input as Bytes</string>
+    <string name="main_output">النواتج</string>
 </resources>
