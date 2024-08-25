@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings for menu_main.xml -->
-    <string name="action_new_file">جديدة</string>
-    <string name="action_open">مفتوح</string>
-    <string name="action_save">أنقذ</string>
-    <string name="action_save_as">إنقاذ</string>
-    <string name="action_about">FHCode - Settings</string>
+    <string name="action_new_file">ملف جديد</string>
+    <string name="action_open">فتح</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_save_as">حفظ كـ</string>
+    <string name="action_about">نبذة عن التطبيق</string>
     <!-- Strings for about + settings activities  -->
-    <string name="title_activity_about">حول</string>
+    <string name="title_activity_about">Brainf - نبذة عن التطبيق</string>
     <!-- settings  -->
     <!-- about  -->
     <!-- Info -->
-    <string name="info_heading">المعلومات</string>
+    <string name="info_heading">معلومات</string>
     <string name="info_text">مترجم للغة البرمجة \‘Brainf\’.</string>
     <!-- Features -->
-    <string name="features_heading">المعالم</string>
-    <string name="features_text">تتكامل مع موضوع النظام مدمجاً بلا رحمة مع موضوع النظام
+    <string name="features_heading">الميزات</string>
+    <string name="features_text">- **تكامل مع سمة النظام**: Brainf يتكامل بسلاسة مع سمة النظام، مما يضمن أن مظهر التطبيق يتماشى مع اختيارات التصميم على مستوى الجهاز للمستخدم.
 \n
-\n- ** إدارة مدونة قواعد السلوك غير المؤاتية**: القيام على وجه السرعة بإنشاء، وتحرير، وإنقاذ، وتنفيذ مدونة الدماغ وملفات النصوص، وتوفير منبر شامل لمساعي الترميز.
+\n- **إدارة الشيفرة بسهولة**: يمكنك بسهولة إنشاء وتحرير وحفظ وتنفيذ ملفات الشيفرة والنص في Brainf، مما يوفر منصة شاملة لمشاريع البرمجة.
 \n
-\n- ** (د) مواءمة قوة الـ(سينتاكس) المرتكزة على الجماع، مع جعل هياكلك الرمزية وعناصرك متميزة بوضوح من أجل تعزيز القابلية للقراءة والفهم.
+\n- **تحديد بنية الشيفرة بألوان زاهية**: استفد من تحديد بنية الشيفرة باستخدام تحديد الصيغ المبني على التعبيرات النظامية (regex)، مما يجعل عناصر الشيفرة والهياكل مميزة بشكل واضح لزيادة قراءة الشيفرة وفهمها.
 \n
-\n- **Swift Navigation via Launcher Shortcuts**: الوصول بشكل ثابت إلى الأقسام الرئيسية مثل ستينغز، حول، وجديد File من خلال الإختصارات القاذفة المناسبة، تبسيط تفاعلك مع التطبيق لتحقيق أقصى قدر من الكفاءة.</string>
+\n- **الوصول السريع من خلال اختصارات التشغيل**: اصطحب مفتاح الوصول السريع للوصول الفوري إلى الأقسام الرئيسية مثل الإعدادات، نبذة عن التطبيق، وإنشاء ملف جديد من خلال اختصارات التشغيل السهلة، مما يبسط تفاعلك مع التطبيق لتحقيق أقصى كفاءة.</string>
     <!-- License -->
-    <string name="license_heading">MIT الرخصة</string>
-    <string name="license_text">حقوق التأليف والنشر</string>
+    <string name="license_heading">رخصة MIT</string>
+    <string name="license_text">حقوق النشر © فريد هابي فيس</string>
     <!-- Links -->
-    <string name="links_heading">الروابط</string>
+    <string name="links_heading">روابط</string>
     <string name="links_text">- يمكن العثور على الشيفرة المصدرية لBrainf على الرابط التالي: https://github.com/FredHappyface/Android.Brainf
 \n
 \n- رخصة MIT
 \n(انظر الرخصة لمزيد من المعلومات: https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
-    <string name="dialog_saved_button">حسنا</string>
-    <string name="dialog_saved_title">أنقذوا!</string>
+    <string name="dialog_saved_button">موافق</string>
+    <string name="dialog_saved_title">تم الحفظ!</string>
     <!-- New file dialog  -->
     <string name="dialog_new_confirm">نعم</string>
     <string name="dialog_new_cancel">لا</string>
-    <string name="dialog_new_title">أصنع كومة جديدة؟?</string>
+    <string name="dialog_new_title">إنشاء ملف جديد؟</string>
     <!-- Blank file text  -->
-    <string name="blank_file_text">[هذا ملف فارغ، فتح ملف أو تحرير هذا الملف وإنقاذ]</string>
+    <string name="blank_file_text">[هذا ملف فارغ، قم بفتح ملف أو تحرير هذا الملف وحفظه]</string>
     <!-- Run, stdin, stdout  -->
-    <string name="main_run_btn">Run Program</string>
+    <string name="main_run_btn">تشغيل البرنامج</string>
     <string name="main_stdin">[Stdin Bytes هنا]</string>
-    <string name="main_stdout">[Stdout Bytes هنا]</string>
+    <string name="main_stdout">[البيانات المُخرَجة هنا]</string>
     <string name="main_stdin_header">أدخل بايتات stdin أدناه</string>
     <string name="main_stdout_header">بايتات الإخراج القياسية أدناه</string>
     <string name="main_data">بيانات</string>
     <!-- Strings for shortcuts.xml -->
-	<string name="shortcut_disabled">الإعاقة القصيرة</string>
+	<string name="shortcut_disabled">الاختصار معطل</string>
 </resources>
