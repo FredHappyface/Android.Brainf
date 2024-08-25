@@ -12,7 +12,7 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">Información</string>
-    <string name="info_text">Interprete para el lenguaje de programación \‘Brainf\’.</string>
+    <string name="info_text">Intérprete del lenguaje de programación \'Brainf\'.</string>
     <!-- Features -->
     <string name="features_heading">Características</string>
     <string name="features_text">- **Integración con el tema del sistema**: Brainf se integra perfectamente con el tema del sistema, asegurando que la apariencia de la aplicación se ajusta con las opciones del diseño de todo el dispositivo del usuario.
@@ -24,7 +24,7 @@
 \n- **Navegación rápida mediante accesos directos en el lanzador**: Accede instantáneamente a secciones clave como Configuración, Acerca de y Nuevo archivo a través de cómodos accesos directos en el lanzador, agilizando tu interacción con la aplicación para una máxima eficiencia.</string>
     <!-- License -->
     <string name="license_heading">Licencia MIT</string>
-    <string name="license_text">Derechos de autor © FredHappyface</string>
+    <string name="license_text">Copyright © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">Enlaces</string>
     <string name="links_text">- El código fuente de Brainf está disponible en https://github.com/FredHappyface/Android.Brainf
@@ -32,24 +32,24 @@
 \n- Licencia MIT
 \n(Consulte la licencia para obtener más información en https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
-    <string name="dialog_saved_button">DE ACUERDO</string>
+    <string name="dialog_saved_button">De acuerdo</string>
     <string name="dialog_saved_title">¡Guardado!</string>
     <!-- New file dialog  -->
     <string name="dialog_new_confirm">Sí</string>
     <string name="dialog_new_cancel">No</string>
     <string name="dialog_new_title">¿Crear un nuevo archivo\?</string>
     <!-- Blank file text  -->
-    <string name="blank_file_text">[Este es un archivo en blanco, abra un archivo o edite este archivo y guárdelo]</string>
+    <string name="blank_file_text">[Este es un archivo en blanco, abre un archivo o edita este archivo y guárdalo]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Ejecutar el programa</string>
-    <string name="main_stdin">[Texto de entrada rojo aquí]</string>
+    <string name="main_stdin">[Escribir el texto de entrada aquí]</string>
     <string name="main_stdout">[Texto de salida mostrado aquí]</string>
     <string name="main_stdin_header">Texto de entrada</string>
     <string name="main_stdout_header">Texto de salida</string>
-    <string name="main_data">Data Array</string>
+    <string name="main_data">Matriz de datos</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Acceso directo deshabilitado</string>
-    <string name="main_debug">[Debug Info]</string>
+    <string name="main_debug">[Información de depuración]</string>
     <string name="main_input">Entrada como Bytes</string>
-    <string name="main_output">Producto como Bytes</string>
+    <string name="main_output">Salida como Bytes</string>
 </resources>
