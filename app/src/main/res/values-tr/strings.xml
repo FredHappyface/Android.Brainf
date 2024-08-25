@@ -46,7 +46,10 @@
     <string name="main_stdout">[Output Text Displayed Here]</string>
     <string name="main_stdin_header">Giriş Text</string>
     <string name="main_stdout_header">Çıktı Text</string>
-    <string name="main_data">Veri</string>
+    <string name="main_data">Data Series</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Kısayol Devre Dışı</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_input">Bytes olarak giriş</string>
+    <string name="main_output">Bytes</string>
 </resources>
