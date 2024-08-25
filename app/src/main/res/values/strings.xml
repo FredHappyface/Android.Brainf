@@ -42,11 +42,14 @@
 	<string name="blank_file_text">[This is a blank file, open a file or edit this file and save]</string>
 	<!-- Run, stdin, stdout  -->
 	<string name="main_run_btn">Run Program</string>
-	<string name="main_stdin">[Stdin Bytes Here]</string>
-	<string name="main_stdout">[Stdout Bytes Here]</string>
-	<string name="main_stdin_header">Input Stdin Bytes Below</string>
-	<string name="main_stdout_header">Stdout Bytes Below</string>
-	<string name="main_data">Data</string>
+	<string name="main_stdin">[Write Input Text Here]</string>
+	<string name="main_stdout">[Output Text Displayed Here]</string>
+	<string name="main_stdin_header">Input Text</string>
+	<string name="main_stdout_header">Output Text</string>
+	<string name="main_debug">[Debug Info]</string>
+	<string name="main_data">Data Array</string>
+	<string name="main_input">Input as Bytes</string>
+	<string name="main_output">Output as Bytes</string>
 	<!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">Shortcut Disabled</string>
 </resources>

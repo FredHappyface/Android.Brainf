@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class BufferAdapter(private val data: Array<Int>) :
+open class BufferAdapter<T>(val data: Array<T>) :
 	RecyclerView.Adapter<BufferAdapter.ViewHolder>() {
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,4 +29,17 @@ class BufferAdapter(private val data: Array<Int>) :
 		val secondaryText: TextView = itemView.findViewById(R.id.secondaryText)
 
 	}
+}
+
+class CharBufferAdapter(data: Array<Char>) : BufferAdapter<Char>(data) {
+
+	override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+		var elem = data[position]
+		holder.primaryText.text = when(elem.code){
+			in 0..32 -> "\\x${elem.code.toString(16).padStart(2, '0')}"
+			else -> elem.toString()
+		}
+		holder.secondaryText.text = position.toString()
+	}
+
 }

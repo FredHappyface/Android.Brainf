@@ -269,25 +269,33 @@ class ActivityMain : AppCompatActivity() {
 	 * @param ignoreView: View? required to call function from layout
 	 */
 	fun run(ignoreView: View) {
+		val input = parseSpecialChars(findViewById<EditText>(R.id.stdin).text.toString())
 		val brainfInterpreter = BrainfInterpreter(
 			this.codeEditText.text.toString(),
-			findViewById<EditText>(R.id.stdin).text.toString()
+			input
 		)
 		try {
 			var (output, buffer) = brainfInterpreter.execute()
 			findViewById<TextView>(R.id.stdout).text = output
-			buffer = buffer.copyOfRange(0, 1000)
-			val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-			recyclerView.layoutManager = GridLayoutManager(
-				this,
-				4,
-				RecyclerView.HORIZONTAL,
-				false,
-			)
-			recyclerView.adapter = BufferAdapter(buffer)
+			buffer = buffer.copyOfRange(0,1000)
+			fillTable(R.id.dataView, BufferAdapter(buffer))
+			fillTable(R.id.inputView, CharBufferAdapter(input.toCharArray().toTypedArray()))
+			fillTable(R.id.outputView, CharBufferAdapter(output.toCharArray().toTypedArray()))
+
 		} catch (exception: IllegalStateException) {
 			val error = "ERROR: " + (exception.message ?: "Unknown")
 			findViewById<TextView>(R.id.stdout).text = error
 		}
+	}
+
+	fun <T> fillTable(id: Int, bufferAdapter: BufferAdapter<T>){
+		val recyclerView = findViewById<RecyclerView>(id)
+		recyclerView.layoutManager = GridLayoutManager(
+			this,
+			4,
+			RecyclerView.HORIZONTAL,
+			false,
+		)
+		recyclerView.adapter = bufferAdapter
 	}
 }

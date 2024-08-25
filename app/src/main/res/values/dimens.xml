@@ -10,6 +10,7 @@
 	<dimen name="card_margin">16dp</dimen>
 	<dimen name="content_margin_top">8dp</dimen>
 	<dimen name="content_margin_bottom">4dp</dimen>
+	<dimen name="content_hr">2dp</dimen>
 	<dimen name="zero">0dp</dimen>
 	<dimen name="corner">16dp</dimen>
 </resources>
