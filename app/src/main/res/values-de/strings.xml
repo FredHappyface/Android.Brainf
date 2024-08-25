@@ -42,11 +42,14 @@
     <string name="blank_file_text">[Dies ist eine leere Datei, öffnen Sie eine Datei oder bearbeiten Sie diese und speichern Sie sie]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Programm ausführen</string>
-    <string name="main_stdin">(Stdin Bytes Hier)</string>
-    <string name="main_stdout">[Standard-Ausgabedaten hier]</string>
-    <string name="main_stdin_header">Standard-Eingabedaten hier</string>
-    <string name="main_stdout_header">Standard-Ausgabedaten hier</string>
-    <string name="main_data">Daten</string>
+    <string name="main_stdin">[Schreiben Sie den Eingabetext hier]</string>
+    <string name="main_stdout">[Ausgangstext hier angezeigt]</string>
+    <string name="main_stdin_header">Eingabetext</string>
+    <string name="main_stdout_header">Text</string>
+    <string name="main_data">Datenarray</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">Verknüpfung deaktiviert</string>
+    <string name="main_debug">(Debug Info)</string>
+    <string name="main_input">Input als Bytes</string>
+    <string name="main_output">Ausgabe als Bytes</string>
 </resources>
