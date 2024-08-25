@@ -42,11 +42,14 @@
     <string name="blank_file_text">[Ini adalah file kosong, buka file atau edit file ini dan simpan]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Jalankan Program</string>
-    <string name="main_stdin">[Stdin Bytes Disini]</string>
-    <string name="main_stdout">[Stdout Bytes Disini]</string>
-    <string name="main_stdin_header">Byte Standar Input di Sini</string>
-    <string name="main_stdout_header">Byte Standar Output di Sini</string>
-    <string name="main_data">Data</string>
+    <string name="main_stdin">[Menulis Teks Masuk Di sini]</string>
+    <string name="main_stdout">[Output Teks Tampilkan Disini]</string>
+    <string name="main_stdin_header">Masukan Teks</string>
+    <string name="main_stdout_header">Catalog</string>
+    <string name="main_data">Database</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_input">Masukan sebagai Bytes</string>
+    <string name="main_output">Output sebagai Bytes</string>
 </resources>
