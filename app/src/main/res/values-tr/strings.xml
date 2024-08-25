@@ -42,7 +42,7 @@
     <string name="blank_file_text">[Bu boş bir dosya, bir dosya açın veya bu dosyayı düzenleyin ve kaydedin]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Programı Çalıştır</string>
-    <string name="main_stdin">[Stdin Baytlarını Buraya]</string>
+    <string name="main_stdin">[Yaz Giriş Text Here]</string>
     <string name="main_stdout">[Stdout Baytlarını Buraya]</string>
     <string name="main_stdin_header">Stdin Baytlarını Aşağı Girin</string>
     <string name="main_stdout_header">Stdout Baytları Aşağıda</string>
