@@ -33,8 +33,9 @@ fun parseSpecialChars(input: String): String {
                     // No semicolon found, treat the rest of the string as literal
                     result.append('@')
                 } else {
-                    val controlCode = input.substring(i + 1, endIndex + 1).uppercase()
-                    when (controlCode) {
+                    val controlCode = input.substring(i + 1, endIndex + 1)
+                    val controlCodeUpper = controlCode.uppercase()
+                    when (controlCodeUpper) {
                         "NUL;" -> result.append('\u0000')
                         "SOH;" -> result.append('\u0001')
                         "STX;" -> result.append('\u0002')

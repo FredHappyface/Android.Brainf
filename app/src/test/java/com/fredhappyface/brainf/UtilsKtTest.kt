@@ -18,6 +18,11 @@ class UtilsKtTest {
         assertEquals("\u0000\u0001", parseSpecialChars("@NUL;@SOH;"))
     }
 
+    @Test
+    fun `test escaped control characters`() {
+        assertEquals("@@nul;@@soh;", parseSpecialChars("@@nul;@@soh;"))
+    }
+
 
     @Test
     fun `test hex notation for unprintable ASCII characters`() {
