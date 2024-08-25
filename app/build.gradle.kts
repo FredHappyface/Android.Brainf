@@ -70,6 +70,7 @@ android {
 }
 
 dependencies {
+	testImplementation("junit:junit:4.13.2")
 	dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:1.9.20")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.23")
 	implementation("androidx.core:core-ktx:1.12.0")
