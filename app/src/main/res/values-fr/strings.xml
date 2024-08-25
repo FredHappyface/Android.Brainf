@@ -42,11 +42,14 @@
     <string name="blank_file_text">[Ceci est un fichier vide, ouvrez un fichier ou modifiez ce fichier et enregistrez]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Exécuter le programme</string>
-    <string name="main_stdin">[Entrer des octets d’entrée standard ici]</string>
-    <string name="main_stdout">[Octets de sortie standard ici]</string>
-    <string name="main_stdin_header">Entrez les octets d’entrée standard ci-dessous</string>
-    <string name="main_stdout_header">Octets de sortie standard ci-dessous</string>
-    <string name="main_data">Données</string>
+    <string name="main_stdin">[Texte d\'entrée ici]</string>
+    <string name="main_stdout">[Texte de sortie affiché ici]</string>
+    <string name="main_stdin_header">Texte d \' entrée</string>
+    <string name="main_stdout_header">Texte de sortie</string>
+    <string name="main_data">Data Array</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Raccourci désactivé</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_input">Entrée en octets</string>
+    <string name="main_output">Sortie en octets</string>
 </resources>
