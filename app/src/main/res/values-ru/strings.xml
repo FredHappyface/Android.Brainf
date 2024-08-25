@@ -30,10 +30,13 @@
     <string name="dialog_new_title">Создать новый файл\?</string>
     <string name="blank_file_text">[Это пустой файл, откройте файл или отредактируйте этот файл и сохраните]</string>
     <string name="main_run_btn">Запустить программу</string>
-    <string name="main_stdin">[Stdin Bytes Here]</string>
-    <string name="main_stdout">[Здесь стандартные байты]</string>
-    <string name="main_stdin_header">Введите стандартные байты ввода ниже</string>
-    <string name="main_stdout_header">Стандартные байты вывода ниже</string>
-    <string name="main_data">Данные</string>
+    <string name="main_stdin">[Напишите текст ввода здесь]</string>
+    <string name="main_stdout">[Обнаруженный текст]</string>
+    <string name="main_stdin_header">Текст ввода</string>
+    <string name="main_stdout_header">Текст</string>
+    <string name="main_data">Сбор данных</string>
     <string name="shortcut_disabled">Ярлык отключен</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_input">Вход как байты</string>
+    <string name="main_output">Выход: байты</string>
 </resources>
