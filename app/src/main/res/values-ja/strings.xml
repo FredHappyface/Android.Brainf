@@ -42,11 +42,14 @@
     <string name="blank_file_text">[これは空白のファイルです。ファイルを開いて編集し、保存してください]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">プログラムを実行</string>
-    <string name="main_stdin">[Stdin Bytes 詳細はこちら]</string>
-    <string name="main_stdout">[標準出力バイトがここに表示されます]</string>
-    <string name="main_stdin_header">以下に標準入力バイトを入力</string>
-    <string name="main_stdout_header">以下に標準出力バイト</string>
-    <string name="main_data">データ</string>
+    <string name="main_stdin">[Write 入力テキストはこちら]</string>
+    <string name="main_stdout">【出力テキストはこちら】</string>
+    <string name="main_stdin_header">入力テキスト</string>
+    <string name="main_stdout_header">出力テキスト</string>
+    <string name="main_data">データ配列</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">ショートカットは無効です</string>
+    <string name="main_debug">[デバッグ情報]</string>
+    <string name="main_input">バイトとして入力</string>
+    <string name="main_output">バイトとして出力</string>
 </resources>
