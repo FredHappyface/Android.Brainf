@@ -42,11 +42,14 @@
     <string name="blank_file_text">[Este é um arquivo em branco, abra um arquivo ou edite este arquivo e salve]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Executar Programa</string>
-    <string name="main_stdin">[Stdin Bytes Here]</string>
-    <string name="main_stdout">[Bytes de Saída Padrão Aqui]</string>
-    <string name="main_stdin_header">Introduza Bytes de Entrada Padrão Abaixo</string>
-    <string name="main_stdout_header">Bytes de Saída Padrão Abaixo</string>
-    <string name="main_data">Dados</string>
+    <string name="main_stdin">[Escreva texto de entrada aqui]</string>
+    <string name="main_stdout">[Texto de saída exibido aqui]</string>
+    <string name="main_stdin_header">Texto de entrada</string>
+    <string name="main_stdout_header">Texto de saída</string>
+    <string name="main_data">Array de Dados</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">Atalho Desativado</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_input">Entrada como Bytes</string>
+    <string name="main_output">Saída como Bytes</string>
 </resources>
