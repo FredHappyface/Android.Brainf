@@ -42,11 +42,14 @@
     <string name="blank_file_text">[这是一个空文件，请打开一个文件或编辑此文件并保存]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">运行程序</string>
-    <string name="main_stdin">[此处注明]</string>
-    <string name="main_stdout">[标准输出字节在此]</string>
-    <string name="main_stdin_header">在下方输入标准输入字节</string>
-    <string name="main_stdout_header">在下方输出标准输出字节</string>
+    <string name="main_stdin">[此处的正文]</string>
+    <string name="main_stdout">[此处显示投入案文]</string>
+    <string name="main_stdin_header">投入案文</string>
+    <string name="main_stdout_header">产出</string>
     <string name="main_data">数据</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">快捷方式已禁用</string>
+    <string name="main_debug">[Debuginfo]</string>
+    <string name="main_input">投入</string>
+    <string name="main_output">产出</string>
 </resources>
