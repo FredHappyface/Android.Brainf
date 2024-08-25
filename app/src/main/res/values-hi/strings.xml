@@ -42,11 +42,14 @@
     <string name="blank_file_text">[यह एक रिक्त फ़ाइल है, एक फ़ाइल खोलें या इसे संपादित करें और सहेजें]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">प्रोग्राम चलाएं</string>
-    <string name="main_stdin">[Stdin Bytes Here]</string>
-    <string name="main_stdout">[मानक आउटपुट बाइट यहाँ है]</string>
-    <string name="main_stdin_header">नीचे स्टैंडर्ड इनपुट बाइट्स दर्ज करें</string>
-    <string name="main_stdout_header">नीचे स्टैंडर्ड आउटपुट बाइट्स</string>
-    <string name="main_data">डेटा</string>
+    <string name="main_stdin">[Write Input Text Here]</string>
+    <string name="main_stdout">[Output Text यहाँ प्रदर्शित]</string>
+    <string name="main_stdin_header">इनपुट टेक्स्ट</string>
+    <string name="main_stdout_header">आउटपुट टेक्स्ट</string>
+    <string name="main_data">डेटा ऐरे</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">शॉर्टकट निष्क्रिय किया गया है</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_input">बाइट्स के रूप में इनपुट</string>
+    <string name="main_output">बाइट्स के रूप में आउटपुट</string>
 </resources>
