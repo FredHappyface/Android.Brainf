@@ -44,7 +44,7 @@
     <string name="main_run_btn">Programı Çalıştır</string>
     <string name="main_stdin">[Yaz Giriş Text Here]</string>
     <string name="main_stdout">[Output Text Displayed Here]</string>
-    <string name="main_stdin_header">Stdin Baytlarını Aşağı Girin</string>
+    <string name="main_stdin_header">Giriş Text</string>
     <string name="main_stdout_header">Stdout Baytları Aşağıda</string>
     <string name="main_data">Veri</string>
     <!-- Strings for shortcuts.xml -->
