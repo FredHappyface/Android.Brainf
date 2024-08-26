@@ -52,4 +52,5 @@
     <string name="main_debug">[Información de depuración]</string>
     <string name="main_input">Entrada como Bytes</string>
     <string name="main_output">Salida como Bytes</string>
+    <string name="version_heading">Versión</string>
 </resources>
