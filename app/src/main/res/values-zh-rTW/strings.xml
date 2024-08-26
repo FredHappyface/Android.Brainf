@@ -52,4 +52,5 @@
     <string name="main_debug">[Debuginfo]</string>
     <string name="main_output">产出</string>
     <string name="main_input">投入</string>
+    <string name="version_heading">信息</string>
 </resources>
