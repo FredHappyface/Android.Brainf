@@ -7,16 +7,16 @@ open override fun [getColour](get-colour.md)(type: [String](https://kotlinlang.o
 
 Get a colour for a given type
 
-eg colourMap = ("keyword" to "red", "annotation" to "red", "constant" to "#orange", "comment" to "grey", "class" to "green", "import" to "blue")
+eg colourMap = (&quot;keyword&quot; to &quot;red&quot;, &quot;annotation&quot; to &quot;red&quot;, &quot;constant&quot; to &quot;#orange&quot;, &quot;comment&quot; to &quot;grey&quot;, &quot;class&quot; to &quot;green&quot;, &quot;import&quot; to &quot;blue&quot;)
 
 #### Return
 
-ForegroundColorSpan ForegroundColorSpan(Color.parseColor(colourMap[type](get-colour.md))) -> "red" if type="keyword"
+ForegroundColorSpan ForegroundColorSpan(Color.parseColor(colourMap[type](get-colour.md))) -> &quot;red&quot; if type=&quot;keyword&quot;
 
-## Parameters
+#### Parameters
 
 androidJvm
 
 | | |
 |---|---|
-| type | String eg "keyword" |
+| type | String eg &quot;keyword&quot; |

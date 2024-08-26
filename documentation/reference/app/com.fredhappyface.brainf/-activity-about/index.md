@@ -3,7 +3,7 @@
 # ActivityAbout
 
 [androidJvm]\
-class [ActivityAbout](index.md) : [AppCompatActivity](../-activity-themable/index.md)
+class [ActivityAbout](index.md) : [AppCompatActivity](https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html)
 
 ActivityAbout class inherits from the AppCompatActivity class - provides the about view
 
@@ -11,10 +11,4 @@ ActivityAbout class inherits from the AppCompatActivity class - provides the abo
 
 | | |
 |---|---|
-| [ActivityAbout](-activity-about.md) | [androidJvm]<br>fun [ActivityAbout](-activity-about.md)() |
-
-## Functions
-
-| Name | Summary |
-|---|---|
-| [onCreate](on-create.md) | [androidJvm]<br>protected open override fun [onCreate](on-create.md)(savedInstanceState: [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html)?)<br>Override the onCreate method from AppCompatActivity adding the activity_about view |
+| [ActivityAbout](-activity-about.md) | [androidJvm]<br>constructor() |

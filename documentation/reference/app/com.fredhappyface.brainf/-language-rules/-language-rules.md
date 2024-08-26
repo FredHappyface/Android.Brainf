@@ -3,4 +3,4 @@
 # LanguageRules
 
 [androidJvm]\
-fun [LanguageRules](-language-rules.md)()
+constructor()

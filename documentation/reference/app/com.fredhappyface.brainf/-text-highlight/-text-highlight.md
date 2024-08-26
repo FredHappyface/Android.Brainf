@@ -3,9 +3,9 @@
 # TextHighlight
 
 [androidJvm]\
-fun [TextHighlight](-text-highlight.md)(targetEditText: [EditText](https://developer.android.com/reference/kotlin/android/widget/EditText.html), languageRules: [LanguageRules](../-language-rules/index.md), colours: [Colours](../-colours/index.md), timeDelay: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) = 150)
+constructor(targetEditText: [EditText](https://developer.android.com/reference/kotlin/android/widget/EditText.html), languageRules: [LanguageRules](../-language-rules/index.md), colours: [Colours](../-colours/index.md), timeDelay: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) = 150)
 
-## Parameters
+#### Parameters
 
 androidJvm
 

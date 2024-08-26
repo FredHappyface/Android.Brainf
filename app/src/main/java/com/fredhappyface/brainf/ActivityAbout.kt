@@ -1,5 +1,6 @@
 package com.fredhappyface.brainf
 
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -25,5 +26,12 @@ class ActivityAbout : AppCompatActivity() {
 		val linksText = findViewById<TextView>(R.id.links_text)
 		markwon.setMarkdown(linksText, getString(R.string.links_text))
 
+		val versionText: TextView = findViewById(R.id.versionText)
+		try {
+			val packageInfo = packageManager.getPackageInfo(packageName, 0)
+			versionText.text = packageInfo.versionName
+		} catch (e: PackageManager.NameNotFoundException) {
+			versionText.text = getString(R.string.version_text)
+		}
 	}
 }

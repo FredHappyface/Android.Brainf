@@ -3,4 +3,4 @@
 # RuleMatch
 
 [androidJvm]\
-fun [RuleMatch](-rule-match.md)(ruleName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), startIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), endIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+constructor(ruleName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), startIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), endIndex: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))

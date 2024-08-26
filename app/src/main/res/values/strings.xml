@@ -31,6 +31,8 @@
 
 - MIT License
 (See the license for more information https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
+	<string name="version_heading">Version Info</string>
+	<string name="version_text" translatable="false">[debug]</string>
 	<!-- Saved dialog  -->
 	<string name="dialog_saved_button">OK</string>
 	<string name="dialog_saved_title">Saved!</string>

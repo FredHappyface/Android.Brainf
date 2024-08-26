@@ -3,4 +3,4 @@
 # SpannableHighlighter
 
 [androidJvm]\
-fun [SpannableHighlighter](-spannable-highlighter.md)(colours: [Colours](../-colours/index.md))
+constructor(colours: [Colours](../-colours/index.md))

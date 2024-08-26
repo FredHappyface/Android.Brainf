@@ -11,7 +11,7 @@ Combine matching rules
 
 List<RuleMatch> list of rule matches
 
-## Parameters
+#### Parameters
 
 androidJvm
 

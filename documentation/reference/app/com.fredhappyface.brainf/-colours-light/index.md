@@ -11,7 +11,7 @@ ColoursLight implements interface Colours
 
 | | |
 |---|---|
-| [ColoursLight](-colours-light.md) | [androidJvm]<br>fun [ColoursLight](-colours-light.md)() |
+| [ColoursLight](-colours-light.md) | [androidJvm]<br>constructor() |
 
 ## Functions
 

@@ -3,10 +3,10 @@
 # execute
 
 [androidJvm]\
-fun [execute](execute.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
+fun [execute](execute.md)(): [Pair](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)&gt;
 
 execute the programText, with the input specified in the constructor
 
 #### Return
 
-String: OutputBuffer.toString()
+Pair<String, IntArray>: Pair of OutputBuffer.toString() and buffer

@@ -3,4 +3,4 @@
 # ColoursLight
 
 [androidJvm]\
-fun [ColoursLight](-colours-light.md)()
+constructor()

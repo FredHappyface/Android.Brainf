@@ -3,4 +3,4 @@
 # ActivityAbout
 
 [androidJvm]\
-fun [ActivityAbout](-activity-about.md)()
+constructor()

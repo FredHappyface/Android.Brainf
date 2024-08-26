@@ -3,4 +3,4 @@
 # ColoursDark
 
 [androidJvm]\
-fun [ColoursDark](-colours-dark.md)()
+constructor()

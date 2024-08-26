@@ -11,7 +11,7 @@ ColoursDark implements interface Colours
 
 | | |
 |---|---|
-| [ColoursDark](-colours-dark.md) | [androidJvm]<br>fun [ColoursDark](-colours-dark.md)() |
+| [ColoursDark](-colours-dark.md) | [androidJvm]<br>constructor() |
 
 ## Functions
 

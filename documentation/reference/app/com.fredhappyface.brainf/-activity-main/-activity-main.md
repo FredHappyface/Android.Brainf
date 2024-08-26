@@ -3,4 +3,4 @@
 # ActivityMain
 
 [androidJvm]\
-fun [ActivityMain](-activity-main.md)()
+constructor()

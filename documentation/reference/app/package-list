@@ -1,0 +1,53 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.fredhappyface.brainf////PointingToDeclaration/app/com.fredhappyface.brainf/index.md
+$dokka.location:com.fredhappyface.brainf//parseSpecialChars/#kotlin.String/PointingToDeclaration/app/com.fredhappyface.brainf/parse-special-chars.md
+$dokka.location:com.fredhappyface.brainf/ActivityAbout///PointingToDeclaration/app/com.fredhappyface.brainf/-activity-about/index.md
+$dokka.location:com.fredhappyface.brainf/ActivityAbout/ActivityAbout/#/PointingToDeclaration/app/com.fredhappyface.brainf/-activity-about/-activity-about.md
+$dokka.location:com.fredhappyface.brainf/ActivityMain///PointingToDeclaration/app/com.fredhappyface.brainf/-activity-main/index.md
+$dokka.location:com.fredhappyface.brainf/ActivityMain/ActivityMain/#/PointingToDeclaration/app/com.fredhappyface.brainf/-activity-main/-activity-main.md
+$dokka.location:com.fredhappyface.brainf/ActivityMain/fillTable/#kotlin.Int#com.fredhappyface.brainf.BufferAdapter[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/app/com.fredhappyface.brainf/-activity-main/fill-table.md
+$dokka.location:com.fredhappyface.brainf/ActivityMain/onCreateOptionsMenu/#android.view.Menu/PointingToDeclaration/app/com.fredhappyface.brainf/-activity-main/on-create-options-menu.md
+$dokka.location:com.fredhappyface.brainf/ActivityMain/onOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/app/com.fredhappyface.brainf/-activity-main/on-options-item-selected.md
+$dokka.location:com.fredhappyface.brainf/ActivityMain/run/#android.view.View/PointingToDeclaration/app/com.fredhappyface.brainf/-activity-main/run.md
+$dokka.location:com.fredhappyface.brainf/BrainfInterpreter///PointingToDeclaration/app/com.fredhappyface.brainf/-brainf-interpreter/index.md
+$dokka.location:com.fredhappyface.brainf/BrainfInterpreter/BrainfInterpreter/#kotlin.String#kotlin.String/PointingToDeclaration/app/com.fredhappyface.brainf/-brainf-interpreter/-brainf-interpreter.md
+$dokka.location:com.fredhappyface.brainf/BrainfInterpreter/execute/#/PointingToDeclaration/app/com.fredhappyface.brainf/-brainf-interpreter/execute.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter.ViewHolder///PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/-view-holder/index.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter.ViewHolder/ViewHolder/#android.view.View/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/-view-holder/-view-holder.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter.ViewHolder/primaryText/#/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/-view-holder/primary-text.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter.ViewHolder/secondaryText/#/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/-view-holder/secondary-text.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter///PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/index.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter/BufferAdapter/#kotlin.Array[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/-buffer-adapter.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter/data/#/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/data.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter/getItemCount/#/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/get-item-count.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter/onBindViewHolder/#com.fredhappyface.brainf.BufferAdapter.ViewHolder#kotlin.Int/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/on-bind-view-holder.md
+$dokka.location:com.fredhappyface.brainf/BufferAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/com.fredhappyface.brainf/-buffer-adapter/on-create-view-holder.md
+$dokka.location:com.fredhappyface.brainf/CharBufferAdapter///PointingToDeclaration/app/com.fredhappyface.brainf/-char-buffer-adapter/index.md
+$dokka.location:com.fredhappyface.brainf/CharBufferAdapter/CharBufferAdapter/#kotlin.Array[kotlin.Char]/PointingToDeclaration/app/com.fredhappyface.brainf/-char-buffer-adapter/-char-buffer-adapter.md
+$dokka.location:com.fredhappyface.brainf/CharBufferAdapter/onBindViewHolder/#com.fredhappyface.brainf.BufferAdapter.ViewHolder#kotlin.Int/PointingToDeclaration/app/com.fredhappyface.brainf/-char-buffer-adapter/on-bind-view-holder.md
+$dokka.location:com.fredhappyface.brainf/Colours///PointingToDeclaration/app/com.fredhappyface.brainf/-colours/index.md
+$dokka.location:com.fredhappyface.brainf/Colours/getColour/#kotlin.String/PointingToDeclaration/app/com.fredhappyface.brainf/-colours/get-colour.md
+$dokka.location:com.fredhappyface.brainf/ColoursDark///PointingToDeclaration/app/com.fredhappyface.brainf/-colours-dark/index.md
+$dokka.location:com.fredhappyface.brainf/ColoursDark/ColoursDark/#/PointingToDeclaration/app/com.fredhappyface.brainf/-colours-dark/-colours-dark.md
+$dokka.location:com.fredhappyface.brainf/ColoursDark/getColour/#kotlin.String/PointingToDeclaration/app/com.fredhappyface.brainf/-colours-dark/get-colour.md
+$dokka.location:com.fredhappyface.brainf/ColoursLight///PointingToDeclaration/app/com.fredhappyface.brainf/-colours-light/index.md
+$dokka.location:com.fredhappyface.brainf/ColoursLight/ColoursLight/#/PointingToDeclaration/app/com.fredhappyface.brainf/-colours-light/-colours-light.md
+$dokka.location:com.fredhappyface.brainf/ColoursLight/getColour/#kotlin.String/PointingToDeclaration/app/com.fredhappyface.brainf/-colours-light/get-colour.md
+$dokka.location:com.fredhappyface.brainf/LanguageRules///PointingToDeclaration/app/com.fredhappyface.brainf/-language-rules/index.md
+$dokka.location:com.fredhappyface.brainf/LanguageRules/LanguageRules/#/PointingToDeclaration/app/com.fredhappyface.brainf/-language-rules/-language-rules.md
+$dokka.location:com.fredhappyface.brainf/LanguageRules/createHighlighting/#kotlin.CharSequence/PointingToDeclaration/app/com.fredhappyface.brainf/-language-rules/create-highlighting.md
+$dokka.location:com.fredhappyface.brainf/RuleMatch///PointingToDeclaration/app/com.fredhappyface.brainf/-rule-match/index.md
+$dokka.location:com.fredhappyface.brainf/RuleMatch/RuleMatch/#kotlin.String#kotlin.Int#kotlin.Int/PointingToDeclaration/app/com.fredhappyface.brainf/-rule-match/-rule-match.md
+$dokka.location:com.fredhappyface.brainf/RuleMatch/endIndex/#/PointingToDeclaration/app/com.fredhappyface.brainf/-rule-match/end-index.md
+$dokka.location:com.fredhappyface.brainf/RuleMatch/ruleName/#/PointingToDeclaration/app/com.fredhappyface.brainf/-rule-match/rule-name.md
+$dokka.location:com.fredhappyface.brainf/RuleMatch/startIndex/#/PointingToDeclaration/app/com.fredhappyface.brainf/-rule-match/start-index.md
+$dokka.location:com.fredhappyface.brainf/SpannableHighlighter///PointingToDeclaration/app/com.fredhappyface.brainf/-spannable-highlighter/index.md
+$dokka.location:com.fredhappyface.brainf/SpannableHighlighter/SpannableHighlighter/#com.fredhappyface.brainf.Colours/PointingToDeclaration/app/com.fredhappyface.brainf/-spannable-highlighter/-spannable-highlighter.md
+$dokka.location:com.fredhappyface.brainf/SpannableHighlighter/appliedStyles/#/PointingToDeclaration/app/com.fredhappyface.brainf/-spannable-highlighter/applied-styles.md
+$dokka.location:com.fredhappyface.brainf/TextHighlight///PointingToDeclaration/app/com.fredhappyface.brainf/-text-highlight/index.md
+$dokka.location:com.fredhappyface.brainf/TextHighlight/TextHighlight/#android.widget.EditText#com.fredhappyface.brainf.LanguageRules#com.fredhappyface.brainf.Colours#kotlin.Long/PointingToDeclaration/app/com.fredhappyface.brainf/-text-highlight/-text-highlight.md
+$dokka.location:com.fredhappyface.brainf/TextHighlight/end/#/PointingToDeclaration/app/com.fredhappyface.brainf/-text-highlight/end.md
+$dokka.location:com.fredhappyface.brainf/TextHighlight/start/#/PointingToDeclaration/app/com.fredhappyface.brainf/-text-highlight/start.md
+com.fredhappyface.brainf
+

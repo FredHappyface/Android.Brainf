@@ -79,6 +79,27 @@
 						android:text="@string/links_text" />
 				</LinearLayout>
 			</com.google.android.material.card.MaterialCardView>
+
+			<!-- Version -->
+			<com.google.android.material.card.MaterialCardView style="@style/card">
+
+				<LinearLayout
+					style="@style/cardchild"
+					android:orientation="vertical">
+
+					<TextView
+						style="@style/heading"
+						android:text="@string/version_heading" />
+
+					<TextView
+						style="@style/body_text"
+						android:autoLink="web"
+						android:linksClickable="true"
+						android:id="@+id/versionText"
+						android:text="@string/version_text" />
+				</LinearLayout>
+			</com.google.android.material.card.MaterialCardView>
+
 		</LinearLayout>
 	</ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

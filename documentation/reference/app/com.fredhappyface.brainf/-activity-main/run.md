@@ -3,14 +3,14 @@
 # run
 
 [androidJvm]\
-fun [run](run.md)(view: [View](https://developer.android.com/reference/kotlin/android/view/View.html))
+fun [run](run.md)(ignoreView: [View](https://developer.android.com/reference/kotlin/android/view/View.html))
 
 Run the interpreter
 
-## Parameters
+#### Parameters
 
 androidJvm
 
 | | |
 |---|---|
-| view | : View? required to call function from layout |
+| ignoreView | : View? required to call function from layout |
