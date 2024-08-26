@@ -80,4 +80,3 @@ fun parseSpecialChars(input: String): String {
 
     return result.toString()
 }
-
