@@ -52,4 +52,5 @@
     <string name="main_debug">[Debug Info]</string>
     <string name="main_input">Masukan sebagai Bytes</string>
     <string name="main_output">Output sebagai Bytes</string>
+    <string name="version_heading">Info Versi</string>
 </resources>
