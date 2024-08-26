@@ -52,4 +52,5 @@
     <string name="main_debug">(Debug Info)</string>
     <string name="main_input">Input als Bytes</string>
     <string name="main_output">Ausgabe als Bytes</string>
+    <string name="version_heading">Details zum Artikel</string>
 </resources>
