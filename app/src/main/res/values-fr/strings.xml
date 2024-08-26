@@ -52,4 +52,5 @@
     <string name="main_debug">[Debug Info]</string>
     <string name="main_input">Entrée en octets</string>
     <string name="main_output">Sortie en octets</string>
+    <string name="version_heading">Version Info</string>
 </resources>
