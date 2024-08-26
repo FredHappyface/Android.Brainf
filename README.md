@@ -45,7 +45,7 @@ Interpreter for the 'Brainf' programming language
 
 - **Swift Navigation via Launcher Shortcuts**: Instantly access key sections like Settings, About, and New File through convenient launcher shortcuts, streamlining your interaction with the app for maximum efficiency.
 
-- **ASCII Control Character Support:** The input processing function now supports two notation types for ASCII control characters: **hexadecimal notation** (`\xNN`) and **control character notation** (`@NAME;`), allowing flexible inclusion of control sequences in input strings.
+- **ASCII Control Character Support:** supporting two notation types for ASCII control characters: **hexadecimal notation** (`\xNN`) and **control character notation** (`@NAME;`), allowing flexible inclusion of control sequences in input strings.
 
 ## Screenshots
 

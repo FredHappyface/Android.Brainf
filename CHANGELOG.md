@@ -3,6 +3,12 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 20240826
+
+- Update version, screenshots
+- Add escape sequences supporting two notation types for ASCII control characters: **hexadecimal notation** (`\xNN`) and **control character notation** (`@NAME;`)
+- Update UI - add byte representation for input and output
+
 ## 20240330
 
 - Update version, screenshots

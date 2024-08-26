@@ -7,7 +7,7 @@ Interpreter for the ‘Brainf’ programming language
 <li><b>Effortless Code Management</b>: Easily create, edit, save, and execute Brainf code and text files, providing a comprehensive platform for coding endeavours.</li>
 <li><b>Vibrant Syntax Highlighting</b>: Harness the power of regex-based syntax highlighting, making your code structures and elements vividly distinct for enhanced readability and comprehension.</li>
 <li><b>Swift Navigation via Launcher Shortcuts</b>: Instantly access key sections like Settings, About, and New File through convenient launcher shortcuts, streamlining your interaction with the app for maximum efficiency.</li>
-<li><b>ASCII Control Character Support:</b> The input processing function now supports two notation types for ASCII control characters: <b>hexadecimal notation</b> (<code>\xNN</code>) and <b>control character notation</b> (<code>@NAME;</code>), allowing flexible inclusion of control sequences in input strings.</li>
+<li><b>ASCII Control Character Support:</b> supporting two notation types for ASCII control characters: <b>hexadecimal notation</b> (<code>\xNN</code>) and <b>control character notation</b> (<code>@NAME;</code>), allowing flexible inclusion of control sequences in input strings.</li>
 </ul>
 
 <b>Links:</b>

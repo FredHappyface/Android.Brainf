@@ -1,0 +1,9 @@
+<h2 id="section">20240826</h2>
+<ul>
+<li>Update version, screenshots</li>
+<li>Add escape sequences supporting two notation types for ASCII control
+characters: <b>hexadecimal notation</b> (<code>\xNN</code>)
+and <b>control character notation</b>
+(<code>@NAME;</code>)</li>
+<li>Update UI - add byte representation for input and output</li>
+</ul>
