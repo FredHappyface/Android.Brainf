@@ -52,4 +52,5 @@
     <string name="main_debug">[デバッグ情報]</string>
     <string name="main_input">バイトとして入力</string>
     <string name="main_output">バイトとして出力</string>
+    <string name="version_heading">バージョン情報</string>
 </resources>
