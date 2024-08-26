@@ -39,4 +39,5 @@
     <string name="main_debug">[Debug Info]</string>
     <string name="main_input">Вход как байты</string>
     <string name="main_output">Выход: байты</string>
+    <string name="version_heading">Версия</string>
 </resources>
