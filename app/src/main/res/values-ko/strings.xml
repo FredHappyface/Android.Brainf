@@ -52,4 +52,5 @@
     <string name="main_debug">[디버그 정보]</string>
     <string name="main_input">Bytes로 입력</string>
     <string name="main_output">Bytes로 산출</string>
+    <string name="version_heading">버전 정보</string>
 </resources>
