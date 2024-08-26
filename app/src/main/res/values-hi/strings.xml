@@ -52,4 +52,5 @@
     <string name="main_debug">[Debug Info]</string>
     <string name="main_input">बाइट्स के रूप में इनपुट</string>
     <string name="main_output">बाइट्स के रूप में आउटपुट</string>
+    <string name="version_heading">संस्करण की जानकारी</string>
 </resources>
