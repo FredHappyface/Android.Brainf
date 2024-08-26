@@ -45,6 +45,8 @@ Interpreter for the 'Brainf' programming language
 
 - **Swift Navigation via Launcher Shortcuts**: Instantly access key sections like Settings, About, and New File through convenient launcher shortcuts, streamlining your interaction with the app for maximum efficiency.
 
+- **ASCII Control Character Support:** The input processing function now supports two notation types for ASCII control characters: **hexadecimal notation** (`\xNN`) and **control character notation** (`@NAME;`), allowing flexible inclusion of control sequences in input strings.
+
 ## Screenshots
 
 <p>
@@ -61,10 +63,9 @@ Interpreter for the 'Brainf' programming language
 A high-level overview of how the documentation is organized organized will help you know
 where to look for certain things:
 
-<!--
 - [Tutorials](/documentation/tutorials) take you by the hand through a series of steps to get
   started using the software. Start here if you’re new.
--->
+
 - The [Technical Reference](/documentation/reference) documents APIs and other aspects of the
   machinery. This documentation describes how to use the classes and functions at a lower level
   and assume that you have a good high-level understanding of the software.
