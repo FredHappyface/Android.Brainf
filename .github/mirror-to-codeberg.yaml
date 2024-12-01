@@ -1,0 +1,19 @@
+# Sync repo to the Codeberg mirror
+name: Repo sync GitHub -> Codeberg
+on:
+  push:
+    branches:
+    - '**'
+
+jobs:
+  codeberg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: spyoungtech/mirror-action@v0.5.1
+        with:
+          REMOTE: "https://codeberg.org/FredHappyface/Android.Brainf.git"
+          GIT_USERNAME: FredHappyface
+          GIT_PASSWORD: ${{ secrets.CODEBERG_PASSWORD }}
