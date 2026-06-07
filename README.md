@@ -80,7 +80,6 @@ You can install the app using the following methods, Follow the link to the list
 preferred store by clicking on one of the badges below, then download/install:
 
 [<img src="readme-assets/badges/badge_obtainium.png" alt="Get it on Obtainium" height="80">](https://intradeus.github.io/http-protocol-redirector?r=obtainium://add/github.com/fredhappyface/Android.Brainf)
-[<img src="readme-assets/badges/badge_fdroid.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/en/packages/com.fredhappyface.brainf/)
 [<img src="readme-assets/badges/badge_gplay.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.fredhappyface.brainf)
 [<img src="readme-assets/badges/badge_github.png" alt="Get it on GitHub" height="80">](../../releases)
 
