@@ -15,22 +15,13 @@
     <string name="info_text">‘Brainf’ programlama dili için yorumlayıcı.</string>
     <!-- Features -->
     <string name="features_heading">Özellikler</string>
-    <string name="features_text">"- **Sistem Teması Entegrasyonu**: Brainf, sistemin temasıyla sorunsuz bir şekilde entegre olarak uygulamanın görünümünün kullanıcının cihaz genelindeki tasarım seçimleriyle uyumlu olmasını sağlar.
-
-- **Zahmetsiz Kod Yönetimi**: Brainf kodu ve metin dosyalarını kolayca oluşturun, düzenleyin, kaydedin ve çalıştırın; kodlama çalışmaları için kapsamlı bir platform sağlayın.
-
-- **Canlı Sözdizimi Vurgulama**: Regex tabanlı sözdizimi vurgulamanın gücünden yararlanarak kod yapılarınızı ve öğelerinizi daha iyi okunabilirlik ve anlaşılırlık için canlı bir şekilde belirgin hale getirin.
-
-- **Başlatıcı Kısayolları ile Hızlı Gezinme**: Kullanışlı başlatıcı kısayolları aracılığıyla Ayarlar, Hakkında ve Yeni Dosya gibi önemli bölümlere anında erişerek maksimum verimlilik için uygulamayla etkileşiminizi kolaylaştırın.</string>
+    <string name="features_text">- **Sistem Teması Entegrasyonu**: Brainf, sistemin temasıyla sorunsuz bir şekilde entegre olarak uygulamanın görünümünün kullanıcının cihaz genelindeki tasarım seçimleriyle uyumlu olmasını sağlar.\n\n- **Zahmetsiz Kod Yönetimi**: Brainf kodu ve metin dosyalarını kolayca oluşturun, düzenleyin, kaydedin ve çalıştırın; kodlama çalışmaları için kapsamlı bir platform sağlayın.\n\n- **Canlı Sözdizimi Vurgulama**: Regex tabanlı sözdizimi vurgulamanın gücünden yararlanarak kod yapılarınızı ve öğelerinizi daha iyi okunabilirlik ve anlaşılırlık için canlı bir şekilde belirgin hale getirin.\n\n- **Başlatıcı Kısayolları ile Hızlı Gezinme**: Kullanışlı başlatıcı kısayolları aracılığıyla Ayarlar, Hakkında ve Yeni Dosya gibi önemli bölümlere anında erişerek maksimum verimlilik için uygulamayla etkileşiminizi kolaylaştırın.</string>
     <!-- License -->
     <string name="license_heading">MIT Lisansı</string>
     <string name="license_text">Tüm Hakları Saklıdır © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">Bağlantılar</string>
-    <string name="links_text">"- Brainf kaynak kodu https://github.com/FredHappyface/Android.Brainf üzerinde mevcuttur
-
-- MIT Lisansı
-(Daha fazla bilgi için lisansa bakın https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
+    <string name="links_text">- Brainf kaynak kodu https://github.com/FredHappyface/Android.Brainf üzerinde mevcuttur\n\n- MIT Lisansı\n(Daha fazla bilgi için lisansa bakın https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">Tamam</string>
     <string name="dialog_saved_title">Kaydedildi!</string>
@@ -42,11 +33,15 @@
     <string name="blank_file_text">[Bu boş bir dosya, bir dosya açın veya bu dosyayı düzenleyin ve kaydedin]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Programı Çalıştır</string>
-    <string name="main_stdin">[Stdin Baytlarını Buraya]</string>
-    <string name="main_stdout">[Stdout Baytlarını Buraya]</string>
-    <string name="main_stdin_header">Stdin Baytlarını Aşağı Girin</string>
-    <string name="main_stdout_header">Stdout Baytları Aşağıda</string>
-    <string name="main_data">Veri</string>
+    <string name="main_stdin">[Girdi Metnini Buraya Yazın]</string>
+    <string name="main_stdout">[Çıktı Metni Burada Görüntülenir]</string>
+    <string name="main_stdin_header">Girdi Metni</string>
+    <string name="main_stdout_header">Çıktı Metni</string>
+    <string name="main_data">Veri Dizisi</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Kısayol Devre Dışı</string>
+    <string name="version_heading">Sürüm Bilgisi</string>
+    <string name="main_input">Bayt Olarak Girdi</string>
+    <string name="main_debug">[Hata Ayıklama Bilgileri]</string>
+    <string name="main_output">Bayt Olarak Çıktı</string>
 </resources>

@@ -12,25 +12,16 @@
     <!-- about  -->
     <!-- Info -->
     <string name="info_heading">Info</string>
-    <string name="info_text">Penerjemah untuk bahasa pemrograman \‘Brainf\’.</string>
+    <string name="info_text">Penerjemah untuk bahasa pemrograman Brainf.</string>
     <!-- Features -->
     <string name="features_heading">Fitur</string>
-    <string name="features_text">- Integrasi dengan Tema Sistem**: Brainf terintegrasi dengan tema sistem dengan mulus, memastikan bahwa tampilan aplikasi selaras dengan pilihan desain di seluruh perangkat pengguna.
-\n
-\n- Manajemen Kode yang Mudah**: Membuat, mengedit, menyimpan, dan menjalankan kode dan file teks Brainf dengan mudah, menyediakan platform yang komprehensif untuk upaya pengkodean.
-\n
-\n- **Penyorotan Sintaksis**: Manfaatkan kekuatan penyorotan sintaksis berbasis regex, membuat struktur dan elemen kode Anda jelas berbeda untuk meningkatkan keterbacaan dan pemahaman.
-\n
-\n- Navigasi Cepat melalui Pintasan Peluncur**: Akses bagian utama seperti Pengaturan, Tentang, dan File Baru secara instan melalui pintasan peluncur yang nyaman, menyederhanakan interaksi Anda dengan aplikasi untuk efisiensi maksimum.</string>
+    <string name="features_text">- Integrasi dengan Tema Sistem**: Brainf terintegrasi dengan tema sistem dengan mulus, memastikan bahwa tampilan aplikasi selaras dengan pilihan desain di seluruh perangkat pengguna.\n\n- Manajemen Kode yang Mudah**: Membuat, mengedit, menyimpan, dan menjalankan kode dan file teks Brainf dengan mudah, menyediakan platform yang komprehensif untuk upaya pengkodean.\n\n- **Penyorotan Sintaksis**: Manfaatkan kekuatan penyorotan sintaksis berbasis regex, membuat struktur dan elemen kode Anda jelas berbeda untuk meningkatkan keterbacaan dan pemahaman.\n\n- Navigasi Cepat melalui Pintasan Peluncur**: Akses bagian utama seperti Pengaturan, Tentang, dan File Baru secara instan melalui pintasan peluncur yang nyaman, menyederhanakan interaksi Anda dengan aplikasi untuk efisiensi maksimum.</string>
     <!-- License -->
     <string name="license_heading">Lisensi MIT</string>
     <string name="license_text">Hak Cipta © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">Tautan</string>
-    <string name="links_text">- Kode sumber Brainf tersedia di https://github.com/FredHappyface/Android.Brainf
-\n
-\n- Lisensi MIT
-\n(Lihat lisensi untuk informasi lebih lanjut https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
+    <string name="links_text">- Kode sumber Brainf tersedia di https://github.com/FredHappyface/Android.Brainf\n\n- Lisensi MIT\n(Lihat lisensi untuk informasi lebih lanjut https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">OK</string>
     <string name="dialog_saved_title">Tersimpan!</string>
@@ -42,11 +33,15 @@
     <string name="blank_file_text">[Ini adalah file kosong, buka file atau edit file ini dan simpan]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Jalankan Program</string>
-    <string name="main_stdin">[Stdin Bytes Disini]</string>
-    <string name="main_stdout">[Stdout Bytes Disini]</string>
-    <string name="main_stdin_header">Byte Standar Input di Sini</string>
-    <string name="main_stdout_header">Byte Standar Output di Sini</string>
-    <string name="main_data">Data</string>
+    <string name="main_stdin">[Menulis Teks Masuk Di sini]</string>
+    <string name="main_stdout">[Output Teks Tampilkan Disini]</string>
+    <string name="main_stdin_header">Masukan Teks</string>
+    <string name="main_stdout_header">Catalog</string>
+    <string name="main_data">Database</string>
     <!-- Strings for shortcuts.xml -->
     <string name="shortcut_disabled">Pintasan Dinonaktifkan</string>
+    <string name="version_heading">Info Versi</string>
+    <string name="main_input">Masukan sebagai Bytes</string>
+    <string name="main_debug">[Debug Info]</string>
+    <string name="main_output">Output sebagai Bytes</string>
 </resources>

@@ -15,22 +15,13 @@
     <string name="info_text">Brainf编程语言的解释器。</string>
     <!-- Features -->
     <string name="features_heading">特点</string>
-    <string name="features_text">- **与系统主题集成**: Brainf与系统主题无缝集成，确保应用程序的外观与用户设备的整体设计选择相一致。
-\n
-\n- **轻松代码管理**: 轻松创建、编辑、保存和执行Brainf代码和文本文件，提供全面的编码平台。
-\n
-\n- **丰富的语法高亮**: 利用基于正则表达式的语法高亮，使您的代码结构和元素清晰可辨，增强可读性和理解力。
-\n
-\n- **通过快捷方式快速导航**: 通过便捷的快捷方式即时访问设置、关于和新建文件等关键部分，简化了与应用程序的交互，提高了效率。</string>
+    <string name="features_text">- **与系统主题集成**: Brainf与系统主题无缝集成，确保应用程序的外观与用户设备的整体设计选择相一致。\n\n- **轻松代码管理**: 轻松创建、编辑、保存和执行Brainf代码和文本文件，提供全面的编码平台。\n\n- **丰富的语法高亮**: 利用基于正则表达式的语法高亮，使您的代码结构和元素清晰可辨，增强可读性和理解力。\n\n- **通过快捷方式快速导航**: 通过便捷的快捷方式即时访问设置、关于和新建文件等关键部分，简化了与应用程序的交互，提高了效率。</string>
     <!-- License -->
     <string name="license_heading">MIT许可</string>
     <string name="license_text">版权所有 © FredHappyface</string>
     <!-- Links -->
     <string name="links_heading">链接</string>
-    <string name="links_text">- Brainf的源代码位于 https://github.com/FredHappyface/Android.Brainf
-\n
-\n- MIT许可
-\n(有关更多信息，请参阅许可证 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
+    <string name="links_text">- Brainf的源代码位于 https://github.com/FredHappyface/Android.Brainf\n\n- MIT许可\n(有关更多信息，请参阅许可证 https://github.com/FredHappyface/Android.Brainf/blob/main/LICENSE.md )</string>
     <!-- Saved dialog  -->
     <string name="dialog_saved_button">好的</string>
     <string name="dialog_saved_title">已保存！</string>
@@ -42,11 +33,15 @@
     <string name="blank_file_text">[这是一个空文件，请打开一个文件或编辑此文件并保存]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">运行程序</string>
-    <string name="main_stdin">[此处注明]</string>
-    <string name="main_stdout">[标准输出字节在此]</string>
-    <string name="main_stdin_header">在下方输入标准输入字节</string>
-    <string name="main_stdout_header">在下方输出标准输出字节</string>
+    <string name="main_stdin">[此处的正文]</string>
+    <string name="main_stdout">[此处显示投入案文]</string>
+    <string name="main_stdin_header">投入案文</string>
+    <string name="main_stdout_header">产出</string>
     <string name="main_data">数据</string>
     <!-- Strings for shortcuts.xml -->
 	<string name="shortcut_disabled">快捷方式已禁用</string>
+    <string name="version_heading">信息</string>
+    <string name="main_input">投入</string>
+    <string name="main_debug">[Debuginfo]</string>
+    <string name="main_output">产出</string>
 </resources>
