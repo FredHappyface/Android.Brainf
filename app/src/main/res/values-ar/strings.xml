@@ -34,7 +34,7 @@
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">تشغيل البرنامج</string>
     <string name="main_stdin">[اكتب نص المدخلات هنا]</string>
-    <string name="main_stdout">[نصوص مستنسخة هنا]</string>
+    <string name="main_stdout">[النص المرسل هنا]</string>
     <string name="main_stdin_header">النص</string>
     <string name="main_stdout_header">نص الناتج</string>
     <string name="main_data">البيانات</string>
