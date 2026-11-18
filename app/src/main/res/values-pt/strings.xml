@@ -33,7 +33,7 @@
     <string name="blank_file_text">[Este é um arquivo em branco, abra um arquivo ou edite este arquivo e salve]</string>
     <!-- Run, stdin, stdout  -->
     <string name="main_run_btn">Executar Programa</string>
-    <string name="main_stdin">[Escreva texto de entrada aqui]</string>
+    <string name="main_stdin">[Escrever texto de entrada aqui]</string>
     <string name="main_stdout">[Texto de saída exibido aqui]</string>
     <string name="main_stdin_header">Texto de entrada</string>
     <string name="main_stdout_header">Texto de saída</string>
